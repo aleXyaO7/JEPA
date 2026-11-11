@@ -1,0 +1,11 @@
+[2026-11-11 12:06:16,190][OpenGL.acceleratesupport][INFO] - No OpenGL_accelerate module loaded: No module named 'OpenGL_accelerate'
+[2026-11-11 12:06:16,525][absl][INFO] - MUJOCO_GL=egl, attempting to import specified OpenGL backend.
+[2026-11-11 12:06:16,564][absl][INFO] - MuJoCo library version is: 4.0.0
+[2026-11-11 12:06:48,083][datasets][INFO] - JAX version 0.10.2 available.
+[2026-11-11 12:06:51,590][root][INFO] - Cached 'action' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/ogbench/cube_single_expert.h5'
+[2026-11-11 12:40:36,827][OpenGL.acceleratesupport][INFO] - No OpenGL_accelerate module loaded: No module named 'OpenGL_accelerate'
+[2026-11-11 12:40:37,040][absl][INFO] - MUJOCO_GL=egl, attempting to import specified OpenGL backend.
+[2026-11-11 12:40:37,107][absl][INFO] - MuJoCo library version is: 4.0.0
+[2026-11-11 12:41:08,022][datasets][INFO] - JAX version 0.10.2 available.
+[2026-11-11 12:41:12,641][root][INFO] - Cached 'action' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/ogbench/cube_single_expert.h5'
+[2026-11-11 12:41:13,114][stable_worldmodel.wm.utils][INFO] - Loading checkpoint from folder /sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/checkpoints/lewm-cube...

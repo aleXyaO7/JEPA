@@ -1,0 +1,12 @@
+OK tworoom.tar.zst
+OK pusht_expert_train.h5.zst
+OK reacher.tar.zst
+OK cube_single_expert.tar.zst
+total 253833216
+drwxr-sr-x 1 qxe3fj users            0 Nov 11 02:16 .
+drwxr-sr-x 1 qxe3fj users            0 Nov 11 02:15 ..
+-rw-r--r-- 1 qxe3fj users 101942558720 Feb 18  2026 cube_single_expert.h5
+-rw-r--r-- 1 qxe3fj users  46300921856 Nov 11 02:05 pusht_expert_train.h5
+-rw-r--r-- 1 qxe3fj users  98905882624 Mar 12  2026 reacher.h5
+-rw-r--r-- 1 qxe3fj users  12775849984 Feb  1  2026 tworoom.h5
+ALL_DONE

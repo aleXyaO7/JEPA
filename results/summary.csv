@@ -1,0 +1,8 @@
+model,environment,planner,goal_normal_steps,success_normal_pct,goal_harder_steps,success_harder_pct,change_pts,n_episodes,seed,source_normal,source_harder
+DINO-WM,PushT,CEM open-loop,25,64,50,6,-58,50,100,results/dinowm/pusht/goalH_25_seed100.log,results/dinowm/pusht/goalH_50_seed100.log
+LeWM,PushT,CEM MPC,25,88,50,52,-36,50,42,results/lewm/pusht/offset_25/pusht_offset25_results.txt,results/lewm/pusht/offset_50/pusht_offset50_results.txt
+LeWM,TwoRoom,CEM MPC,25,86,50,50,-36,50,42,results/lewm/tworoom/offset_25/tworoom_offset25_results.txt,results/lewm/tworoom/offset_50/tworoom_offset50_results.txt
+LeWM,OGBench-Cube,CEM MPC,25,74,50,52,-22,50,42,results/lewm/cube/offset_25/cube_offset25_results.txt,results/lewm/cube/offset_50/cube_offset50_results.txt
+DINO-WM,PointMaze-UMaze,CEM open-loop,25,98,50,88,-10,50,100,results/dinowm/point_maze/goalH_25_seed100.log,results/dinowm/point_maze/goalH_50_seed100.log
+LeWM,Reacher,CEM MPC,25,62,50,56,-6,50,42,results/lewm/reacher/offset_25/reacher_offset25_results.txt,results/lewm/reacher/offset_50/reacher_offset50_results.txt
+DINO-WM,Wall,CEM open-loop,25,82,45,80,-2,50,100,results/dinowm/wall_single/goalH_25_seed100.log,results/dinowm/wall_single/goalH_45_seed100.log

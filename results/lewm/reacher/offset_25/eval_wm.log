@@ -1,0 +1,16 @@
+[2026-11-11 11:40:24,832][absl][INFO] - MUJOCO_GL=egl, attempting to import specified OpenGL backend.
+[2026-11-11 11:40:24,870][OpenGL.acceleratesupport][INFO] - No OpenGL_accelerate module loaded: No module named 'OpenGL_accelerate'
+[2026-11-11 11:40:25,223][absl][INFO] - MuJoCo library version is: 4.0.0
+[2026-11-11 11:40:34,834][datasets][INFO] - JAX version 0.10.2 available.
+[2026-11-11 11:40:37,740][root][INFO] - Cached 'action' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/reacher.h5'
+[2026-11-11 12:05:18,533][absl][INFO] - MUJOCO_GL=egl, attempting to import specified OpenGL backend.
+[2026-11-11 12:05:18,602][OpenGL.acceleratesupport][INFO] - No OpenGL_accelerate module loaded: No module named 'OpenGL_accelerate'
+[2026-11-11 12:05:18,914][absl][INFO] - MuJoCo library version is: 4.0.0
+[2026-11-11 12:05:26,994][datasets][INFO] - JAX version 0.10.2 available.
+[2026-11-11 12:05:29,649][root][INFO] - Cached 'action' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/reacher.h5'
+[2026-11-11 12:38:24,555][absl][INFO] - MUJOCO_GL=egl, attempting to import specified OpenGL backend.
+[2026-11-11 12:38:24,599][OpenGL.acceleratesupport][INFO] - No OpenGL_accelerate module loaded: No module named 'OpenGL_accelerate'
+[2026-11-11 12:38:24,881][absl][INFO] - MuJoCo library version is: 4.0.0
+[2026-11-11 12:38:33,189][datasets][INFO] - JAX version 0.10.2 available.
+[2026-11-11 12:38:38,578][root][INFO] - Cached 'action' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/reacher.h5'
+[2026-11-11 12:38:39,449][stable_worldmodel.wm.utils][INFO] - Loading checkpoint from folder /sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/checkpoints/lewm-reacher...

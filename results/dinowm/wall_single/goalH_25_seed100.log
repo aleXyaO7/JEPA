@@ -1,0 +1,338 @@
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/wandb/util.py:118: SentryHubDeprecationWarning: `sentry_sdk.Hub` is deprecated and will be removed in a future major release. Please consult our 1.x to 2.x migration guide for details on how to migrate `Hub` usage to the new API: https://docs.sentry.io/platforms/python/migration/1.x-to-2.x
+  sentry_hub = sentry_sdk.Hub(sentry_client)
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py:30: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/pkg_resources/__init__.py:3148: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('mpl_toolkits')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/pkg_resources/__init__.py:3148: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/Cython/Distutils/old_build_ext.py:15: DeprecationWarning: dep_util is Deprecated. Use functions from setuptools instead.
+  from distutils.dep_util import newer, newer_group
+<frozen importlib._bootstrap>:283: DeprecationWarning: the load_module() method is deprecated and slated for removal in Python 3.12; use exec_module() instead
+Warning: Mujoco-based envs failed to import. Set the environment variable D4RL_SUPPRESS_IMPORT_ERROR=1 to suppress this message.
+No module named 'mjrl'
+Warning: Flow failed to import. Set the environment variable D4RL_SUPPRESS_IMPORT_ERROR=1 to suppress this message.
+No module named 'flow'
+Warning: CARLA failed to import. Set the environment variable D4RL_SUPPRESS_IMPORT_ERROR=1 to suppress this message.
+No module named 'carla'
+pybullet build time: Jan 29 2025 23:16:28
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-open-v0[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-umaze-v0[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-medium-v0[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-large-v0[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-umaze-v1[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-medium-v1[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-large-v1[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-eval-umaze-v1[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-eval-medium-v1[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-eval-large-v1[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-open-dense-v0[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-umaze-dense-v0[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-medium-dense-v0[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-large-dense-v0[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-umaze-dense-v1[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-medium-dense-v1[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-large-dense-v1[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-eval-umaze-dense-v1[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-eval-medium-dense-v1[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-eval-large-dense-v1[0m
+  logger.warn(f"Overriding environment {id}")
+/sfs/weka/scratch/qxe3fj/temporal-straightening/custom_resolvers.py:4: UserWarning: 
+The version_base parameter is not specified.
+Please specify a compatability version level, or None.
+Will assume defaults for version 1.1
+  @hydra.main(config_path=None)
+[2026-11-11 11:41:03,929][__main__][INFO] - Planning result saved dir: /sfs/weka/scratch/qxe3fj/JEPA/results/dinowm/wall_single/goalH_25_seed100
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py:30: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+Loading wall dataset...
+Loaded 1920 rollouts
+[[102, 33, 1056, 1591, 354, 245, 790, 1323, 142, 1745, 1588, 1473, 38, 1192, 735, 832, 547, 1186, 843, 660, 869, 83, 695, 1629, 179, 1658, 157, 1758, 1747, 250, 312, 1361, 1163, 1798, 275, 1099, 1787, 964, 1066, 609, 1666, 774, 181, 1502, 407, 668, 593, 1623, 1101, 565, 1350, 1572, 1094, 512, 148, 809, 263, 1853, 908, 927, 626, 569, 1730, 757, 1574, 1866, 1107, 1706, 391, 1255, 947, 828, 1720, 1057, 19, 1364, 1575, 1914, 1562, 1909, 534, 973, 538, 1017, 646, 285, 309, 1884, 1059, 552, 697, 1702, 145, 819, 649, 665, 169, 1051, 171, 1529, 1470, 291, 1371, 1240, 1641, 1746, 1443, 1307, 1801, 369, 1365, 525, 167, 1121, 1430, 874, 528, 1459, 1617, 770, 359, 923, 507, 884, 1616, 1314, 1149, 1379, 891, 1442, 1047, 1887, 248, 1767, 1620, 283, 392, 1290, 1650, 242, 1399, 807, 159, 204, 775, 1827, 500, 1352, 700, 1265, 1102, 149, 1440, 1258, 1738, 347, 690, 468, 1726, 1234, 1126, 868, 1501, 621, 585, 1523, 121, 1108, 846, 1167, 1405, 114, 474, 1406, 195, 1144, 586, 384, 1680, 298, 308, 529, 901, 475, 992, 1811, 1655, 914, 1598, 560, 1452, 385, 1032, 1895, 756, 1893, 485, 1293, 1876, 378, 206, 61, 1762, 1335, 1779, 1062, 111, 550, 1357, 284, 1074, 880, 592, 712, 1454, 1660, 1067, 946, 1011, 193, 1838, 1072, 1065, 1267, 1217, 591, 678, 792, 180, 1313, 69, 84, 1603, 1775, 201, 1415, 457, 1359, 400, 1759, 1081, 554, 471, 1841, 446, 1670, 688, 140, 1600, 871, 1093, 460, 1831, 818, 940, 1128, 614, 1000, 987, 1048, 72, 465, 804, 1804, 826, 1006, 1129, 270, 954, 86, 107, 1744, 751, 1143, 1554, 1750, 556, 1692, 664, 943, 907, 1713, 881, 1793, 849, 972, 264, 1431, 1040, 1391, 680, 1864, 724, 1549, 455, 600, 389, 1301, 1262, 1073, 1216, 613, 314, 15, 657, 896, 549, 575, 719, 545, 937, 1585, 165, 1252, 338, 970, 1366, 1247, 1024, 14, 855, 212, 887, 977, 1225, 776, 10, 1903, 1423, 596, 726, 431, 959, 1159, 1033, 1458, 1196, 1526, 317, 1358, 454, 1647, 976, 773, 1786, 1462, 488, 41, 571, 1464, 599, 979, 864, 18, 306, 1299, 797, 332, 1424, 1286, 66, 51, 1230, 1527, 1042, 762, 219, 487, 1026, 1282, 1285, 1503, 1597, 1573, 758, 999, 30, 1215, 1315, 1227, 387, 1867, 1421, 220, 932, 1829, 26, 1822, 290, 1088, 1902, 429, 463, 197, 1156, 1539, 1491, 1027, 1901, 733, 1879, 833, 278, 1251, 1899, 1642, 73, 272, 1019, 1084, 1346, 1803, 845, 568, 286, 76, 956, 1237, 48, 939, 1601, 481, 1187, 176, 1231, 1545, 1664, 1244, 87, 47, 194, 1586, 1316, 1125, 1649, 1077, 995, 1665, 1428, 1219, 1712, 1038, 542, 998, 70, 929, 1648, 476, 886, 1134, 1733, 854, 853, 1283, 1432, 1723, 1269, 281, 1174, 110, 1685, 1868, 777, 1522, 353, 798, 1773, 409, 768, 1273, 1490, 221, 1154, 1499, 71, 1637, 720, 1850, 1198, 1755, 1915, 716, 1900, 1835, 672, 319, 1536, 226, 1472, 1602, 969, 492, 428, 895, 814, 1133, 62, 656, 1722, 1621, 1142, 1087, 524, 1590, 1030, 650, 1451, 1913, 1259, 1917, 544, 377, 862, 1202, 1177, 1274, 1123, 617, 605, 1106, 1855, 422, 1769, 362, 1721, 1329, 1206, 1506, 135, 1320, 217, 120, 1120, 1836, 710, 717, 1799, 1557, 722, 1694, 405, 375, 1034, 260, 1496, 411, 1672, 28, 637, 373, 1808, 134, 1012, 536, 1752, 983, 1135, 1576, 483, 13, 404, 841, 1172, 1041, 1843, 161, 847, 1369, 1910, 1782, 1671, 1376, 1856, 498, 806, 635, 1212, 438, 835, 1849, 1109, 1349, 1043, 2, 466, 610, 1165, 885, 951, 344, 300, 1807, 1908, 287, 1877, 705, 1872, 1581, 985, 328, 708, 730, 350, 307, 146, 840, 1180, 494, 16, 555, 1368, 1780, 779, 1771, 1203, 1754, 744, 863, 1684, 639, 1919, 738, 938, 1053, 618, 91, 1886, 1028, 472, 1050, 138, 131, 89, 416, 991, 1254, 467, 227, 1765, 1634, 1789, 1622, 1205, 1874, 839, 1151, 654, 1182, 815, 470, 670, 150, 718, 352, 1579, 879, 443, 1690, 32, 435, 1383, 501, 882, 1085, 1176, 1382, 1171, 686, 1140, 1105, 800, 1516, 1485, 516, 1475, 1434, 1911, 889, 239, 652, 1535, 1639, 335, 1325, 1784, 765, 663, 1224, 448, 1815, 739, 1812, 1076, 747, 1467, 732, 1654, 1828, 502, 1319, 1425, 1160, 1468, 368, 1732, 1248, 143, 808, 674, 713, 129, 1599, 288, 1005, 1643, 1729, 1918, 1064, 279, 1741, 406, 867, 729, 604, 1220, 750, 304, 936, 215, 1626, 1778, 1031, 1756, 305, 1699, 412, 1387, 1640, 210, 188, 253, 645, 1279, 349, 1898, 262, 1082, 213, 255, 1514, 1375, 576, 698, 986, 1119, 508, 1753, 104, 1296, 1380, 128, 163, 693, 1524, 924, 842, 812, 1348, 199, 1386, 1628, 1435, 1772, 817, 931, 334, 1360, 390, 1413, 1783, 944, 905, 1271, 1132, 1857, 35, 340, 1461, 506, 1150, 1455, 594, 1020, 1178, 1770, 1389, 1276, 1355, 1228, 990, 1480, 1100, 1326, 282, 1321, 852, 200, 1146, 1253, 49, 1682, 1221, 1840, 1525, 1037, 1170, 1800, 648, 1243, 266, 926, 782, 1667, 984, 570, 1289, 1860, 893, 1630, 479, 339, 246, 866, 1631, 211, 684, 60, 125, 1513, 836, 43, 1450, 515, 1256, 244, 1063, 1693, 913, 966, 54, 432, 1869, 254, 1916, 577, 1096, 540, 1075, 1261, 1871, 1587, 381, 634, 205, 269, 489, 1890, 37, 746, 386, 551, 1414, 953, 1403, 709, 622, 1497, 1561, 1324, 158, 624, 426, 1466, 44, 267, 994, 318, 1398, 397, 95, 786, 81, 1332, 837, 289, 865, 965, 67, 1696, 816, 1044, 820, 229, 1400, 1362, 491, 1139, 1873, 1338, 559, 1016, 1021, 1436, 1002, 1797, 40, 224, 1615, 1385, 941, 1308, 978, 794, 231, 834, 1675, 1736, 31, 1181, 562, 831, 1272, 767, 372, 1825, 1669, 760, 380, 1343, 42, 1351, 1337, 1441, 268, 1644, 1015, 52, 1469, 1861, 1481, 22, 1605, 361, 1381, 410, 1333, 975, 1046, 1595, 348, 1768, 366, 1281, 772, 974, 495, 358, 590, 187, 631, 1695, 687, 1328, 572, 588, 1805, 620, 1577, 1449, 1433, 1659, 320, 418, 346, 602, 573, 1709, 1300, 113, 427, 1891, 1341, 236, 1001, 370, 723, 1092, 1560, 379, 662, 79, 850, 1704, 824, 627, 436, 666, 1103, 653, 945, 1370, 1232, 587, 234, 103, 1858, 934, 1420, 123, 1818, 1310, 499, 1739, 1493, 1847, 1553, 740, 124, 1260, 1378, 1842, 1777, 1816, 1543, 749, 608, 1563, 996, 25, 101, 90, 459, 337, 122, 580, 829, 533, 292, 452, 1614, 1183, 1322, 1278, 521, 1136, 1190, 96, 259, 1645, 1008, 1888, 342, 445, 1504, 162, 382, 1894, 784, 1404, 1531, 1312, 444, 1097, 1447, 1280, 872, 168, 50, 1687, 1593, 1610, 98, 1242, 769, 642, 1309, 888, 433, 302, 1263, 1169, 1656, 1295, 243, 921, 1438, 1161, 877, 640, 1541, 24, 703, 980, 1173, 935, 1519, 440, 1512, 1137, 822, 1014, 310, 511, 583, 1518, 458, 274, 109, 856, 522, 11, 462, 1236, 232, 633, 1567, 1241, 989, 1725, 280, 875, 1083, 1833, 324, 1566, 249, 172, 696, 1505, 1010, 1477, 1327, 910, 861, 88, 99, 357, 437, 80, 1292, 764, 175, 395, 1716, 699, 1483, 1717, 673, 623, 1697, 1479, 1060, 1651, 553, 981, 218, 1110, 185, 77, 900, 371, 904, 1390, 21, 1882, 595, 1718, 1476, 152, 420, 918, 192, 1679, 1484, 1863, 787, 567, 851, 441, 530, 517, 1419, 1388, 329, 301, 1330, 876, 478, 1530, 676, 1844, 403, 74, 647, 728, 230, 519, 256, 737, 235, 1796, 182, 858, 504, 1287, 1124, 1229, 294, 625, 894, 759, 1544, 330, 1711, 505, 903, 1055, 1238, 1397, 1686, 136, 1275, 1580, 1584, 59, 1112, 1636, 166, 655, 1520, 1540, 374, 496, 414, 1226, 154, 860, 531, 1465, 1345, 1662, 1284, 669, 1627, 1408, 36, 191, 1748, 7, 1498, 802, 325, 957, 208, 228, 1201, 950, 1318, 155, 948, 133, 920, 442, 225, 611, 1633, 796, 667, 1652, 1304, 1609, 1611, 527, 1427, 1354, 689, 930, 870, 925, 56, 1402, 100, 189, 1068, 1737, 322, 523, 247, 971, 1445, 55, 579, 1374, 1571, 1521, 890, 785, 58, 671, 1608, 1168, 1742, 899, 299, 778, 1542, 761, 566, 46, 1708, 1719, 351, 1392, 651, 1764, 811, 449, 922, 261, 1036, 694, 127, 1114, 707, 1487, 1852, 1802, 873, 174, 1865, 1710, 763, 164, 1632, 345, 539, 1141, 805, 919, 911, 184, 548, 1422, 1625, 1155, 399, 1795, 1845, 1889, 1565, 45, 603, 1444, 1517, 1823, 1246, 477, 64, 1164, 1411, 781, 8, 1635, 1583, 1200, 241, 151, 177, 333, 629, 1453, 293, 1760, 636, 1239, 1115, 727, 273, 1394, 1266, 1184, 1619, 1743, 313, 1904, 982, 1367, 153, 564, 1806, 331, 1862, 1848, 606, 1264, 57, 97, 1774, 1814, 1086, 1029, 393, 1488, 85, 1509, 1550, 725, 1638, 1846, 1342, 1728, 993, 421, 1781, 681, 473, 1604, 364, 1613, 679, 780, 1885, 581, 1130, 116, 823, 355, 736, 75, 398, 557, 1740, 1515, 1596, 1250, 641, 1683, 198, 1363, 589, 1223, 1209, 417, 209, 1810, 9, 535, 1500, 1881, 1208, 909, 0, 702, 1897, 598, 1189, 748, 675, 1691, 1152, 755, 4, 1416, 830, 439, 1222, 1340, 692, 1003, 34, 356, 170, 1761, 1657, 1578, 401, 795, 1507, 997, 644, 1166, 447, 518, 563, 336, 1820, 343, 597, 844, 1058, 497, 311, 1463, 754, 1218, 1191, 1148, 1612, 1022, 1344, 1776, 942, 906, 1409, 1098, 130, 1418, 1830, 190, 1303, 1749, 607, 825, 92, 677, 628, 326, 715, 949, 27, 1537, 1025, 1439, 1277, 396, 1270, 53, 558, 584, 616, 630, 1533, 532, 1113, 612, 1080, 173, 1090, 838, 17, 897, 1306, 1311, 1131, 388, 1118, 1528, 1426, 1257, 1460, 1714, 1407, 144, 1734, 258, 1731, 526, 367, 1834, 126, 1104, 638, 791, 265, 223, 461, 1457, 139, 456, 1905, 1663, 1412, 1568, 1763, 883, 1661, 1678, 493, 1606, 1813, 541, 1757, 276, 296, 1673, 222, 1707, 183, 257, 615, 1478, 742, 376, 810, 661, 365, 156, 1298, 1701, 1653, 202, 1334, 1197, 1482, 106, 323, 1448, 1558, 1179, 1854, 902, 1049, 297, 216, 1268, 277, 1336, 1393, 65, 1456, 1052, 5, 1735, 1495, 1175, 988, 117, 721, 1788, 315, 1819, 1305, 1794, 520, 543, 1214, 917, 731, 1091, 1147, 1070, 68, 892, 1486, 464, 783, 115, 1883, 1372, 752, 383, 1122, 582, 1039, 1213, 574, 1594, 1870, 1111, 1792, 706, 1674, 233, 1607, 691, 1417, 1071, 711, 1538, 252, 741, 1396, 1211, 1429, 1906, 513, 799, 1384, 1138, 1688, 1681, 1045, 961, 743, 1824, 619, 766, 1727, 147, 827, 1117, 1547, 1892, 39, 82, 1546, 963, 178, 658, 1592, 425, 484, 415, 1204, 1331, 1207, 561, 912, 451, 1548, 1494, 1210, 1676, 685, 1291, 793, 632, 1018], [1054, 207, 1715, 1233, 514, 238, 1377, 1677, 878, 1624, 1145, 1009, 469, 962, 1194, 93, 1556, 1851, 1569, 1089, 745, 423, 23, 821, 29, 1401, 789, 1791, 788, 1079, 1347, 503, 1199, 753, 848, 1294, 801, 682, 955, 112, 1188, 402, 1878, 1817, 1288, 1821, 1245, 1302, 1007, 1705, 271, 510, 1510, 327, 1127, 486, 1555, 1004, 1589, 1511, 1700, 1373, 1668, 341, 1489, 1790, 1492, 321, 659, 578, 303, 118, 960, 453, 160, 683, 1832, 434, 701, 928, 480, 1446, 1552, 704, 94, 1317, 1410, 394, 186, 771, 859, 1395, 1646, 1570, 1353, 714, 1297, 360, 1153, 1185, 1766, 1471, 1013, 1356, 1437, 78, 63, 1618, 537, 482, 3, 450, 1339, 490, 857, 251, 898, 916, 546, 1809, 1689, 1078, 1069, 1, 1035, 1534, 1158, 203, 1837, 1095, 1235, 295, 933, 1474, 1559, 240, 105, 419, 1751, 1061, 1896, 1162, 1508, 1195, 237, 509, 1875, 6, 1564, 1698, 1907, 20, 1023, 1157, 1724, 132, 1912, 108, 1839, 734, 413, 316, 1249, 1880, 430, 915, 952, 813, 1532, 1116, 1859, 137, 1703, 141, 1785, 1582, 643, 119, 12, 968, 1193, 408, 214, 601, 967, 803, 1551, 363, 424, 958, 1826, 196]]Using cache found in /home/qxe3fj/.cache/torch/hub/facebookresearch_dinov2_81b2b6419385
+
+[2026-11-11 11:41:05,909][dinov2][INFO] - using MLP layer as FFN
+[2026-11-11 11:41:06,596][models.dino][WARNING] - Unknown projector 'none' for patch tokens; proceeding without projector.
+Using cache found in /home/qxe3fj/.cache/torch/hub/facebookresearch_dinov2_81b2b6419385
+Resuming from epoch 65: /sfs/weka/scratch/qxe3fj/JEPA/checkpoints/dino_wm/outputs/wall_single/checkpoints/model_latest.pth
+[2026-11-11 11:41:07,400][dinov2][INFO] - using MLP layer as FFN
+[2026-11-11 11:41:07,753][models.dino][WARNING] - Unknown projector 'none' for patch tokens; proceeding without projector.
+[2026-11-11 11:41:07,759][models.visual_world_model][INFO] - num_action_repeat: 1
+[2026-11-11 11:41:07,760][models.visual_world_model][INFO] - num_proprio_repeat: 1
+[2026-11-11 11:41:07,760][models.visual_world_model][INFO] - proprio encoder: ProprioceptiveEmbedding(
+  (patch_embed): Conv1d(2, 10, kernel_size=(1,), stride=(1,))
+)
+[2026-11-11 11:41:07,760][models.visual_world_model][INFO] - action encoder: ProprioceptiveEmbedding(
+  (patch_embed): Conv1d(10, 10, kernel_size=(1,), stride=(1,))
+)
+[2026-11-11 11:41:07,760][models.visual_world_model][INFO] - proprio_dim: 10, after repeat: 10
+[2026-11-11 11:41:07,760][models.visual_world_model][INFO] - action_dim: 10, after repeat: 10
+[2026-11-11 11:41:07,760][models.visual_world_model][INFO] - emb_dim: 404
+[2026-11-11 11:41:07,760][models.visual_world_model][INFO] - Straightening disabled
+[2026-11-11 11:41:07,760][models.visual_world_model][INFO] - Speed constancy disabled
+[2026-11-11 11:41:07,760][models.visual_world_model][INFO] - Trajectory penalty disabled
+[2026-11-11 11:41:07,760][models.visual_world_model][INFO] - Stop-grad enabled: True
+[2026-11-11 11:41:07,760][models.visual_world_model][INFO] - VCReg enabled: False, apply_to=enc, std_coeff=0.0, cov_coeff=0.0
+[2026-11-11 11:41:07,760][models.visual_world_model][INFO] - Motion regularizer: mode=none direction_scale=0.1 speed_scale=0.1 predictor_layer=None
+[2026-11-11 11:41:07,760][models.visual_world_model][INFO] - Model emb_dim: 404
+[timing] setup_model_s=3.850
+eval_seed:  [1, 101, 201, 301, 401, 501, 601, 701, 801, 901, 1001, 1101, 1201, 1301, 1401, 1501, 1601, 1701, 1801, 1901, 2001, 2101, 2201, 2301, 2401, 2501, 2601, 2701, 2801, 2901, 3001, 3101, 3201, 3301, 3401, 3501, 3601, 3701, 3801, 3901, 4001, 4101, 4201, 4301, 4401, 4501, 4601, 4701, 4801, 4901]
+Dumped plan targets to /sfs/weka/scratch/qxe3fj/JEPA/results/dinowm/wall_single/goalH_25_seed100/plan_targets.pkl
+[timing] setup_workspace_s=9.699
+  0%|          | 0/10 [00:00<?, ?it/s] 10%|█         | 1/10 [00:52<07:51, 52.38s/it] 20%|██        | 2/10 [01:45<07:01, 52.64s/it] 30%|███       | 3/10 [02:38<06:09, 52.80s/it] 40%|████      | 4/10 [03:31<05:17, 52.98s/it] 50%|█████     | 5/10 [04:24<04:25, 53.09s/it] 60%|██████    | 6/10 [05:18<03:32, 53.18s/it]Success rate:  0.34
+{'success': array([False, False,  True,  True, False, False, False, False, False,
+       False,  True,  True, False,  True,  True, False,  True,  True,
+       False, False, False, False, False, False,  True, False, False,
+       False, False, False, False,  True, False,  True, False, False,
+        True, False,  True, False, False, False,  True,  True, False,
+       False, False,  True,  True, False]), 'state_dist': array([ 6.8110476 , 17.924833  ,  3.2959545 ,  0.973148  , 19.396868  ,
+        7.163204  , 24.059828  , 17.631607  , 33.098057  , 38.694862  ,
+        2.3866673 ,  0.36858612, 49.86904   ,  0.17592898,  0.2828438 ,
+       42.16861   ,  2.8505278 ,  1.0326722 , 50.443977  ,  6.8016367 ,
+       19.255955  , 38.35721   , 16.05104   , 22.984268  ,  1.8159753 ,
+        5.5351934 ,  6.606094  , 37.055126  ,  5.2324224 , 32.317894  ,
+       26.127157  ,  4.412303  , 43.426296  ,  1.1584531 , 14.568259  ,
+       20.497337  ,  0.54218453, 15.64109   ,  0.5930977 ,  8.226452  ,
+       11.342496  , 53.219334  ,  3.1064136 ,  0.74066716,  9.553097  ,
+       24.9694    ,  4.945264  ,  0.86990446,  0.        , 23.173176  ],
+      dtype=float32)}
+Success rate:  0.56
+{'success': array([ True, False,  True,  True, False,  True, False, False, False,
+       False,  True,  True, False,  True,  True, False,  True,  True,
+       False,  True, False, False, False, False,  True,  True,  True,
+       False,  True, False, False,  True, False,  True,  True, False,
+        True, False,  True,  True,  True, False,  True,  True,  True,
+       False,  True,  True,  True, False]), 'state_dist': array([3.87000799e+00, 8.67768002e+00, 2.65197754e-01, 9.70749140e-01,
+       1.70954475e+01, 2.12682033e+00, 1.34182911e+01, 1.13236885e+01,
+       3.74493103e+01, 4.05696869e+01, 9.14279699e-01, 2.10498118e+00,
+       5.70359116e+01, 1.15888596e-01, 0.00000000e+00, 4.37012138e+01,
+       2.82843798e-01, 5.44610143e-01, 5.50442467e+01, 2.07298374e+00,
+       6.15288925e+00, 3.43087273e+01, 6.43220472e+00, 1.50184612e+01,
+       1.36438370e+00, 1.05687940e+00, 2.75243378e+00, 3.72584572e+01,
+       2.31811237e+00, 3.46673393e+01, 2.10196419e+01, 1.42909527e+00,
+       5.20743103e+01, 6.26007080e-01, 3.94878840e+00, 1.15816364e+01,
+       0.00000000e+00, 6.81778669e+00, 1.15623474e-02, 1.72648239e+00,
+       3.64142680e+00, 5.88446388e+01, 3.61176074e-01, 3.90441895e-01,
+       1.98128414e+00, 2.33599205e+01, 4.73749429e-01, 1.62665176e+00,
+       0.00000000e+00, 1.71069088e+01], dtype=float32)}
+Success rate:  0.7
+{'success': array([ True,  True,  True,  True, False,  True,  True, False, False,
+       False,  True,  True, False,  True,  True, False,  True,  True,
+       False,  True,  True, False,  True,  True,  True,  True,  True,
+       False,  True, False, False,  True, False,  True,  True,  True,
+        True,  True,  True,  True,  True, False,  True,  True,  True,
+       False,  True,  True,  True, False]), 'state_dist': array([3.5064325e+00, 2.5555899e+00, 2.4287643e+00, 1.2506700e+00,
+       1.5660000e+01, 9.4777381e-01, 2.9495926e+00, 9.3845139e+00,
+       3.7117023e+01, 4.5094959e+01, 9.7689134e-01, 2.0893500e+00,
+       5.7480297e+01, 1.2997818e-01, 0.0000000e+00, 4.4716042e+01,
+       0.0000000e+00, 9.4509256e-01, 5.5050476e+01, 3.2279487e+00,
+       1.2177941e+00, 2.7581787e+01, 1.4144020e+00, 3.5604329e+00,
+       8.3236027e-01, 1.2388831e+00, 2.3238373e-01, 3.7017673e+01,
+       2.9285767e+00, 4.1581825e+01, 1.1671818e+01, 1.1620815e+00,
+       5.5595135e+01, 6.0195160e-01, 2.5966406e+00, 1.9006655e+00,
+       0.0000000e+00, 8.4861755e-02, 1.4256668e-01, 4.2550659e-01,
+       1.1803424e+00, 5.8934349e+01, 0.0000000e+00, 5.4831505e-03,
+       6.4918172e-01, 2.1394598e+01, 1.0142747e+00, 1.5235901e+00,
+       0.0000000e+00, 5.9855766e+00], dtype=float32)}
+Success rate:  0.74
+{'success': array([ True,  True,  True,  True, False,  True,  True,  True, False,
+       False,  True,  True, False,  True,  True, False,  True,  True,
+       False, False,  True, False,  True,  True,  True,  True,  True,
+       False,  True, False,  True,  True, False,  True,  True,  True,
+        True,  True,  True,  True,  True, False,  True,  True,  True,
+       False,  True,  True,  True,  True]), 'state_dist': array([3.16912842e+00, 1.83698404e+00, 2.27942657e+00, 1.57127666e+00,
+       1.58388710e+01, 9.47698712e-01, 5.93673706e-01, 2.75558639e+00,
+       1.66988029e+01, 4.74446831e+01, 7.71362305e-01, 1.89530408e+00,
+       5.74802971e+01, 4.66897964e-01, 0.00000000e+00, 4.56605263e+01,
+       0.00000000e+00, 1.34112012e+00, 5.51552887e+01, 4.52737904e+00,
+       4.66769576e-01, 1.91468258e+01, 2.46170044e-01, 1.09047258e+00,
+       1.03983593e+00, 2.31885719e+00, 2.34306335e+00, 3.75223274e+01,
+       1.76780415e+00, 4.56864548e+01, 2.77370715e+00, 3.02214980e-01,
+       5.53233032e+01, 6.72725677e-01, 2.96584415e+00, 1.08485508e+00,
+       0.00000000e+00, 1.50936890e+00, 2.91679382e-01, 1.48114395e+00,
+       7.26070583e-01, 5.86930161e+01, 0.00000000e+00, 1.10349655e-02,
+       1.77853060e+00, 1.48052216e+01, 4.02911276e-01, 1.46065521e+00,
+       0.00000000e+00, 1.03057861e+00], dtype=float32)}
+Success rate:  0.76
+{'success': array([ True,  True,  True,  True, False,  True,  True,  True, False,
+       False,  True,  True, False,  True,  True, False,  True,  True,
+       False, False,  True, False,  True,  True,  True,  True,  True,
+       False,  True, False,  True,  True, False,  True,  True,  True,
+        True,  True,  True,  True,  True, False,  True,  True,  True,
+        True,  True,  True,  True,  True]), 'state_dist': array([2.8842735e+00, 1.5881013e+00, 6.2326050e-01, 1.3650810e+00,
+       1.4673094e+01, 6.0984129e-01, 7.1060300e-01, 3.1636190e+00,
+       8.9662991e+00, 4.8322502e+01, 1.8193436e-01, 2.3161452e+00,
+       5.7099049e+01, 7.5893211e-01, 0.0000000e+00, 4.6442795e+01,
+       0.0000000e+00, 1.2467948e+00, 5.5073956e+01, 5.5815110e+00,
+       3.1860286e-01, 8.6587782e+00, 7.7416992e-01, 8.1656355e-01,
+       6.6578102e-01, 1.9199314e+00, 1.3580055e+00, 3.7067791e+01,
+       1.8672481e+00, 5.2641636e+01, 0.0000000e+00, 2.6405996e-01,
+       5.5256306e+01, 7.5782776e-01, 1.9703023e+00, 1.8852921e+00,
+       0.0000000e+00, 4.8805428e-01, 8.8388062e-01, 1.4598618e+00,
+       1.9780167e+00, 5.8187771e+01, 0.0000000e+00, 1.8689156e-02,
+       1.8895801e+00, 3.6784549e+00, 1.2134641e+00, 1.2533035e+00,
+       0.0000000e+00, 1.5948334e+00], dtype=float32)}
+Success rate:  0.82
+{'success': array([ True,  True,  True,  True, False,  True,  True,  True,  True,
+       False,  True,  True, False,  True,  True, False,  True,  True,
+       False,  True,  True,  True,  True,  True,  True,  True,  True,
+       False,  True, False,  True,  True, False,  True,  True,  True,
+        True,  True,  True,  True,  True, False,  True,  True,  True,
+        True,  True,  True,  True,  True]), 'state_dist': array([2.9663556e+00, 1.4588790e+00, 6.5868378e-01, 8.6615694e-01,
+       1.8392643e+01, 1.2195313e+00, 5.4059774e-01, 2.3477671e+00,
+       2.5178385e-01, 4.8503345e+01, 4.3634033e-01, 1.7834231e+00,
+       5.6929062e+01, 2.9299545e-01, 0.0000000e+00, 4.8213795e+01,
+       0.0000000e+00, 1.1784183e+00, 5.5050720e+01, 3.3796453e+00,
+       9.8901474e-01, 8.0473709e-01, 7.7342987e-01, 1.2209598e+00,
+       5.3371906e-01, 6.3160133e-01, 8.0797195e-01, 3.6331551e+01,
+       1.9404514e+00, 5.2641636e+01, 0.0000000e+00, 1.0412288e+00,
+       5.5409828e+01, 6.4620209e-01, 2.0914690e+00, 2.8303413e+00,
+       0.0000000e+00, 8.9378357e-01, 7.5004196e-01, 1.3772507e+00,
+       2.5291879e+00, 5.6848995e+01, 0.0000000e+00, 2.3108006e-02,
+       8.6318421e-01, 2.2703319e+00, 9.0412277e-01, 1.5562134e+00,
+       0.0000000e+00, 1.9674377e+00], dtype=float32)}
+Success rate:  0.82
+ 70%|███████   | 7/10 [06:11<02:39, 53.24s/it] 80%|████████  | 8/10 [07:04<01:46, 53.29s/it] 90%|█████████ | 9/10 [07:58<00:53, 53.31s/it]100%|██████████| 10/10 [08:51<00:00, 53.33s/it]100%|██████████| 10/10 [08:51<00:00, 53.16s/it]
+{'success': array([ True,  True,  True,  True, False,  True,  True,  True,  True,
+       False,  True,  True, False,  True,  True, False,  True,  True,
+       False,  True,  True,  True,  True,  True,  True,  True,  True,
+       False,  True, False,  True,  True, False,  True,  True,  True,
+        True,  True,  True,  True,  True, False,  True,  True,  True,
+        True,  True,  True,  True,  True]), 'state_dist': array([2.6528263e+00, 2.0910475e+00, 8.2836151e-01, 1.2477256e+00,
+       1.6779783e+01, 1.2325852e+00, 4.0148467e-01, 2.0384967e+00,
+       4.8045710e-01, 4.8503345e+01, 2.6304817e-01, 1.9305201e+00,
+       5.7122787e+01, 7.7017593e-01, 0.0000000e+00, 5.2317196e+01,
+       0.0000000e+00, 1.2563442e+00, 5.5036781e+01, 3.8213406e+00,
+       1.6043085e-01, 1.7527771e-01, 1.4802361e+00, 9.3983102e-01,
+       4.5796776e-01, 1.5789471e+00, 5.1729965e-01, 3.6389442e+01,
+       1.8854927e+00, 5.2641636e+01, 0.0000000e+00, 1.5158110e+00,
+       5.5282478e+01, 1.3567581e+00, 3.5787001e+00, 2.9027958e+00,
+       0.0000000e+00, 2.0564499e+00, 4.4940186e-01, 3.0616760e-02,
+       2.6789691e+00, 5.5021671e+01, 0.0000000e+00, 2.4247646e-02,
+       6.5399832e-01, 1.7457209e+00, 9.1163582e-01, 1.3170280e+00,
+       0.0000000e+00, 1.9814568e+00], dtype=float32)}
+Success rate:  0.82
+{'success': array([ True,  True,  True,  True, False,  True,  True,  True,  True,
+       False,  True,  True, False,  True,  True, False,  True,  True,
+       False,  True,  True,  True,  True,  True,  True,  True,  True,
+       False,  True, False,  True,  True, False,  True,  True,  True,
+        True,  True,  True,  True,  True, False,  True,  True,  True,
+        True,  True,  True,  True,  True]), 'state_dist': array([2.2901654e+00, 1.5009030e+00, 8.1388855e-01, 2.4404709e-01,
+       1.6080463e+01, 1.7740982e+00, 5.7261807e-01, 3.1978920e+00,
+       5.2616370e-01, 4.8503345e+01, 3.2886887e-01, 2.1587465e+00,
+       5.6799259e+01, 6.7951393e-01, 0.0000000e+00, 5.3542950e+01,
+       0.0000000e+00, 1.5510756e+00, 5.5037605e+01, 2.6065392e+00,
+       1.8073007e-01, 2.1065140e-01, 1.4284592e+00, 1.2209760e+00,
+       6.0910225e-01, 1.0658455e-01, 1.2082291e-01, 3.6041454e+01,
+       1.8433716e+00, 5.2641636e+01, 0.0000000e+00, 2.9003360e+00,
+       5.5752674e+01, 1.0386429e+00, 3.1128733e+00, 2.8878393e+00,
+       0.0000000e+00, 9.6319389e-01, 8.0702972e-01, 5.7765579e-01,
+       2.9575658e+00, 5.5114769e+01, 0.0000000e+00, 2.6716709e-02,
+       2.9817399e-01, 1.5922700e+00, 5.7395381e-01, 1.2228889e+00,
+       0.0000000e+00, 1.6956482e+00], dtype=float32)}
+Success rate:  0.82
+{'success': array([ True,  True,  True,  True, False,  True,  True,  True,  True,
+       False,  True,  True, False,  True,  True, False,  True,  True,
+       False,  True,  True,  True,  True,  True,  True,  True,  True,
+       False,  True, False,  True,  True, False,  True,  True,  True,
+        True,  True,  True,  True,  True, False,  True,  True,  True,
+        True,  True,  True,  True,  True]), 'state_dist': array([1.64433730e+00, 2.55190730e+00, 1.25541687e+00, 4.45425093e-01,
+       1.55446663e+01, 1.19615400e+00, 3.06685776e-01, 3.22629929e+00,
+       4.03949738e-01, 4.85033455e+01, 4.61046219e-01, 1.92423844e+00,
+       5.69969902e+01, 5.24557114e-01, 0.00000000e+00, 5.35429497e+01,
+       0.00000000e+00, 1.24864256e+00, 5.50047302e+01, 2.16005659e+00,
+       1.45312428e+00, 2.70030975e-01, 1.14896011e+00, 8.37537348e-01,
+       5.16052246e-02, 1.08242035e-02, 1.33205795e+00, 3.67989731e+01,
+       3.14307857e+00, 5.29247437e+01, 0.00000000e+00, 4.04079407e-01,
+       5.54337692e+01, 9.16450500e-01, 2.70221949e+00, 2.17149734e+00,
+       0.00000000e+00, 8.22567225e-01, 5.19069672e-01, 5.92720032e-01,
+       2.90237737e+00, 5.51147690e+01, 0.00000000e+00, 2.39601135e-02,
+       2.60700107e-01, 1.69390595e+00, 1.23328768e-01, 1.36755753e+00,
+       0.00000000e+00, 1.99206924e+00], dtype=float32)}
+Success rate:  0.82
+{'success': array([ True,  True,  True,  True, False,  True,  True,  True,  True,
+       False,  True,  True, False,  True,  True, False,  True,  True,
+       False,  True,  True,  True,  True,  True,  True,  True,  True,
+       False,  True, False,  True,  True, False,  True,  True,  True,
+        True,  True,  True,  True,  True, False,  True,  True,  True,
+        True,  True,  True,  True,  True]), 'state_dist': array([1.8538753e+00, 2.4518838e+00, 2.3121262e-01, 1.4084780e+00,
+       1.6354013e+01, 9.1497719e-01, 2.9686734e-01, 2.5783732e+00,
+       4.1269955e-01, 4.8503345e+01, 6.9469833e-01, 1.6655086e+00,
+       5.6244751e+01, 1.0010319e+00, 0.0000000e+00, 5.3542950e+01,
+       0.0000000e+00, 1.6382148e+00, 5.5000114e+01, 1.1614614e+00,
+       7.6076591e-01, 5.4260254e-02, 2.2346497e-01, 1.2089463e+00,
+       7.5068665e-01, 6.7768097e-03, 1.0338173e+00, 3.6446804e+01,
+       2.4237347e+00, 5.2641636e+01, 0.0000000e+00, 5.0170273e-01,
+       5.5379623e+01, 7.4569702e-01, 2.3998811e+00, 1.8561535e+00,
+       0.0000000e+00, 7.0386881e-01, 3.2429886e-01, 1.3369827e+00,
+       2.2399940e+00, 5.5301861e+01, 0.0000000e+00, 2.4938583e-02,
+       2.0091246e-01, 1.6940854e+00, 6.3138700e-01, 1.3375130e+00,
+       0.0000000e+00, 1.5395775e+00], dtype=float32)}
+MPC iter 0 Eval ------- 
+Success rate:  0.82
+{'success': array([ True,  True,  True,  True, False,  True,  True,  True,  True,
+       False,  True,  True, False,  True,  True, False,  True,  True,
+       False,  True,  True,  True,  True,  True,  True,  True,  True,
+       False,  True, False,  True,  True, False,  True,  True,  True,
+        True,  True,  True,  True,  True, False,  True,  True,  True,
+        True,  True,  True,  True,  True]), 'state_dist': array([1.8538753e+00, 2.4518838e+00, 2.3121262e-01, 1.4084780e+00,
+       1.6354013e+01, 9.1497719e-01, 2.9686734e-01, 2.5783732e+00,
+       4.1269955e-01, 4.8503345e+01, 6.9469833e-01, 1.6655086e+00,
+       5.6244751e+01, 1.0010319e+00, 0.0000000e+00, 5.3542950e+01,
+       0.0000000e+00, 1.6382148e+00, 5.5000114e+01, 1.1614614e+00,
+       7.6076591e-01, 5.4260254e-02, 2.2346497e-01, 1.2089463e+00,
+       7.5068665e-01, 6.7768097e-03, 1.0338173e+00, 3.6446804e+01,
+       2.4237347e+00, 5.2641636e+01, 0.0000000e+00, 5.0170273e-01,
+       5.5379623e+01, 7.4569702e-01, 2.3998811e+00, 1.8561535e+00,
+       0.0000000e+00, 7.0386881e-01, 3.2429886e-01, 1.3369827e+00,
+       2.2399940e+00, 5.5301861e+01, 0.0000000e+00, 2.4938583e-02,
+       2.0091246e-01, 1.6940854e+00, 6.3138700e-01, 1.3375130e+00,
+       0.0000000e+00, 1.5395775e+00], dtype=float32)}
+self.is_success:  [ True  True  True  True False  True  True  True  True False  True  True
+ False  True  True False  True  True False  True  True  True  True  True
+  True  True  True False  True False  True  True False  True  True  True
+  True  True  True  True  True False  True  True  True  True  True  True
+  True  True]
+Success rate:  0.82
+{'success': array([ True,  True,  True,  True, False,  True,  True,  True,  True,
+       False,  True,  True, False,  True,  True, False,  True,  True,
+       False,  True,  True,  True,  True,  True,  True,  True,  True,
+       False,  True, False,  True,  True, False,  True,  True,  True,
+        True,  True,  True,  True,  True, False,  True,  True,  True,
+        True,  True,  True,  True,  True]), 'state_dist': array([1.8538753e+00, 2.4518838e+00, 2.3121262e-01, 1.4084780e+00,
+       1.6354013e+01, 9.1497719e-01, 2.9686734e-01, 2.5783732e+00,
+       4.1269955e-01, 4.8503345e+01, 6.9469833e-01, 1.6655086e+00,
+       5.6244751e+01, 1.0010319e+00, 0.0000000e+00, 5.3542950e+01,
+       0.0000000e+00, 1.6382148e+00, 5.5000114e+01, 1.1614614e+00,
+       7.6076591e-01, 5.4260254e-02, 2.2346497e-01, 1.2089463e+00,
+       7.5068665e-01, 6.7768097e-03, 1.0338173e+00, 3.6446804e+01,
+       2.4237347e+00, 5.2641636e+01, 0.0000000e+00, 5.0170273e-01,
+       5.5379623e+01, 7.4569702e-01, 2.3998811e+00, 1.8561535e+00,
+       0.0000000e+00, 7.0386881e-01, 3.2429886e-01, 1.3369827e+00,
+       2.2399940e+00, 5.5301861e+01, 0.0000000e+00, 2.4938583e-02,
+       2.0091246e-01, 1.6940854e+00, 6.3138700e-01, 1.3375130e+00,
+       0.0000000e+00, 1.5395775e+00], dtype=float32)}
+[timing] perform_planning_s=537.712
+[timing] total_planning_main_s=551.261

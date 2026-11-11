@@ -1,0 +1,9 @@
+- ckpt_base_path=/sfs/weka/scratch/qxe3fj/JEPA/checkpoints/dino_wm/outputs/pusht
+- model_epoch=latest
+- goal_H=50
+- planner.sub_planner.horizon=50
+- planner.n_taken_actions=50
+- n_evals=50
+- seed=100
+- decode_for_viz=false
+- objective.alpha=1

@@ -1,0 +1,13 @@
+[2026-11-11 11:40:29,369][datasets][INFO] - JAX version 0.10.2 available.
+[2026-11-11 11:40:32,121][root][INFO] - Cached 'action' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-11 11:40:32,727][root][INFO] - Cached 'proprio' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-11 11:40:33,351][root][INFO] - Cached 'state' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-11 12:03:39,833][datasets][INFO] - JAX version 0.10.2 available.
+[2026-11-11 12:03:44,952][root][INFO] - Cached 'action' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-11 12:03:45,560][root][INFO] - Cached 'proprio' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-11 12:03:46,191][root][INFO] - Cached 'state' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-11 12:36:32,859][datasets][INFO] - JAX version 0.10.2 available.
+[2026-11-11 12:36:38,732][root][INFO] - Cached 'action' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-11 12:36:39,284][root][INFO] - Cached 'proprio' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-11 12:36:39,892][root][INFO] - Cached 'state' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-11 12:36:41,132][stable_worldmodel.wm.utils][INFO] - Loading checkpoint from folder /sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/checkpoints/lewm-pusht...

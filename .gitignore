@@ -1,0 +1,28 @@
+# Results/logs/scripts only. Models, datasets and third-party code stay out.
+
+# Pretrained model weights (DINO-WM, LeWM, V-JEPA 2)
+checkpoints/
+vjepa2-vitl-fpc64-256/
+
+# Datasets + LeWM checkpoint cache (~243 GB) and its rollout videos
+stablewm_home/
+
+# Third-party source clone (galilai-group/stable-worldmodel)
+src/
+
+# Large binary/derived artifacts
+*.pkl
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+*.h5
+*.hdf5
+*.zst
+*.zip
+*.mp4
+
+# Python / editor noise
+__pycache__/
+*.pyc
+.DS_Store

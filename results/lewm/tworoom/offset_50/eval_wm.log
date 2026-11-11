@@ -1,0 +1,7 @@
+[2026-11-11 12:04:36,621][datasets][INFO] - JAX version 0.10.2 available.
+[2026-11-11 12:04:38,590][root][INFO] - Cached 'action' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/tworoom.h5'
+[2026-11-11 12:04:38,599][root][INFO] - Cached 'proprio' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/tworoom.h5'
+[2026-11-11 12:37:56,279][datasets][INFO] - JAX version 0.10.2 available.
+[2026-11-11 12:38:01,339][root][INFO] - Cached 'action' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/tworoom.h5'
+[2026-11-11 12:38:01,347][root][INFO] - Cached 'proprio' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/tworoom.h5'
+[2026-11-11 12:38:01,898][stable_worldmodel.wm.utils][INFO] - Loading checkpoint from folder /sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/checkpoints/lewm-tworooms...

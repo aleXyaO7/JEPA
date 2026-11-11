@@ -1,0 +1,289 @@
+name, memory.total [MiB]
+NVIDIA A40, 46068 MiB
+===== cube  policy=lewm-cube  goal_offset=25  eval_budget=50 =====
+[2026-11-11 12:05:24,499][OpenGL.acceleratesupport][INFO] - No OpenGL_accelerate module loaded: No module named 'OpenGL_accelerate'
+[2026-11-11 12:05:24,780][absl][INFO] - MUJOCO_GL=egl, attempting to import specified OpenGL backend.
+[2026-11-11 12:05:24,836][absl][INFO] - MuJoCo library version is: 4.0.0
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/envs/registration.py:732: UserWarning: [33mWARN: The environment is being initialised with render_mode='rgb_array' that is not in the possible render_modes ([]).[0m
+  logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:486: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+  gym.logger.warn("Casting input x to numpy array.")
+[2026-11-11 12:05:57,384][datasets][INFO] - JAX version 0.10.2 available.
+12:06:01 | INFO  | atomic_chec~| [atomic_save] installed crash-safe checkpoint plugin (write to sibling .tmp + fsync + atomic rename)
+[2026-11-11 12:06:02,466][root][INFO] - Cached 'action' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/ogbench/cube_single_expert.h5'
+12:06:03 | INFO  | utils.py    | Loading checkpoint from folder /sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/checkpoints/lewm-cube...
+12:06:03 | INFO  | utils.py    | Created ViT-tiny from scratch with config: {'hidden_size': 192, 'num_hidden_layers': 12, 'num_attention_heads': 3, 'intermediate_size': 768, 'image_size': 224, 'patch_size': 14}
+Error executing job with overrides: ['policy=lewm-cube', 'eval.goal_offset_steps=25', 'eval.eval_budget=50', 'output.filename=cube_offset25_results.txt']
+12:06:04 | ERROR | richuru.py  | Exception:
+Traceback (most recent call last):
+
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 644, in _locate
+    obj = getattr(obj, part)
+                  │    └ 'planning'
+                  └ <module 'stable_worldmodel' from '/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/stable_worldmodel/__init__.py'>
+
+AttributeError: module 'stable_worldmodel' has no attribute 'planning'
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 650, in _locate
+    obj = import_module(mod)
+          │             └ 'stable_worldmodel.planning'
+          └ <function import_module at 0x7f3ee4fbf380>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           │          │           │    │        │        └ 0
+           │          │           │    │        └ None
+           │          │           │    └ 0
+           │          │           └ 'stable_worldmodel.planning'
+           │          └ <function _gcd_import at 0x7f3eed8afd80>
+           └ <module '_frozen_importlib' (frozen)>
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+
+ModuleNotFoundError: No module named 'stable_worldmodel.planning'
+
+
+The above exception was the direct cause of the following exception:
+
+
+Traceback (most recent call last):
+
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 192, in _resolve_target
+    target = _locate(target)
+             │       └ 'stable_worldmodel.planning.GoalMSE'
+             └ <function _locate at 0x7f3ee41f8ea0>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 653, in _locate
+    raise ImportError(
+
+ImportError: Error loading 'stable_worldmodel.planning.GoalMSE':
+ModuleNotFoundError("No module named 'stable_worldmodel.planning'")
+Are you sure that 'planning' is importable from module 'stable_worldmodel'?
+
+
+The above exception was the direct cause of the following exception:
+
+
+Traceback (most recent call last):
+
+> File "/sfs/weka/scratch/qxe3fj/JEPA/src/stable-worldmodel/scripts/plan/eval_wm.py", line 253, in <module>
+    run()
+    └ <function run at 0x7f3d67841a80>
+
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/main.py", line 94, in decorated_main
+    _run_hydra(
+    └ <function _run_hydra at 0x7f3ee41f8a40>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 394, in _run_hydra
+    _run_app(
+    └ <function _run_app at 0x7f3ee41f8ae0>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 457, in _run_app
+    run_and_report(
+    └ <function run_and_report at 0x7f3ee41f89a0>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 223, in run_and_report
+    raise ex
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 220, in run_and_report
+    return func()
+           └ <function _run_app.<locals>.<lambda> at 0x7f3d576874c0>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 458, in <lambda>
+    lambda: hydra.run(
+            │     └ <function Hydra.run at 0x7f3ee40abe20>
+            └ <hydra._internal.hydra.Hydra object at 0x7f3d6786d010>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/hydra.py", line 132, in run
+    _ = ret.return_value
+        │   └ <property object at 0x7f3ee4998630>
+        └ JobReturn(overrides=['policy=lewm-cube', 'eval.goal_offset_steps=25', 'eval.eval_budget=50', 'output.filename=cube_offset25_r...
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/core/utils.py", line 263, in return_value
+    raise self._return_value
+          │    └ InstantiationException("Error locating target 'stable_worldmodel.planning.GoalMSE', set env var HYDRA_FULL_ERROR=1 to see cha...
+          └ JobReturn(overrides=['policy=lewm-cube', 'eval.goal_offset_steps=25', 'eval.eval_budget=50', 'output.filename=cube_offset25_r...
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/core/utils.py", line 189, in run_job
+    ret.return_value = task_function(task_cfg)
+    │   │              │             └ {'cache_dir': None, 'solver': {'_target_': 'stable_worldmodel.planning.solver.CEMSolver', 'cost': '???', 'batch_size': 1, 'nu...
+    │   │              └ <function run at 0x7f3da8068b80>
+    │   └ <property object at 0x7f3ee4998630>
+    └ JobReturn(overrides=['policy=lewm-cube', 'eval.goal_offset_steps=25', 'eval.eval_budget=50', 'output.filename=cube_offset25_r...
+
+  File "/sfs/weka/scratch/qxe3fj/JEPA/src/stable-worldmodel/scripts/plan/eval_wm.py", line 127, in run
+    objective = hydra.utils.instantiate(cfg.objective)
+                │     │     │           └ {'cache_dir': None, 'solver': {'_target_': 'stable_worldmodel.planning.solver.CEMSolver', 'cost': '???', 'batch_size': 1, 'nu...
+                │     │     └ <function instantiate at 0x7f3ee41faf20>
+                │     └ <module 'hydra.utils' from '/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/utils.py'>
+                └ <module 'hydra' from '/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/__init__.py'>
+
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 251, in instantiate
+    return _instantiate_impl(config, args, kwargs)
+           │                 │       │     └ {}
+           │                 │       └ ()
+           │                 └ {'_target_': 'stable_worldmodel.planning.GoalMSE'}
+           └ <function _instantiate_impl at 0x7f3ee41fafc0>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 299, in _instantiate_impl
+    return instantiate_node(
+           └ <function instantiate_node at 0x7f3ee41fb100>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 406, in instantiate_node
+    _target_ = _resolve_target(node.get(_Keys.TARGET), full_key)
+               │               │    │   │     │        └ 'objective'
+               │               │    │   │     └ <_Keys.TARGET: '_target_'>
+               │               │    │   └ <enum '_Keys'>
+               │               │    └ <function DictConfig.get at 0x7f3ee4bcb060>
+               │               └ {'_target_': 'stable_worldmodel.planning.GoalMSE'}
+               └ <function _resolve_target at 0x7f3ee41fae80>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 197, in _resolve_target
+    raise InstantiationException(msg) from e
+          │                      └ "Error locating target 'stable_worldmodel.planning.GoalMSE', set env var HYDRA_FULL_ERROR=1 to see chained exception.\nfull_k...
+          └ <class 'hydra.errors.InstantiationException'>
+
+hydra.errors.InstantiationException: Error locating target 'stable_worldmodel.planning.GoalMSE', set env var HYDRA_FULL_ERROR=1 to see chained exception.
+full_key: objective
+===== cube  policy=lewm-cube  goal_offset=50  eval_budget=100 =====
+[2026-11-11 12:06:16,190][OpenGL.acceleratesupport][INFO] - No OpenGL_accelerate module loaded: No module named 'OpenGL_accelerate'
+[2026-11-11 12:06:16,525][absl][INFO] - MUJOCO_GL=egl, attempting to import specified OpenGL backend.
+[2026-11-11 12:06:16,564][absl][INFO] - MuJoCo library version is: 4.0.0
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/envs/registration.py:732: UserWarning: [33mWARN: The environment is being initialised with render_mode='rgb_array' that is not in the possible render_modes ([]).[0m
+  logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:486: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+  gym.logger.warn("Casting input x to numpy array.")
+[2026-11-11 12:06:48,083][datasets][INFO] - JAX version 0.10.2 available.
+12:06:51 | INFO  | atomic_chec~| [atomic_save] installed crash-safe checkpoint plugin (write to sibling .tmp + fsync + atomic rename)
+[2026-11-11 12:06:51,590][root][INFO] - Cached 'action' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/ogbench/cube_single_expert.h5'
+12:06:52 | INFO  | utils.py    | Loading checkpoint from folder /sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/checkpoints/lewm-cube...
+12:06:52 | INFO  | utils.py    | Created ViT-tiny from scratch with config: {'hidden_size': 192, 'num_hidden_layers': 12, 'num_attention_heads': 3, 'intermediate_size': 768, 'image_size': 224, 'patch_size': 14}
+Error executing job with overrides: ['policy=lewm-cube', 'eval.goal_offset_steps=50', 'eval.eval_budget=100', 'output.filename=cube_offset50_results.txt']
+12:06:52 | ERROR | richuru.py  | Exception:
+Traceback (most recent call last):
+
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 644, in _locate
+    obj = getattr(obj, part)
+                  │    └ 'planning'
+                  └ <module 'stable_worldmodel' from '/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/stable_worldmodel/__init__.py'>
+
+AttributeError: module 'stable_worldmodel' has no attribute 'planning'
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 650, in _locate
+    obj = import_module(mod)
+          │             └ 'stable_worldmodel.planning'
+          └ <function import_module at 0x7f9d07f97380>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           │          │           │    │        │        └ 0
+           │          │           │    │        └ None
+           │          │           │    └ 0
+           │          │           └ 'stable_worldmodel.planning'
+           │          └ <function _gcd_import at 0x7f9d14937d80>
+           └ <module '_frozen_importlib' (frozen)>
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+
+ModuleNotFoundError: No module named 'stable_worldmodel.planning'
+
+
+The above exception was the direct cause of the following exception:
+
+
+Traceback (most recent call last):
+
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 192, in _resolve_target
+    target = _locate(target)
+             │       └ 'stable_worldmodel.planning.GoalMSE'
+             └ <function _locate at 0x7f9d07228ea0>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 653, in _locate
+    raise ImportError(
+
+ImportError: Error loading 'stable_worldmodel.planning.GoalMSE':
+ModuleNotFoundError("No module named 'stable_worldmodel.planning'")
+Are you sure that 'planning' is importable from module 'stable_worldmodel'?
+
+
+The above exception was the direct cause of the following exception:
+
+
+Traceback (most recent call last):
+
+> File "/sfs/weka/scratch/qxe3fj/JEPA/src/stable-worldmodel/scripts/plan/eval_wm.py", line 253, in <module>
+    run()
+    └ <function run at 0x7f9b7e8b9a80>
+
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/main.py", line 94, in decorated_main
+    _run_hydra(
+    └ <function _run_hydra at 0x7f9d07228a40>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 394, in _run_hydra
+    _run_app(
+    └ <function _run_app at 0x7f9d07228ae0>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 457, in _run_app
+    run_and_report(
+    └ <function run_and_report at 0x7f9d072289a0>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 223, in run_and_report
+    raise ex
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 220, in run_and_report
+    return func()
+           └ <function _run_app.<locals>.<lambda> at 0x7f9b7e8ff4c0>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 458, in <lambda>
+    lambda: hydra.run(
+            │     └ <function Hydra.run at 0x7f9d070f3e20>
+            └ <hydra._internal.hydra.Hydra object at 0x7f9b7e8cd0d0>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/hydra.py", line 132, in run
+    _ = ret.return_value
+        │   └ <property object at 0x7f9d079cc720>
+        └ JobReturn(overrides=['policy=lewm-cube', 'eval.goal_offset_steps=50', 'eval.eval_budget=100', 'output.filename=cube_offset50_...
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/core/utils.py", line 263, in return_value
+    raise self._return_value
+          │    └ InstantiationException("Error locating target 'stable_worldmodel.planning.GoalMSE', set env var HYDRA_FULL_ERROR=1 to see cha...
+          └ JobReturn(overrides=['policy=lewm-cube', 'eval.goal_offset_steps=50', 'eval.eval_budget=100', 'output.filename=cube_offset50_...
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/core/utils.py", line 189, in run_job
+    ret.return_value = task_function(task_cfg)
+    │   │              │             └ {'cache_dir': None, 'solver': {'_target_': 'stable_worldmodel.planning.solver.CEMSolver', 'cost': '???', 'batch_size': 1, 'nu...
+    │   │              └ <function run at 0x7f9bca26cb80>
+    │   └ <property object at 0x7f9d079cc720>
+    └ JobReturn(overrides=['policy=lewm-cube', 'eval.goal_offset_steps=50', 'eval.eval_budget=100', 'output.filename=cube_offset50_...
+
+  File "/sfs/weka/scratch/qxe3fj/JEPA/src/stable-worldmodel/scripts/plan/eval_wm.py", line 127, in run
+    objective = hydra.utils.instantiate(cfg.objective)
+                │     │     │           └ {'cache_dir': None, 'solver': {'_target_': 'stable_worldmodel.planning.solver.CEMSolver', 'cost': '???', 'batch_size': 1, 'nu...
+                │     │     └ <function instantiate at 0x7f9d0722af20>
+                │     └ <module 'hydra.utils' from '/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/utils.py'>
+                └ <module 'hydra' from '/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/__init__.py'>
+
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 251, in instantiate
+    return _instantiate_impl(config, args, kwargs)
+           │                 │       │     └ {}
+           │                 │       └ ()
+           │                 └ {'_target_': 'stable_worldmodel.planning.GoalMSE'}
+           └ <function _instantiate_impl at 0x7f9d0722afc0>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 299, in _instantiate_impl
+    return instantiate_node(
+           └ <function instantiate_node at 0x7f9d0722b100>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 406, in instantiate_node
+    _target_ = _resolve_target(node.get(_Keys.TARGET), full_key)
+               │               │    │   │     │        └ 'objective'
+               │               │    │   │     └ <_Keys.TARGET: '_target_'>
+               │               │    │   └ <enum '_Keys'>
+               │               │    └ <function DictConfig.get at 0x7f9d07bfb060>
+               │               └ {'_target_': 'stable_worldmodel.planning.GoalMSE'}
+               └ <function _resolve_target at 0x7f9d0722ae80>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 197, in _resolve_target
+    raise InstantiationException(msg) from e
+          │                      └ "Error locating target 'stable_worldmodel.planning.GoalMSE', set env var HYDRA_FULL_ERROR=1 to see chained exception.\nfull_k...
+          └ <class 'hydra.errors.InstantiationException'>
+
+hydra.errors.InstantiationException: Error locating target 'stable_worldmodel.planning.GoalMSE', set env var HYDRA_FULL_ERROR=1 to see chained exception.
+full_key: objective
+results: /sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/checkpoints/lewm-cube/*_results.txt

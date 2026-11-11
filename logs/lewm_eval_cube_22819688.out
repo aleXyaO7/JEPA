@@ -1,0 +1,897 @@
+name, memory.total [MiB]
+NVIDIA A40, 46068 MiB
+===== cube  policy=lewm-cube  goal_offset=25  eval_budget=50 =====
+[2026-11-11 12:38:24,599][OpenGL.acceleratesupport][INFO] - No OpenGL_accelerate module loaded: No module named 'OpenGL_accelerate'
+[2026-11-11 12:38:24,809][absl][INFO] - MUJOCO_GL=egl, attempting to import specified OpenGL backend.
+[2026-11-11 12:38:24,856][absl][INFO] - MuJoCo library version is: 4.0.0
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/envs/registration.py:732: UserWarning: [33mWARN: The environment is being initialised with render_mode='rgb_array' that is not in the possible render_modes ([]).[0m
+  logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:486: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+  gym.logger.warn("Casting input x to numpy array.")
+[2026-11-11 12:38:56,914][datasets][INFO] - JAX version 0.10.2 available.
+12:39:00 | INFO  | atomic_chec~| [atomic_save] installed crash-safe checkpoint plugin (write to sibling .tmp + fsync + atomic rename)
+[2026-11-11 12:39:01,312][root][INFO] - Cached 'action' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/ogbench/cube_single_expert.h5'
+[2026-11-11 12:39:02,504][stable_worldmodel.wm.utils][INFO] - Loading checkpoint from folder /sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/checkpoints/lewm-cube...
+12:39:02 | INFO  | utils.py    | Created ViT-tiny from scratch with config: {'hidden_size': 192, 'num_hidden_layers': 12, 'num_attention_heads': 3, 'intermediate_size': 768, 'image_size': 224, 'patch_size': 14}
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:486: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+  gym.logger.warn("Casting input x to numpy array.")
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/utils/passive_env_checker.py:243: UserWarning: [33mWARN: The infos returned by `reset` and the following `step` share an object, therefore, modifying one will modify the other. Environments should return new info data on every call as users commonly keep the data returned to them.[0m
+  logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/utils/passive_env_checker.py:243: UserWarning: [33mWARN: The infos returned by `step` and the following `step` share an object, therefore, modifying one will modify the other. Environments should return new info data on every call as users commonly keep the data returned to them.[0m
+  logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/lance/__init__.py:358: UserWarning: lance is not fork-safe. If you are using multiprocessing, use spawn or forkserver instead.
+  warnings.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+1760000 valid starting points found for evaluation.
+[ 128267  136513  172735  179377  185182  189273  257500  332101  366907
+  404928  456736  556269  712588  745269  808840  870337  882105  891250
+  895808  905240  905400 1005679 1031561 1058182 1096293 1114685 1269623
+ 1294137 1315640 1362611 1401663 1408040 1442084 1478821 1523728 1529853
+ 1555600 1564529 1570914 1579946 1653717 1663520 1687855 1725131 1725719
+ 1784622 1795166 1862757 1951074 1960958]
+[eval] saving videos to /sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/checkpoints (one env_{i}.mp4 per env)
+CEM solve time: 32.8620 seconds
+CEM solve time: 8.4846 seconds
+{'success_rate': 74.0, 'episode_successes': array([False, False,  True,  True,  True,  True, False,  True,  True,
+        True,  True, False,  True,  True, False,  True,  True, False,
+        True,  True,  True,  True, False,  True, False,  True,  True,
+       False,  True, False,  True, False,  True,  True, False,  True,
+        True,  True, False,  True,  True,  True,  True,  True,  True,
+        True,  True,  True,  True,  True]), 'seeds': None}
+[eval] videos saved to /sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/checkpoints
+===== cube  policy=lewm-cube  goal_offset=50  eval_budget=100 =====
+[2026-11-11 12:40:36,827][OpenGL.acceleratesupport][INFO] - No OpenGL_accelerate module loaded: No module named 'OpenGL_accelerate'
+[2026-11-11 12:40:37,040][absl][INFO] - MUJOCO_GL=egl, attempting to import specified OpenGL backend.
+[2026-11-11 12:40:37,107][absl][INFO] - MuJoCo library version is: 4.0.0
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/envs/registration.py:732: UserWarning: [33mWARN: The environment is being initialised with render_mode='rgb_array' that is not in the possible render_modes ([]).[0m
+  logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:486: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+  gym.logger.warn("Casting input x to numpy array.")
+[2026-11-11 12:41:08,022][datasets][INFO] - JAX version 0.10.2 available.
+12:41:11 | INFO  | atomic_chec~| [atomic_save] installed crash-safe checkpoint plugin (write to sibling .tmp + fsync + atomic rename)
+[2026-11-11 12:41:12,641][root][INFO] - Cached 'action' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/ogbench/cube_single_expert.h5'
+[2026-11-11 12:41:13,114][stable_worldmodel.wm.utils][INFO] - Loading checkpoint from folder /sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/checkpoints/lewm-cube...
+12:41:13 | INFO  | utils.py    | Created ViT-tiny from scratch with config: {'hidden_size': 192, 'num_hidden_layers': 12, 'num_attention_heads': 3, 'intermediate_size': 768, 'image_size': 224, 'patch_size': 14}
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:486: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+  gym.logger.warn("Casting input x to numpy array.")
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/utils/passive_env_checker.py:243: UserWarning: [33mWARN: The infos returned by `reset` and the following `step` share an object, therefore, modifying one will modify the other. Environments should return new info data on every call as users commonly keep the data returned to them.[0m
+  logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/utils/passive_env_checker.py:243: UserWarning: [33mWARN: The infos returned by `step` and the following `step` share an object, therefore, modifying one will modify the other. Environments should return new info data on every call as users commonly keep the data returned to them.[0m
+  logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:297: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:364: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/lance/__init__.py:358: UserWarning: lance is not fork-safe. If you are using multiprocessing, use spawn or forkserver instead.
+  warnings.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+1510000 valid starting points found for evaluation.
+[ 128263  136508  172724  179364  185173  189254  257497  332094  366895
+  404910  456726  556254  712582  745244  808836  870333  882086  891246
+  895786  905219  905385 1005666 1031555 1058162 1096286 1114664 1269606
+ 1294120 1315622 1362607 1401646 1408034 1442065 1478808 1523706 1529843
+ 1555586 1564509 1570897 1579930 1653701 1663513 1687843 1725108 1725695
+ 1784600 1795161 1862741 1951050 1960902]
+[eval] saving videos to /sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/checkpoints (one env_{i}.mp4 per env)
+CEM solve time: 32.8634 seconds
+CEM solve time: 15.6929 seconds
+CEM solve time: 15.7440 seconds
+CEM solve time: 15.7612 seconds
+{'success_rate': 52.0, 'episode_successes': array([False, False,  True,  True,  True,  True, False,  True,  True,
+       False, False, False, False,  True, False, False, False, False,
+        True,  True, False,  True, False, False, False,  True, False,
+       False, False,  True,  True, False, False,  True,  True,  True,
+        True,  True, False,  True,  True, False, False,  True,  True,
+        True, False,  True,  True,  True]), 'seeds': None}
+[eval] videos saved to /sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/checkpoints
+results: /sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/checkpoints/lewm-cube/*_results.txt

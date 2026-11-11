@@ -1,0 +1,275 @@
+name, memory.total [MiB]
+NVIDIA A40, 46068 MiB
+===== tworoom  policy=lewm-tworooms  goal_offset=25  eval_budget=50 =====
+[2026-11-11 12:36:30,635][datasets][INFO] - JAX version 0.10.2 available.
+12:36:34 | INFO  | atomic_chec~| [atomic_save] installed crash-safe checkpoint plugin (write to sibling .tmp + fsync + atomic rename)
+[2026-11-11 12:36:35,728][root][INFO] - Cached 'action' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/tworoom.h5'
+[2026-11-11 12:36:35,990][root][INFO] - Cached 'proprio' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/tworoom.h5'
+[2026-11-11 12:36:36,642][stable_worldmodel.wm.utils][INFO] - Loading checkpoint from folder /sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/checkpoints/lewm-tworooms...
+12:36:38 | INFO  | utils.py    | Created ViT-tiny from scratch with config: {'hidden_size': 192, 'num_hidden_layers': 12, 'num_attention_heads': 3, 'intermediate_size': 768, 'image_size': 224, 'patch_size': 14}
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/utils/passive_env_checker.py:146: UserWarning: [33mWARN: The obs returned by the `reset()` method was expecting a numpy array, actual type: <class 'torch.Tensor'>[0m
+  logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:486: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+  gym.logger.warn("Casting input x to numpy array.")
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/utils/passive_env_checker.py:146: UserWarning: [33mWARN: The obs returned by the `step()` method was expecting a numpy array, actual type: <class 'torch.Tensor'>[0m
+  logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:486: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+  gym.logger.warn("Casting input x to numpy array.")
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/utils/passive_env_checker.py:243: UserWarning: [33mWARN: The infos returned by `step` and the following `step` share an object, therefore, modifying one will modify the other. Environments should return new info data on every call as users commonly keep the data returned to them.[0m
+  logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/lance/__init__.py:358: UserWarning: lance is not fork-safe. If you are using multiprocessing, use spawn or forkserver instead.
+  warnings.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+670809 valid starting points found for evaluation.
+[ 58908  62736  79449  82490  85129  86996 118110 152360 168251 185614
+ 209429 254974 326767 341699 370733 398926 404333 408562 410644 414984
+ 415063 460976 472785 484946 502342 510811 581719 593045 602861 624528
+ 642471 645437 660990 677772 698451 701226 712914 717071 719912 724122
+ 757922 762397 773559 790688 790942 817966 822836 853608 893924 898344]
+[eval] saving videos to /sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/checkpoints (one env_{i}.mp4 per env)
+CEM solve time: 33.3488 seconds
+CEM solve time: 5.9587 seconds
+{'success_rate': 86.0, 'episode_successes': array([ True, False,  True, False,  True,  True,  True, False,  True,
+        True,  True,  True,  True,  True,  True,  True,  True, False,
+        True,  True,  True, False,  True,  True,  True,  True,  True,
+        True,  True,  True,  True, False,  True,  True,  True,  True,
+        True,  True,  True,  True,  True,  True,  True,  True,  True,
+        True,  True, False,  True,  True]), 'seeds': None}
+[eval] videos saved to /sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/checkpoints
+===== tworoom  policy=lewm-tworooms  goal_offset=50  eval_budget=100 =====
+[2026-11-11 12:37:56,279][datasets][INFO] - JAX version 0.10.2 available.
+12:38:00 | INFO  | atomic_chec~| [atomic_save] installed crash-safe checkpoint plugin (write to sibling .tmp + fsync + atomic rename)
+[2026-11-11 12:38:01,339][root][INFO] - Cached 'action' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/tworoom.h5'
+[2026-11-11 12:38:01,347][root][INFO] - Cached 'proprio' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/tworoom.h5'
+[2026-11-11 12:38:01,898][stable_worldmodel.wm.utils][INFO] - Loading checkpoint from folder /sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/checkpoints/lewm-tworooms...
+12:38:06 | INFO  | utils.py    | Created ViT-tiny from scratch with config: {'hidden_size': 192, 'num_hidden_layers': 12, 'num_attention_heads': 3, 'intermediate_size': 768, 'image_size': 224, 'patch_size': 14}
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/utils/passive_env_checker.py:146: UserWarning: [33mWARN: The obs returned by the `reset()` method was expecting a numpy array, actual type: <class 'torch.Tensor'>[0m
+  logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:486: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+  gym.logger.warn("Casting input x to numpy array.")
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/utils/passive_env_checker.py:146: UserWarning: [33mWARN: The obs returned by the `step()` method was expecting a numpy array, actual type: <class 'torch.Tensor'>[0m
+  logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:486: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+  gym.logger.warn("Casting input x to numpy array.")
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/utils/passive_env_checker.py:243: UserWarning: [33mWARN: The infos returned by `step` and the following `step` share an object, therefore, modifying one will modify the other. Environments should return new info data on every call as users commonly keep the data returned to them.[0m
+  logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/lance/__init__.py:358: UserWarning: lance is not fork-safe. If you are using multiprocessing, use spawn or forkserver instead.
+  warnings.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/subprocess.py:1885: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = _fork_exec(
+421752 valid starting points found for evaluation.
+[ 59300  63171  80055  83144  85713  87672 118505 152777 168514 185790
+ 209832 255098 327226 342122 370936 399204 404603 408919 410986 415355
+ 415391 461406 473084 485270 502505 511006 581723 593236 603005 624956
+ 643110 646010 661532 678235 699096 701860 713305 717559 720283 724620
+ 758463 762875 774069 791484 791687 818808 823663 854009 894046 898390]
+[eval] saving videos to /sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/checkpoints (one env_{i}.mp4 per env)
+CEM solve time: 33.3455 seconds
+CEM solve time: 21.9820 seconds
+CEM solve time: 19.3312 seconds
+CEM solve time: 16.5937 seconds
+{'success_rate': 50.0, 'episode_successes': array([ True, False, False,  True, False, False,  True,  True,  True,
+        True,  True,  True,  True, False,  True, False, False,  True,
+       False, False,  True,  True,  True, False,  True,  True,  True,
+        True, False,  True, False, False, False,  True, False, False,
+       False,  True,  True, False, False,  True, False, False, False,
+       False, False, False,  True,  True]), 'seeds': None}
+[eval] videos saved to /sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/checkpoints
+results: /sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/checkpoints/lewm-tworooms/*_results.txt

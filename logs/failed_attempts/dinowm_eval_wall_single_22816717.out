@@ -1,0 +1,234 @@
+name, memory.total [MiB]
+NVIDIA RTX A6000, 49140 MiB
+===== wall_single  goal_H=25  n_evals=50  seed=100 =====
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/wandb/util.py:118: SentryHubDeprecationWarning: `sentry_sdk.Hub` is deprecated and will be removed in a future major release. Please consult our 1.x to 2.x migration guide for details on how to migrate `Hub` usage to the new API: https://docs.sentry.io/platforms/python/migration/1.x-to-2.x
+  sentry_hub = sentry_sdk.Hub(sentry_client)
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py:30: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/pkg_resources/__init__.py:3148: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('mpl_toolkits')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/pkg_resources/__init__.py:3148: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/Cython/Distutils/old_build_ext.py:15: DeprecationWarning: dep_util is Deprecated. Use functions from setuptools instead.
+  from distutils.dep_util import newer, newer_group
+<frozen importlib._bootstrap>:283: DeprecationWarning: the load_module() method is deprecated and slated for removal in Python 3.12; use exec_module() instead
+Warning: Mujoco-based envs failed to import. Set the environment variable D4RL_SUPPRESS_IMPORT_ERROR=1 to suppress this message.
+No module named 'mjrl'
+Warning: Flow failed to import. Set the environment variable D4RL_SUPPRESS_IMPORT_ERROR=1 to suppress this message.
+No module named 'flow'
+Warning: CARLA failed to import. Set the environment variable D4RL_SUPPRESS_IMPORT_ERROR=1 to suppress this message.
+No module named 'carla'
+pybullet build time: Jan 29 2025 23:16:28
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-open-v0[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-umaze-v0[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-medium-v0[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-large-v0[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-umaze-v1[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-medium-v1[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-large-v1[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-eval-umaze-v1[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-eval-medium-v1[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-eval-large-v1[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-open-dense-v0[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-umaze-dense-v0[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-medium-dense-v0[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-large-dense-v0[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-umaze-dense-v1[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-medium-dense-v1[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-large-dense-v1[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-eval-umaze-dense-v1[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-eval-medium-dense-v1[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-eval-large-dense-v1[0m
+  logger.warn(f"Overriding environment {id}")
+/sfs/weka/scratch/qxe3fj/temporal-straightening/custom_resolvers.py:4: UserWarning: 
+The version_base parameter is not specified.
+Please specify a compatability version level, or None.
+Will assume defaults for version 1.1
+  @hydra.main(config_path=None)
+Traceback (most recent call last):
+  File "/sfs/weka/scratch/qxe3fj/temporal-straightening/plan.py", line 551, in <module>
+    main()
+  File "/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/hydra/main.py", line 90, in decorated_main
+    _run_hydra(
+  File "/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/hydra/_internal/utils.py", line 389, in _run_hydra
+    _run_app(
+  File "/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/hydra/_internal/utils.py", line 452, in _run_app
+    run_and_report(
+  File "/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/hydra/_internal/utils.py", line 216, in run_and_report
+    raise ex
+  File "/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/hydra/_internal/utils.py", line 213, in run_and_report
+    return func()
+  File "/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/hydra/_internal/utils.py", line 453, in <lambda>
+    lambda: hydra.run(
+  File "/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/hydra/_internal/hydra.py", line 105, in run
+    cfg = self.compose_config(
+  File "/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/hydra/_internal/hydra.py", line 594, in compose_config
+    cfg = self.config_loader.load_configuration(
+  File "/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/hydra/_internal/config_loader_impl.py", line 141, in load_configuration
+    return self._load_configuration_impl(
+  File "/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/hydra/_internal/config_loader_impl.py", line 235, in _load_configuration_impl
+    self._process_config_searchpath(config_name, parsed_overrides, caching_repo)
+  File "/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/hydra/_internal/config_loader_impl.py", line 158, in _process_config_searchpath
+    loaded = repo.load_config(config_path=config_name)
+  File "/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/hydra/_internal/config_repository.py", line 349, in load_config
+    ret = self.delegate.load_config(config_path=config_path)
+  File "/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/hydra/_internal/config_repository.py", line 92, in load_config
+    ret = source.load_config(config_path=config_path)
+  File "/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/hydra/_internal/core_plugins/file_config_source.py", line 31, in load_config
+    cfg = OmegaConf.load(f)
+  File "/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/omegaconf/omegaconf.py", line 192, in load
+    obj = yaml.load(file_, Loader=get_yaml_loader())
+  File "/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/yaml/__init__.py", line 81, in load
+    return loader.get_single_data()
+  File "/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/yaml/constructor.py", line 51, in get_single_data
+    return self.construct_document(node)
+  File "/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/yaml/constructor.py", line 60, in construct_document
+    for dummy in generator:
+  File "/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/yaml/constructor.py", line 413, in construct_yaml_map
+    value = self.construct_mapping(node)
+  File "/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/omegaconf/_utils.py", line 144, in construct_mapping
+    raise yaml.constructor.ConstructorError(
+yaml.constructor.ConstructorError: while constructing a mapping
+  in "/sfs/weka/scratch/qxe3fj/temporal-straightening/conf/plan_cem.yaml", line 6, column 3
+found duplicate key sweep
+  in "/sfs/weka/scratch/qxe3fj/temporal-straightening/conf/plan_cem.yaml", line 10, column 3
+===== wall_single  goal_H=50  n_evals=50  seed=100 =====
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/wandb/util.py:118: SentryHubDeprecationWarning: `sentry_sdk.Hub` is deprecated and will be removed in a future major release. Please consult our 1.x to 2.x migration guide for details on how to migrate `Hub` usage to the new API: https://docs.sentry.io/platforms/python/migration/1.x-to-2.x
+  sentry_hub = sentry_sdk.Hub(sentry_client)
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py:30: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/pkg_resources/__init__.py:3148: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('mpl_toolkits')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/pkg_resources/__init__.py:3148: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/Cython/Distutils/old_build_ext.py:15: DeprecationWarning: dep_util is Deprecated. Use functions from setuptools instead.
+  from distutils.dep_util import newer, newer_group
+<frozen importlib._bootstrap>:283: DeprecationWarning: the load_module() method is deprecated and slated for removal in Python 3.12; use exec_module() instead
+Warning: Mujoco-based envs failed to import. Set the environment variable D4RL_SUPPRESS_IMPORT_ERROR=1 to suppress this message.
+No module named 'mjrl'
+Warning: Flow failed to import. Set the environment variable D4RL_SUPPRESS_IMPORT_ERROR=1 to suppress this message.
+No module named 'flow'
+Warning: CARLA failed to import. Set the environment variable D4RL_SUPPRESS_IMPORT_ERROR=1 to suppress this message.
+No module named 'carla'
+pybullet build time: Jan 29 2025 23:16:28
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-open-v0[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-umaze-v0[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-medium-v0[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-large-v0[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-umaze-v1[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-medium-v1[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-large-v1[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-eval-umaze-v1[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-eval-medium-v1[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-eval-large-v1[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-open-dense-v0[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-umaze-dense-v0[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-medium-dense-v0[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-large-dense-v0[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-umaze-dense-v1[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-medium-dense-v1[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-large-dense-v1[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-eval-umaze-dense-v1[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-eval-medium-dense-v1[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-eval-large-dense-v1[0m
+  logger.warn(f"Overriding environment {id}")
+/sfs/weka/scratch/qxe3fj/temporal-straightening/custom_resolvers.py:4: UserWarning: 
+The version_base parameter is not specified.
+Please specify a compatability version level, or None.
+Will assume defaults for version 1.1
+  @hydra.main(config_path=None)
+Traceback (most recent call last):
+  File "/sfs/weka/scratch/qxe3fj/temporal-straightening/plan.py", line 551, in <module>
+    main()
+  File "/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/hydra/main.py", line 90, in decorated_main
+    _run_hydra(
+  File "/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/hydra/_internal/utils.py", line 389, in _run_hydra
+    _run_app(
+  File "/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/hydra/_internal/utils.py", line 452, in _run_app
+    run_and_report(
+  File "/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/hydra/_internal/utils.py", line 216, in run_and_report
+    raise ex
+  File "/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/hydra/_internal/utils.py", line 213, in run_and_report
+    return func()
+  File "/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/hydra/_internal/utils.py", line 453, in <lambda>
+    lambda: hydra.run(
+  File "/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/hydra/_internal/hydra.py", line 105, in run
+    cfg = self.compose_config(
+  File "/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/hydra/_internal/hydra.py", line 594, in compose_config
+    cfg = self.config_loader.load_configuration(
+  File "/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/hydra/_internal/config_loader_impl.py", line 141, in load_configuration
+    return self._load_configuration_impl(
+  File "/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/hydra/_internal/config_loader_impl.py", line 235, in _load_configuration_impl
+    self._process_config_searchpath(config_name, parsed_overrides, caching_repo)
+  File "/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/hydra/_internal/config_loader_impl.py", line 158, in _process_config_searchpath
+    loaded = repo.load_config(config_path=config_name)
+  File "/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/hydra/_internal/config_repository.py", line 349, in load_config
+    ret = self.delegate.load_config(config_path=config_path)
+  File "/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/hydra/_internal/config_repository.py", line 92, in load_config
+    ret = source.load_config(config_path=config_path)
+  File "/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/hydra/_internal/core_plugins/file_config_source.py", line 31, in load_config
+    cfg = OmegaConf.load(f)
+  File "/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/omegaconf/omegaconf.py", line 192, in load
+    obj = yaml.load(file_, Loader=get_yaml_loader())
+  File "/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/yaml/__init__.py", line 81, in load
+    return loader.get_single_data()
+  File "/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/yaml/constructor.py", line 51, in get_single_data
+    return self.construct_document(node)
+  File "/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/yaml/constructor.py", line 60, in construct_document
+    for dummy in generator:
+  File "/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/yaml/constructor.py", line 413, in construct_yaml_map
+    value = self.construct_mapping(node)
+  File "/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/omegaconf/_utils.py", line 144, in construct_mapping
+    raise yaml.constructor.ConstructorError(
+yaml.constructor.ConstructorError: while constructing a mapping
+  in "/sfs/weka/scratch/qxe3fj/temporal-straightening/conf/plan_cem.yaml", line 6, column 3
+found duplicate key sweep
+  in "/sfs/weka/scratch/qxe3fj/temporal-straightening/conf/plan_cem.yaml", line 10, column 3
