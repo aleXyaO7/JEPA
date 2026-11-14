@@ -1,0 +1,21 @@
+name, memory.total [MiB]
+NVIDIA RTX A6000, 49140 MiB
+===== LeWM train benchmark (tworoom, 300 steps, batch 128) =====
+[Epoch 0/100] step 200/5138 (3.4 it/s)
+[Epoch 0/100] step 250/5138 (3.5 it/s)
+[Epoch 0/100] step 300/5138 (3.6 it/s)
+[Epoch 0/100] done in 84.2s
+Epoch 0/99 ━╸                              300/5138 0:01:26 • 0:19:44 4.09it/s 
+LEWM_300_STEPS_SECONDS=118
+===== collect benchmark: dmc_cheetah (20 episodes x 200 steps) =====
+[collect] swm/CheetahDMControl-v0 -> /sfs/weka/scratch/qxe3fj/JEPA/bench_tmp/datasets/dmc_cheetah.h5 (20 episodes x <= 200 steps)
+COLLECT_dmc_cheetah_20EP_SECONDS=24
+===== collect benchmark: ogb_scene (20 episodes x 200 steps) =====
+[collect] swm/OGBScene-v0 -> /sfs/weka/scratch/qxe3fj/JEPA/bench_tmp/datasets/ogb_scene.h5 (20 episodes x <= 200 steps)
+COLLECT_ogb_scene_20EP_SECONDS=50
+total 1194296
+drwxr-sr-x 1 qxe3fj users         0 Nov 12 05:35 .
+drwxr-sr-x 1 qxe3fj users         0 Nov 12 05:33 ..
+-rw-r--r-- 1 qxe3fj users 607265656 Nov 12 05:35 dmc_cheetah.h5
+-rw-r--r-- 1 qxe3fj users 615683010 Nov 12 05:35 ogb_scene.h5
+lrwxrwxrwx 1 qxe3fj users        63 Nov 12 05:32 tworoom.h5 -> /sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/tworoom.h5

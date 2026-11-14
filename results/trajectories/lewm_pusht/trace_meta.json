@@ -1,0 +1,40 @@
+{
+  "n_episodes": 50,
+  "success_rate": 88.0,
+  "trivial_successes_lt5": 0,
+  "picked": {
+    "success": 0,
+    "failure": 1
+  },
+  "steps_recorded": 51,
+  "lowdim_keys": [
+    "action",
+    "block_pose",
+    "goal_action",
+    "goal_pose",
+    "goal_proprio",
+    "goal_state",
+    "id",
+    "n_contacts",
+    "pos_agent",
+    "proprio",
+    "render_time",
+    "reward",
+    "state",
+    "step_idx",
+    "terminated",
+    "truncated",
+    "vel_agent"
+  ],
+  "argv": [
+    "--config-path",
+    "/sfs/weka/scratch/qxe3fj/JEPA/src/stable-worldmodel/scripts/plan/config",
+    "--config-name",
+    "pusht",
+    "policy=lewm-pusht",
+    "eval.goal_offset_steps=25",
+    "eval.eval_budget=50",
+    "output.filename=trace_pusht_offset25_results.txt",
+    "hydra.run.dir=/sfs/weka/scratch/qxe3fj/JEPA/results/trajectories/lewm_pusht/hydra"
+  ]
+}

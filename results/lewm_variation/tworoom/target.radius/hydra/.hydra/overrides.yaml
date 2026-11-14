@@ -1,0 +1,5 @@
+- policy=lewm-tworooms
+- eval.goal_offset_steps=25
+- eval.eval_budget=50
+- +variation=target.radius
+- +out_dir=/sfs/weka/scratch/qxe3fj/JEPA/results/lewm_variation/tworoom

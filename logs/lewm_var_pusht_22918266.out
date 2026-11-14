@@ -1,0 +1,165 @@
+name, memory.total [MiB]
+NVIDIA A40, 46068 MiB
+===== pusht  variation=none =====
+[2026-11-12 20:17:15,423][datasets][INFO] - JAX version 0.10.2 available.
+20:17:18 | INFO  | atomic_chec~| [atomic_save] installed crash-safe checkpoint plugin (write to sibling .tmp + fsync + atomic rename)
+[2026-11-12 20:17:20,528][root][INFO] - Cached 'action' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-12 20:17:21,067][root][INFO] - Cached 'proprio' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-12 20:17:21,626][root][INFO] - Cached 'state' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-12 20:17:22,511][stable_worldmodel.wm.utils][INFO] - Loading checkpoint from folder /sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/checkpoints/lewm-pusht...
+20:17:23 | INFO  | utils.py    | Created ViT-tiny from scratch with config: {'hidden_size': 192, 'num_hidden_layers': 12, 'num_attention_heads': 3, 'intermediate_size': 768, 'image_size': 224, 'patch_size': 14}
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:486: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+  gym.logger.warn("Casting input x to numpy array.")
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/utils/passive_env_checker.py:243: UserWarning: [33mWARN: The infos returned by `reset` and the following `step` share an object, therefore, modifying one will modify the other. Environments should return new info data on every call as users commonly keep the data returned to them.[0m
+  logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/utils/passive_env_checker.py:243: UserWarning: [33mWARN: The infos returned by `step` and the following `step` share an object, therefore, modifying one will modify the other. Environments should return new info data on every call as users commonly keep the data returned to them.[0m
+  logger.warn(
+CEM solve time: 32.9949 seconds
+CEM solve time: 5.8888 seconds
+[variation] swm/PushT-v1 none: 84.0% (44s)
+===== pusht  variation=background.color =====
+[2026-11-12 20:18:15,811][datasets][INFO] - JAX version 0.10.2 available.
+20:18:17 | INFO  | atomic_chec~| [atomic_save] installed crash-safe checkpoint plugin (write to sibling .tmp + fsync + atomic rename)
+[2026-11-12 20:18:18,312][root][INFO] - Cached 'action' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-12 20:18:18,340][root][INFO] - Cached 'proprio' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-12 20:18:18,379][root][INFO] - Cached 'state' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-12 20:18:19,255][stable_worldmodel.wm.utils][INFO] - Loading checkpoint from folder /sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/checkpoints/lewm-pusht...
+20:18:19 | INFO  | utils.py    | Created ViT-tiny from scratch with config: {'hidden_size': 192, 'num_hidden_layers': 12, 'num_attention_heads': 3, 'intermediate_size': 768, 'image_size': 224, 'patch_size': 14}
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:486: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+  gym.logger.warn("Casting input x to numpy array.")
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/utils/passive_env_checker.py:243: UserWarning: [33mWARN: The infos returned by `reset` and the following `step` share an object, therefore, modifying one will modify the other. Environments should return new info data on every call as users commonly keep the data returned to them.[0m
+  logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/utils/passive_env_checker.py:243: UserWarning: [33mWARN: The infos returned by `step` and the following `step` share an object, therefore, modifying one will modify the other. Environments should return new info data on every call as users commonly keep the data returned to them.[0m
+  logger.warn(
+CEM solve time: 32.9345 seconds
+CEM solve time: 32.2193 seconds
+[variation] swm/PushT-v1 background.color: 4.0% (71s)
+===== pusht  variation=agent.color =====
+[2026-11-12 20:19:38,831][datasets][INFO] - JAX version 0.10.2 available.
+20:19:40 | INFO  | atomic_chec~| [atomic_save] installed crash-safe checkpoint plugin (write to sibling .tmp + fsync + atomic rename)
+[2026-11-12 20:19:41,348][root][INFO] - Cached 'action' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-12 20:19:41,374][root][INFO] - Cached 'proprio' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-12 20:19:41,409][root][INFO] - Cached 'state' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-12 20:19:42,280][stable_worldmodel.wm.utils][INFO] - Loading checkpoint from folder /sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/checkpoints/lewm-pusht...
+20:19:42 | INFO  | utils.py    | Created ViT-tiny from scratch with config: {'hidden_size': 192, 'num_hidden_layers': 12, 'num_attention_heads': 3, 'intermediate_size': 768, 'image_size': 224, 'patch_size': 14}
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:486: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+  gym.logger.warn("Casting input x to numpy array.")
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/utils/passive_env_checker.py:243: UserWarning: [33mWARN: The infos returned by `reset` and the following `step` share an object, therefore, modifying one will modify the other. Environments should return new info data on every call as users commonly keep the data returned to them.[0m
+  logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/utils/passive_env_checker.py:243: UserWarning: [33mWARN: The infos returned by `step` and the following `step` share an object, therefore, modifying one will modify the other. Environments should return new info data on every call as users commonly keep the data returned to them.[0m
+  logger.warn(
+CEM solve time: 33.0411 seconds
+CEM solve time: 25.0379 seconds
+[variation] swm/PushT-v1 agent.color: 32.0% (63s)
+===== pusht  variation=block.color =====
+[2026-11-12 20:20:53,643][datasets][INFO] - JAX version 0.10.2 available.
+20:20:55 | INFO  | atomic_chec~| [atomic_save] installed crash-safe checkpoint plugin (write to sibling .tmp + fsync + atomic rename)
+[2026-11-12 20:20:56,894][root][INFO] - Cached 'action' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-12 20:20:56,920][root][INFO] - Cached 'proprio' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-12 20:20:56,957][root][INFO] - Cached 'state' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-12 20:20:57,882][stable_worldmodel.wm.utils][INFO] - Loading checkpoint from folder /sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/checkpoints/lewm-pusht...
+20:20:58 | INFO  | utils.py    | Created ViT-tiny from scratch with config: {'hidden_size': 192, 'num_hidden_layers': 12, 'num_attention_heads': 3, 'intermediate_size': 768, 'image_size': 224, 'patch_size': 14}
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:486: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+  gym.logger.warn("Casting input x to numpy array.")
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/utils/passive_env_checker.py:243: UserWarning: [33mWARN: The infos returned by `reset` and the following `step` share an object, therefore, modifying one will modify the other. Environments should return new info data on every call as users commonly keep the data returned to them.[0m
+  logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/utils/passive_env_checker.py:243: UserWarning: [33mWARN: The infos returned by `step` and the following `step` share an object, therefore, modifying one will modify the other. Environments should return new info data on every call as users commonly keep the data returned to them.[0m
+  logger.warn(
+CEM solve time: 33.0608 seconds
+CEM solve time: 29.6407 seconds
+[variation] swm/PushT-v1 block.color: 20.0% (68s)
+===== pusht  variation=goal.color =====
+[2026-11-12 20:22:14,003][datasets][INFO] - JAX version 0.10.2 available.
+20:22:15 | INFO  | atomic_chec~| [atomic_save] installed crash-safe checkpoint plugin (write to sibling .tmp + fsync + atomic rename)
+[2026-11-12 20:22:16,565][root][INFO] - Cached 'action' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-12 20:22:16,590][root][INFO] - Cached 'proprio' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-12 20:22:16,626][root][INFO] - Cached 'state' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-12 20:22:17,490][stable_worldmodel.wm.utils][INFO] - Loading checkpoint from folder /sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/checkpoints/lewm-pusht...
+20:22:18 | INFO  | utils.py    | Created ViT-tiny from scratch with config: {'hidden_size': 192, 'num_hidden_layers': 12, 'num_attention_heads': 3, 'intermediate_size': 768, 'image_size': 224, 'patch_size': 14}
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:486: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+  gym.logger.warn("Casting input x to numpy array.")
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/utils/passive_env_checker.py:243: UserWarning: [33mWARN: The infos returned by `reset` and the following `step` share an object, therefore, modifying one will modify the other. Environments should return new info data on every call as users commonly keep the data returned to them.[0m
+  logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/utils/passive_env_checker.py:243: UserWarning: [33mWARN: The infos returned by `step` and the following `step` share an object, therefore, modifying one will modify the other. Environments should return new info data on every call as users commonly keep the data returned to them.[0m
+  logger.warn(
+CEM solve time: 33.1361 seconds
+CEM solve time: 25.1453 seconds
+[variation] swm/PushT-v1 goal.color: 34.0% (63s)
+===== pusht  variation=agent.scale =====
+[2026-11-12 20:23:30,165][datasets][INFO] - JAX version 0.10.2 available.
+20:23:31 | INFO  | atomic_chec~| [atomic_save] installed crash-safe checkpoint plugin (write to sibling .tmp + fsync + atomic rename)
+[2026-11-12 20:23:32,646][root][INFO] - Cached 'action' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-12 20:23:32,672][root][INFO] - Cached 'proprio' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-12 20:23:32,707][root][INFO] - Cached 'state' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-12 20:23:33,591][stable_worldmodel.wm.utils][INFO] - Loading checkpoint from folder /sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/checkpoints/lewm-pusht...
+20:23:34 | INFO  | utils.py    | Created ViT-tiny from scratch with config: {'hidden_size': 192, 'num_hidden_layers': 12, 'num_attention_heads': 3, 'intermediate_size': 768, 'image_size': 224, 'patch_size': 14}
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:486: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+  gym.logger.warn("Casting input x to numpy array.")
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/utils/passive_env_checker.py:243: UserWarning: [33mWARN: The infos returned by `reset` and the following `step` share an object, therefore, modifying one will modify the other. Environments should return new info data on every call as users commonly keep the data returned to them.[0m
+  logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/utils/passive_env_checker.py:243: UserWarning: [33mWARN: The infos returned by `step` and the following `step` share an object, therefore, modifying one will modify the other. Environments should return new info data on every call as users commonly keep the data returned to them.[0m
+  logger.warn(
+CEM solve time: 33.1299 seconds
+CEM solve time: 11.8844 seconds
+[variation] swm/PushT-v1 agent.scale: 72.0% (49s)
+===== pusht  variation=block.scale =====
+[2026-11-12 20:24:31,727][datasets][INFO] - JAX version 0.10.2 available.
+20:24:33 | INFO  | atomic_chec~| [atomic_save] installed crash-safe checkpoint plugin (write to sibling .tmp + fsync + atomic rename)
+[2026-11-12 20:24:34,249][root][INFO] - Cached 'action' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-12 20:24:34,275][root][INFO] - Cached 'proprio' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-12 20:24:34,310][root][INFO] - Cached 'state' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-12 20:24:35,186][stable_worldmodel.wm.utils][INFO] - Loading checkpoint from folder /sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/checkpoints/lewm-pusht...
+20:24:35 | INFO  | utils.py    | Created ViT-tiny from scratch with config: {'hidden_size': 192, 'num_hidden_layers': 12, 'num_attention_heads': 3, 'intermediate_size': 768, 'image_size': 224, 'patch_size': 14}
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:486: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+  gym.logger.warn("Casting input x to numpy array.")
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/utils/passive_env_checker.py:243: UserWarning: [33mWARN: The infos returned by `reset` and the following `step` share an object, therefore, modifying one will modify the other. Environments should return new info data on every call as users commonly keep the data returned to them.[0m
+  logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/utils/passive_env_checker.py:243: UserWarning: [33mWARN: The infos returned by `step` and the following `step` share an object, therefore, modifying one will modify the other. Environments should return new info data on every call as users commonly keep the data returned to them.[0m
+  logger.warn(
+CEM solve time: 33.0863 seconds
+CEM solve time: 22.4061 seconds
+[variation] swm/PushT-v1 block.scale: 34.0% (61s)
+===== pusht  variation=agent.shape =====
+[2026-11-12 20:25:43,649][datasets][INFO] - JAX version 0.10.2 available.
+20:25:45 | INFO  | atomic_chec~| [atomic_save] installed crash-safe checkpoint plugin (write to sibling .tmp + fsync + atomic rename)
+[2026-11-12 20:25:46,212][root][INFO] - Cached 'action' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-12 20:25:46,237][root][INFO] - Cached 'proprio' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-12 20:25:46,273][root][INFO] - Cached 'state' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-12 20:25:47,144][stable_worldmodel.wm.utils][INFO] - Loading checkpoint from folder /sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/checkpoints/lewm-pusht...
+20:25:47 | INFO  | utils.py    | Created ViT-tiny from scratch with config: {'hidden_size': 192, 'num_hidden_layers': 12, 'num_attention_heads': 3, 'intermediate_size': 768, 'image_size': 224, 'patch_size': 14}
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:486: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+  gym.logger.warn("Casting input x to numpy array.")
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/utils/passive_env_checker.py:243: UserWarning: [33mWARN: The infos returned by `reset` and the following `step` share an object, therefore, modifying one will modify the other. Environments should return new info data on every call as users commonly keep the data returned to them.[0m
+  logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/utils/passive_env_checker.py:243: UserWarning: [33mWARN: The infos returned by `step` and the following `step` share an object, therefore, modifying one will modify the other. Environments should return new info data on every call as users commonly keep the data returned to them.[0m
+  logger.warn(
+CEM solve time: 33.0894 seconds
+CEM solve time: 30.2947 seconds
+[variation] swm/PushT-v1 agent.shape: 8.0% (74s)
+===== pusht  variation=block.shape =====
+[2026-11-12 20:27:09,933][datasets][INFO] - JAX version 0.10.2 available.
+20:27:12 | INFO  | atomic_chec~| [atomic_save] installed crash-safe checkpoint plugin (write to sibling .tmp + fsync + atomic rename)
+[2026-11-12 20:27:12,941][root][INFO] - Cached 'action' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-12 20:27:12,966][root][INFO] - Cached 'proprio' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-12 20:27:13,002][root][INFO] - Cached 'state' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-12 20:27:13,892][stable_worldmodel.wm.utils][INFO] - Loading checkpoint from folder /sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/checkpoints/lewm-pusht...
+20:27:13 | INFO  | utils.py    | Created ViT-tiny from scratch with config: {'hidden_size': 192, 'num_hidden_layers': 12, 'num_attention_heads': 3, 'intermediate_size': 768, 'image_size': 224, 'patch_size': 14}
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:486: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+  gym.logger.warn("Casting input x to numpy array.")
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/utils/passive_env_checker.py:243: UserWarning: [33mWARN: The infos returned by `reset` and the following `step` share an object, therefore, modifying one will modify the other. Environments should return new info data on every call as users commonly keep the data returned to them.[0m
+  logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/utils/passive_env_checker.py:243: UserWarning: [33mWARN: The infos returned by `step` and the following `step` share an object, therefore, modifying one will modify the other. Environments should return new info data on every call as users commonly keep the data returned to them.[0m
+  logger.warn(
+CEM solve time: 33.0629 seconds
+CEM solve time: 22.3964 seconds
+[variation] swm/PushT-v1 block.shape: 36.0% (61s)
+== summary ==
+  "variation": "agent.color",	  "success_rate": 32.0,
+  "variation": "agent.scale",	  "success_rate": 72.0,
+  "variation": "agent.shape",	  "success_rate": 8.0,
+  "variation": "background.color",	  "success_rate": 4.0,
+  "variation": "block.color",	  "success_rate": 20.0,
+  "variation": "block.scale",	  "success_rate": 34.0,
+  "variation": "block.shape",	  "success_rate": 36.0,
+  "variation": "goal.color",	  "success_rate": 34.0,
+  "variation": "none",	  "success_rate": 84.0,

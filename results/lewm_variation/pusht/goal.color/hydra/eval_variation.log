@@ -1,0 +1,5 @@
+[2026-11-12 20:22:14,003][datasets][INFO] - JAX version 0.10.2 available.
+[2026-11-12 20:22:16,565][root][INFO] - Cached 'action' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-12 20:22:16,590][root][INFO] - Cached 'proprio' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-12 20:22:16,626][root][INFO] - Cached 'state' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-12 20:22:17,490][stable_worldmodel.wm.utils][INFO] - Loading checkpoint from folder /sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/checkpoints/lewm-pusht...

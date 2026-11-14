@@ -1,0 +1,10 @@
+# LeWM training data for ogb_antmaze (collected by scripts/collect_data.py ogb_antmaze)
+dataset:
+  num_steps: ${eval:'${wm.num_preds} + ${wm.history_size}'}
+  frameskip: 5
+  name: ogb_antmaze.h5
+  keys_to_load:
+    - pixels
+    - action
+  keys_to_cache:
+    - action

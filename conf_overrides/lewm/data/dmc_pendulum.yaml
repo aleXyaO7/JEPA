@@ -1,0 +1,10 @@
+# LeWM training data for dmc_pendulum (collected by scripts/collect_data.py dmc_pendulum)
+dataset:
+  num_steps: ${eval:'${wm.num_preds} + ${wm.history_size}'}
+  frameskip: 5
+  name: dmc_pendulum.h5
+  keys_to_load:
+    - pixels
+    - action
+  keys_to_cache:
+    - action

@@ -1,0 +1,44 @@
+{
+  "n_episodes": 50,
+  "success_rate": 62.0,
+  "trivial_successes_lt5": 1,
+  "picked": {
+    "success": 0,
+    "failure": 6
+  },
+  "steps_recorded": 51,
+  "lowdim_keys": [
+    "action",
+    "finger_pos",
+    "goal_action",
+    "goal_finger_pos",
+    "goal_observation",
+    "goal_qpos",
+    "goal_qvel",
+    "goal_target_pos",
+    "id",
+    "observation",
+    "qpos",
+    "qvel",
+    "render_time",
+    "reward",
+    "score",
+    "step_idx",
+    "success",
+    "target_pos",
+    "terminated",
+    "truncated"
+  ],
+  "argv": [
+    "--config-path",
+    "/sfs/weka/scratch/qxe3fj/JEPA/src/stable-worldmodel/scripts/plan/config",
+    "--config-name",
+    "reacher",
+    "policy=lewm-reacher",
+    "eval.goal_offset_steps=25",
+    "eval.eval_budget=50",
+    "output.filename=trace_reacher_offset25_results.txt",
+    "hydra.run.dir=/sfs/weka/scratch/qxe3fj/JEPA/results/trajectories/lewm_reacher/hydra",
+    "eval.dataset_name=reacher.h5"
+  ]
+}

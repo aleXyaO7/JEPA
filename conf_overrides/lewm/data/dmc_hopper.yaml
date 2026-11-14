@@ -1,0 +1,10 @@
+# LeWM training data for dmc_hopper (collected by scripts/collect_data.py dmc_hopper)
+dataset:
+  num_steps: ${eval:'${wm.num_preds} + ${wm.history_size}'}
+  frameskip: 5
+  name: dmc_hopper.h5
+  keys_to_load:
+    - pixels
+    - action
+  keys_to_cache:
+    - action

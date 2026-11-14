@@ -1,0 +1,15 @@
+ogb_scene collect=22918274 train=22918275
+ogb_pointmaze collect=22918276 train=22918277
+dmc_cheetah collect=22918278 train=22918279
+dmc_walker collect=22918280 train=22918281
+dmc_hopper collect=22918282 train=22918283
+dmc_quadruped collect=22918284 train=22918285
+dmc_finger collect=22918286 train=22918287
+dmc_ballincup collect=22918288 train=22918289
+dmc_cartpole collect=22918290 train=22918291
+dmc_pendulum collect=22918292 train=22918293
+dmc_acrobot collect=22918294 train=22918295
+cc_mountaincar collect=22918296 train=22918297
+cc_pendulum collect=22918298 train=22918299
+simple_pointmaze collect=22931538 train=22931539
+ogb_antmaze convert=22932450 train=22932451

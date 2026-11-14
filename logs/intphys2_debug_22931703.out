@@ -1,0 +1,252 @@
+name, memory.total [MiB]
+NVIDIA RTX A6000, 49140 MiB
+[INFO    ][2026-11-13 03:11:35][root                ][process_main             ] called-params /sfs/weka/scratch/qxe3fj/JEPA/conf_overrides/intphys2/vjepa2_vitl_debug.yaml
+[INFO    ][2026-11-13 03:11:35][root                ][process_main             ] loaded params...
+{   'eval_name': 'intphys2',
+    'experiment': {   'data': {   'batch_size': 1,
+                                  'context_lengths': [12, 18, 24, 30, 36, 42],
+                                  'dataset': 'intphys2-debug',
+                                  'frame_steps': 10,
+                                  'frames_per_clip': 48,
+                                  'num_frames_to_pred': -1,
+                                  'resolution': 256,
+                                  'stride_sliding_window': 2,
+                                  'use_bfloat16': True},
+                      'max_context_mode': True},
+    'folder': '/sfs/weka/scratch/qxe3fj/JEPA/results/intphys2/vjepa2_vitl',
+    'model_kwargs': {   'checkpoint': '/sfs/weka/scratch/qxe3fj/JEPA/checkpoints/vjepa2_native/vitl.pt',
+                        'module_name': 'app.vjepa.modelcustom.default_wrapper',
+                        'pretrain_kwargs': {   'encoder': {   'checkpoint_key': 'encoder',
+                                                              'is_causal': False,
+                                                              'local_window': [   -1,
+                                                                                  -1,
+                                                                                  -1],
+                                                              'model_name': 'vit_large',
+                                                              'uniform_power': True,
+                                                              'use_activation_checkpointing': False,
+                                                              'use_mask_tokens': True,
+                                                              'use_rope': True,
+                                                              'zero_init_mask_tokens': True},
+                                               'predictor': {   'checkpoint_key': 'predictor',
+                                                                'depth': 12,
+                                                                'is_causal': False,
+                                                                'local_window': [   -1,
+                                                                                    -1,
+                                                                                    -1],
+                                                                'model_name': 'vit_predictor',
+                                                                'num_heads': 12,
+                                                                'num_mask_tokens': 10,
+                                                                'uniform_power': True,
+                                                                'use_activation_checkpointing': False,
+                                                                'use_mask_tokens': True,
+                                                                'use_rope': True,
+                                                                'zero_init_mask_tokens': True},
+                                               'resolution': 256,
+                                               'target_encoder': {   'checkpoint_key': 'target_encoder'}},
+                        'wrapper_kwargs': {'no_predictor': False}},
+    'nodes': 1,
+    'resume_checkpoint': False,
+    'tag': 'vitl',
+    'tasks_per_node': 1}
+[INFO    ][2026-11-13 03:11:35][root                ][process_main             ] Running... (rank: 0/1)
+[INFO    ][2026-11-13 03:11:35][Eval runner scaffold][main                     ] Running evaluation: intphys2
+[INFO    ][2026-11-13 03:11:37][root                ][main                     ] Initialized (rank/world-size) 0/1
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.0.attn.d_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.0.attn.h_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.0.attn.w_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.1.attn.d_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.1.attn.h_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.1.attn.w_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.2.attn.d_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.2.attn.h_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.2.attn.w_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.3.attn.d_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.3.attn.h_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.3.attn.w_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.4.attn.d_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.4.attn.h_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.4.attn.w_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.5.attn.d_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.5.attn.h_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.5.attn.w_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.6.attn.d_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.6.attn.h_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.6.attn.w_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.7.attn.d_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.7.attn.h_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.7.attn.w_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.8.attn.d_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.8.attn.h_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.8.attn.w_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.9.attn.d_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.9.attn.h_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.9.attn.w_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.10.attn.d_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.10.attn.h_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.10.attn.w_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.11.attn.d_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.11.attn.h_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.11.attn.w_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.12.attn.d_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.12.attn.h_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.12.attn.w_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.13.attn.d_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.13.attn.h_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.13.attn.w_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.14.attn.d_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.14.attn.h_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.14.attn.w_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.15.attn.d_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.15.attn.h_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.15.attn.w_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.16.attn.d_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.16.attn.h_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.16.attn.w_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.17.attn.d_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.17.attn.h_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.17.attn.w_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.18.attn.d_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.18.attn.h_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.18.attn.w_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.19.attn.d_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.19.attn.h_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.19.attn.w_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.20.attn.d_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.20.attn.h_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.20.attn.w_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.21.attn.d_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.21.attn.h_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.21.attn.w_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.22.attn.d_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.22.attn.h_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.22.attn.w_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.23.attn.d_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.23.attn.h_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.23.attn.w_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] loaded pretrained model with msg: _IncompatibleKeys(missing_keys=['backbone.blocks.0.attn.d_rotary_emb.freqs', 'backbone.blocks.0.attn.h_rotary_emb.freqs', 'backbone.blocks.0.attn.w_rotary_emb.freqs', 'backbone.blocks.1.attn.d_rotary_emb.freqs', 'backbone.blocks.1.attn.h_rotary_emb.freqs', 'backbone.blocks.1.attn.w_rotary_emb.freqs', 'backbone.blocks.2.attn.d_rotary_emb.freqs', 'backbone.blocks.2.attn.h_rotary_emb.freqs', 'backbone.blocks.2.attn.w_rotary_emb.freqs', 'backbone.blocks.3.attn.d_rotary_emb.freqs', 'backbone.blocks.3.attn.h_rotary_emb.freqs', 'backbone.blocks.3.attn.w_rotary_emb.freqs', 'backbone.blocks.4.attn.d_rotary_emb.freqs', 'backbone.blocks.4.attn.h_rotary_emb.freqs', 'backbone.blocks.4.attn.w_rotary_emb.freqs', 'backbone.blocks.5.attn.d_rotary_emb.freqs', 'backbone.blocks.5.attn.h_rotary_emb.freqs', 'backbone.blocks.5.attn.w_rotary_emb.freqs', 'backbone.blocks.6.attn.d_rotary_emb.freqs', 'backbone.blocks.6.attn.h_rotary_emb.freqs', 'backbone.blocks.6.attn.w_rotary_emb.freqs', 'backbone.blocks.7.attn.d_rotary_emb.freqs', 'backbone.blocks.7.attn.h_rotary_emb.freqs', 'backbone.blocks.7.attn.w_rotary_emb.freqs', 'backbone.blocks.8.attn.d_rotary_emb.freqs', 'backbone.blocks.8.attn.h_rotary_emb.freqs', 'backbone.blocks.8.attn.w_rotary_emb.freqs', 'backbone.blocks.9.attn.d_rotary_emb.freqs', 'backbone.blocks.9.attn.h_rotary_emb.freqs', 'backbone.blocks.9.attn.w_rotary_emb.freqs', 'backbone.blocks.10.attn.d_rotary_emb.freqs', 'backbone.blocks.10.attn.h_rotary_emb.freqs', 'backbone.blocks.10.attn.w_rotary_emb.freqs', 'backbone.blocks.11.attn.d_rotary_emb.freqs', 'backbone.blocks.11.attn.h_rotary_emb.freqs', 'backbone.blocks.11.attn.w_rotary_emb.freqs', 'backbone.blocks.12.attn.d_rotary_emb.freqs', 'backbone.blocks.12.attn.h_rotary_emb.freqs', 'backbone.blocks.12.attn.w_rotary_emb.freqs', 'backbone.blocks.13.attn.d_rotary_emb.freqs', 'backbone.blocks.13.attn.h_rotary_emb.freqs', 'backbone.blocks.13.attn.w_rotary_emb.freqs', 'backbone.blocks.14.attn.d_rotary_emb.freqs', 'backbone.blocks.14.attn.h_rotary_emb.freqs', 'backbone.blocks.14.attn.w_rotary_emb.freqs', 'backbone.blocks.15.attn.d_rotary_emb.freqs', 'backbone.blocks.15.attn.h_rotary_emb.freqs', 'backbone.blocks.15.attn.w_rotary_emb.freqs', 'backbone.blocks.16.attn.d_rotary_emb.freqs', 'backbone.blocks.16.attn.h_rotary_emb.freqs', 'backbone.blocks.16.attn.w_rotary_emb.freqs', 'backbone.blocks.17.attn.d_rotary_emb.freqs', 'backbone.blocks.17.attn.h_rotary_emb.freqs', 'backbone.blocks.17.attn.w_rotary_emb.freqs', 'backbone.blocks.18.attn.d_rotary_emb.freqs', 'backbone.blocks.18.attn.h_rotary_emb.freqs', 'backbone.blocks.18.attn.w_rotary_emb.freqs', 'backbone.blocks.19.attn.d_rotary_emb.freqs', 'backbone.blocks.19.attn.h_rotary_emb.freqs', 'backbone.blocks.19.attn.w_rotary_emb.freqs', 'backbone.blocks.20.attn.d_rotary_emb.freqs', 'backbone.blocks.20.attn.h_rotary_emb.freqs', 'backbone.blocks.20.attn.w_rotary_emb.freqs', 'backbone.blocks.21.attn.d_rotary_emb.freqs', 'backbone.blocks.21.attn.h_rotary_emb.freqs', 'backbone.blocks.21.attn.w_rotary_emb.freqs', 'backbone.blocks.22.attn.d_rotary_emb.freqs', 'backbone.blocks.22.attn.h_rotary_emb.freqs', 'backbone.blocks.22.attn.w_rotary_emb.freqs', 'backbone.blocks.23.attn.d_rotary_emb.freqs', 'backbone.blocks.23.attn.h_rotary_emb.freqs', 'backbone.blocks.23.attn.w_rotary_emb.freqs'], unexpected_keys=[])
+MultiMaskWrapper(
+  (backbone): VisionTransformer(
+    (patch_embed): PatchEmbed3D(
+      (proj): Conv3d(3, 1024, kernel_size=(2, 16, 16), stride=(2, 16, 16))
+    )
+    (blocks): ModuleList(
+      (0-23): 24 x Block(
+        (norm1): LayerNorm((1024,), eps=1e-06, elementwise_affine=True)
+        (attn): RoPEAttention3D(
+          (qkv): Linear(in_features=1024, out_features=3072, bias=True)
+          (attn_drop): Dropout(p=0.0, inplace=False)
+          (proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (proj_drop): Dropout(p=0.0, inplace=False)
+          (d_rotary_emb): RotaryEmbedding()
+          (h_rotary_emb): RotaryEmbedding()
+          (w_rotary_emb): RotaryEmbedding()
+        )
+        (drop_path): Identity()
+        (norm2): LayerNorm((1024,), eps=1e-06, elementwise_affine=True)
+        (mlp): MLP(
+          (fc1): Linear(in_features=1024, out_features=4096, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=4096, out_features=1024, bias=True)
+          (drop): Dropout(p=0.0, inplace=False)
+        )
+      )
+    )
+    (norm): LayerNorm((1024,), eps=1e-06, elementwise_affine=True)
+  )
+)
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.0.attn.d_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.0.attn.h_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.0.attn.w_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.1.attn.d_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.1.attn.h_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.1.attn.w_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.2.attn.d_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.2.attn.h_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.2.attn.w_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.3.attn.d_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.3.attn.h_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.3.attn.w_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.4.attn.d_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.4.attn.h_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.4.attn.w_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.5.attn.d_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.5.attn.h_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.5.attn.w_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.6.attn.d_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.6.attn.h_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.6.attn.w_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.7.attn.d_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.7.attn.h_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.7.attn.w_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.8.attn.d_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.8.attn.h_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.8.attn.w_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.9.attn.d_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.9.attn.h_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.9.attn.w_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.10.attn.d_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.10.attn.h_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.10.attn.w_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.11.attn.d_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.11.attn.h_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.11.attn.w_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.12.attn.d_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.12.attn.h_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.12.attn.w_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.13.attn.d_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.13.attn.h_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.13.attn.w_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.14.attn.d_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.14.attn.h_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.14.attn.w_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.15.attn.d_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.15.attn.h_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.15.attn.w_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.16.attn.d_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.16.attn.h_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.16.attn.w_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.17.attn.d_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.17.attn.h_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.17.attn.w_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.18.attn.d_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.18.attn.h_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.18.attn.w_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.19.attn.d_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.19.attn.h_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.19.attn.w_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.20.attn.d_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.20.attn.h_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.20.attn.w_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.21.attn.d_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.21.attn.h_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.21.attn.w_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.22.attn.d_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.22.attn.h_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.22.attn.w_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.23.attn.d_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.23.attn.h_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] key "backbone.blocks.23.attn.w_rotary_emb.freqs" could not be found in loaded state dict
+[INFO    ][2026-11-13 03:11:46][root                ][init_module              ] loaded pretrained model with msg: _IncompatibleKeys(missing_keys=['backbone.blocks.0.attn.d_rotary_emb.freqs', 'backbone.blocks.0.attn.h_rotary_emb.freqs', 'backbone.blocks.0.attn.w_rotary_emb.freqs', 'backbone.blocks.1.attn.d_rotary_emb.freqs', 'backbone.blocks.1.attn.h_rotary_emb.freqs', 'backbone.blocks.1.attn.w_rotary_emb.freqs', 'backbone.blocks.2.attn.d_rotary_emb.freqs', 'backbone.blocks.2.attn.h_rotary_emb.freqs', 'backbone.blocks.2.attn.w_rotary_emb.freqs', 'backbone.blocks.3.attn.d_rotary_emb.freqs', 'backbone.blocks.3.attn.h_rotary_emb.freqs', 'backbone.blocks.3.attn.w_rotary_emb.freqs', 'backbone.blocks.4.attn.d_rotary_emb.freqs', 'backbone.blocks.4.attn.h_rotary_emb.freqs', 'backbone.blocks.4.attn.w_rotary_emb.freqs', 'backbone.blocks.5.attn.d_rotary_emb.freqs', 'backbone.blocks.5.attn.h_rotary_emb.freqs', 'backbone.blocks.5.attn.w_rotary_emb.freqs', 'backbone.blocks.6.attn.d_rotary_emb.freqs', 'backbone.blocks.6.attn.h_rotary_emb.freqs', 'backbone.blocks.6.attn.w_rotary_emb.freqs', 'backbone.blocks.7.attn.d_rotary_emb.freqs', 'backbone.blocks.7.attn.h_rotary_emb.freqs', 'backbone.blocks.7.attn.w_rotary_emb.freqs', 'backbone.blocks.8.attn.d_rotary_emb.freqs', 'backbone.blocks.8.attn.h_rotary_emb.freqs', 'backbone.blocks.8.attn.w_rotary_emb.freqs', 'backbone.blocks.9.attn.d_rotary_emb.freqs', 'backbone.blocks.9.attn.h_rotary_emb.freqs', 'backbone.blocks.9.attn.w_rotary_emb.freqs', 'backbone.blocks.10.attn.d_rotary_emb.freqs', 'backbone.blocks.10.attn.h_rotary_emb.freqs', 'backbone.blocks.10.attn.w_rotary_emb.freqs', 'backbone.blocks.11.attn.d_rotary_emb.freqs', 'backbone.blocks.11.attn.h_rotary_emb.freqs', 'backbone.blocks.11.attn.w_rotary_emb.freqs', 'backbone.blocks.12.attn.d_rotary_emb.freqs', 'backbone.blocks.12.attn.h_rotary_emb.freqs', 'backbone.blocks.12.attn.w_rotary_emb.freqs', 'backbone.blocks.13.attn.d_rotary_emb.freqs', 'backbone.blocks.13.attn.h_rotary_emb.freqs', 'backbone.blocks.13.attn.w_rotary_emb.freqs', 'backbone.blocks.14.attn.d_rotary_emb.freqs', 'backbone.blocks.14.attn.h_rotary_emb.freqs', 'backbone.blocks.14.attn.w_rotary_emb.freqs', 'backbone.blocks.15.attn.d_rotary_emb.freqs', 'backbone.blocks.15.attn.h_rotary_emb.freqs', 'backbone.blocks.15.attn.w_rotary_emb.freqs', 'backbone.blocks.16.attn.d_rotary_emb.freqs', 'backbone.blocks.16.attn.h_rotary_emb.freqs', 'backbone.blocks.16.attn.w_rotary_emb.freqs', 'backbone.blocks.17.attn.d_rotary_emb.freqs', 'backbone.blocks.17.attn.h_rotary_emb.freqs', 'backbone.blocks.17.attn.w_rotary_emb.freqs', 'backbone.blocks.18.attn.d_rotary_emb.freqs', 'backbone.blocks.18.attn.h_rotary_emb.freqs', 'backbone.blocks.18.attn.w_rotary_emb.freqs', 'backbone.blocks.19.attn.d_rotary_emb.freqs', 'backbone.blocks.19.attn.h_rotary_emb.freqs', 'backbone.blocks.19.attn.w_rotary_emb.freqs', 'backbone.blocks.20.attn.d_rotary_emb.freqs', 'backbone.blocks.20.attn.h_rotary_emb.freqs', 'backbone.blocks.20.attn.w_rotary_emb.freqs', 'backbone.blocks.21.attn.d_rotary_emb.freqs', 'backbone.blocks.21.attn.h_rotary_emb.freqs', 'backbone.blocks.21.attn.w_rotary_emb.freqs', 'backbone.blocks.22.attn.d_rotary_emb.freqs', 'backbone.blocks.22.attn.h_rotary_emb.freqs', 'backbone.blocks.22.attn.w_rotary_emb.freqs', 'backbone.blocks.23.attn.d_rotary_emb.freqs', 'backbone.blocks.23.attn.h_rotary_emb.freqs', 'backbone.blocks.23.attn.w_rotary_emb.freqs'], unexpected_keys=[])
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "<frozen runpy>", line 198, in _run_module_as_main
+[rank0]:   File "<frozen runpy>", line 88, in _run_code
+[rank0]:   File "/sfs/weka/scratch/qxe3fj/JEPA/src/IntPhys2/prediction_evals/evals/main.py", line 70, in <module>
+[rank0]:     process_main(rank=0, fname=args.fname, world_size=1, devices=["cuda:0"])
+[rank0]:   File "/sfs/weka/scratch/qxe3fj/JEPA/src/IntPhys2/prediction_evals/evals/main.py", line 64, in process_main
+[rank0]:     eval_main(params["eval_name"], args_eval=params)
+[rank0]:   File "/sfs/weka/scratch/qxe3fj/JEPA/src/IntPhys2/prediction_evals/evals/scaffold.py", line 21, in main
+[rank0]:     return importlib.import_module(import_path).main(args_eval=args_eval, resume_preempt=resume_preempt)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/sfs/weka/scratch/qxe3fj/JEPA/src/IntPhys2/prediction_evals/evals/intphys2/eval.py", line 111, in main
+[rank0]:     model = init_module(
+[rank0]:             ^^^^^^^^^^^^
+[rank0]:   File "/sfs/weka/scratch/qxe3fj/JEPA/src/IntPhys2/prediction_evals/evals/intphys2/eval.py", line 389, in init_module
+[rank0]:     model = importlib.import_module(f"{module_name}").init_module(
+[rank0]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/sfs/weka/scratch/qxe3fj/JEPA/src/IntPhys2/prediction_evals/app/vjepa/modelcustom/default_wrapper.py", line 119, in init_module
+[rank0]:     predictor = vit_pred.__dict__[pred_model_name](
+[rank0]:                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]: TypeError: app.vjepa.models.predictor.vit_predictor() got multiple values for keyword argument 'num_heads'
+[rank0]:[W1113 03:11:47.025810896 ProcessGroupNCCL.cpp:1538] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())

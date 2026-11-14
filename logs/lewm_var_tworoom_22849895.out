@@ -1,0 +1,349 @@
+name, memory.total [MiB]
+NVIDIA RTX A6000, 49140 MiB
+===== tworoom  variation=none =====
+[2026-11-12 05:30:48,721][datasets][INFO] - JAX version 0.10.2 available.
+05:30:50 | INFO  | atomic_chec~| [atomic_save] installed crash-safe checkpoint plugin (write to sibling .tmp + fsync + atomic rename)
+[2026-11-12 05:30:52,223][root][INFO] - Cached 'action' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/tworoom.h5'
+[2026-11-12 05:30:52,534][root][INFO] - Cached 'proprio' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/tworoom.h5'
+[2026-11-12 05:30:52,882][stable_worldmodel.wm.utils][INFO] - Loading checkpoint from folder /sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/checkpoints/lewm-tworooms...
+05:30:53 | INFO  | utils.py    | Created ViT-tiny from scratch with config: {'hidden_size': 192, 'num_hidden_layers': 12, 'num_attention_heads': 3, 'intermediate_size': 768, 'image_size': 224, 'patch_size': 14}
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/utils/passive_env_checker.py:146: UserWarning: [33mWARN: The obs returned by the `reset()` method was expecting a numpy array, actual type: <class 'torch.Tensor'>[0m
+  logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:486: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+  gym.logger.warn("Casting input x to numpy array.")
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/utils/passive_env_checker.py:146: UserWarning: [33mWARN: The obs returned by the `step()` method was expecting a numpy array, actual type: <class 'torch.Tensor'>[0m
+  logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:486: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+  gym.logger.warn("Casting input x to numpy array.")
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/utils/passive_env_checker.py:243: UserWarning: [33mWARN: The infos returned by `step` and the following `step` share an object, therefore, modifying one will modify the other. Environments should return new info data on every call as users commonly keep the data returned to them.[0m
+  logger.warn(
+CEM solve time: 32.6713 seconds
+CEM solve time: 5.8299 seconds
+[variation] swm/TwoRoom-v1 none: 86.0% (44s)
+===== tworoom  variation=background.color =====
+[2026-11-12 05:31:46,924][datasets][INFO] - JAX version 0.10.2 available.
+05:31:49 | INFO  | atomic_chec~| [atomic_save] installed crash-safe checkpoint plugin (write to sibling .tmp + fsync + atomic rename)
+[2026-11-12 05:31:50,109][root][INFO] - Cached 'action' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/tworoom.h5'
+[2026-11-12 05:31:50,117][root][INFO] - Cached 'proprio' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/tworoom.h5'
+[2026-11-12 05:31:50,451][stable_worldmodel.wm.utils][INFO] - Loading checkpoint from folder /sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/checkpoints/lewm-tworooms...
+05:31:50 | INFO  | utils.py    | Created ViT-tiny from scratch with config: {'hidden_size': 192, 'num_hidden_layers': 12, 'num_attention_heads': 3, 'intermediate_size': 768, 'image_size': 224, 'patch_size': 14}
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/utils/passive_env_checker.py:146: UserWarning: [33mWARN: The obs returned by the `reset()` method was expecting a numpy array, actual type: <class 'torch.Tensor'>[0m
+  logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:486: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+  gym.logger.warn("Casting input x to numpy array.")
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/utils/passive_env_checker.py:146: UserWarning: [33mWARN: The obs returned by the `step()` method was expecting a numpy array, actual type: <class 'torch.Tensor'>[0m
+  logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:486: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+  gym.logger.warn("Casting input x to numpy array.")
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/utils/passive_env_checker.py:243: UserWarning: [33mWARN: The infos returned by `step` and the following `step` share an object, therefore, modifying one will modify the other. Environments should return new info data on every call as users commonly keep the data returned to them.[0m
+  logger.warn(
+CEM solve time: 32.5190 seconds
+CEM solve time: 25.9714 seconds
+[variation] swm/TwoRoom-v1 background.color: 22.0% (66s)
+===== tworoom  variation=agent.color =====
+[2026-11-12 05:33:06,112][datasets][INFO] - JAX version 0.10.2 available.
+05:33:08 | INFO  | atomic_chec~| [atomic_save] installed crash-safe checkpoint plugin (write to sibling .tmp + fsync + atomic rename)
+[2026-11-12 05:33:09,318][root][INFO] - Cached 'action' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/tworoom.h5'
+[2026-11-12 05:33:09,326][root][INFO] - Cached 'proprio' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/tworoom.h5'
+[2026-11-12 05:33:09,664][stable_worldmodel.wm.utils][INFO] - Loading checkpoint from folder /sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/checkpoints/lewm-tworooms...
+05:33:09 | INFO  | utils.py    | Created ViT-tiny from scratch with config: {'hidden_size': 192, 'num_hidden_layers': 12, 'num_attention_heads': 3, 'intermediate_size': 768, 'image_size': 224, 'patch_size': 14}
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/utils/passive_env_checker.py:146: UserWarning: [33mWARN: The obs returned by the `reset()` method was expecting a numpy array, actual type: <class 'torch.Tensor'>[0m
+  logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:486: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+  gym.logger.warn("Casting input x to numpy array.")
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/utils/passive_env_checker.py:146: UserWarning: [33mWARN: The obs returned by the `step()` method was expecting a numpy array, actual type: <class 'torch.Tensor'>[0m
+  logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:486: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+  gym.logger.warn("Casting input x to numpy array.")
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/utils/passive_env_checker.py:243: UserWarning: [33mWARN: The infos returned by `step` and the following `step` share an object, therefore, modifying one will modify the other. Environments should return new info data on every call as users commonly keep the data returned to them.[0m
+  logger.warn(
+CEM solve time: 32.6423 seconds
+CEM solve time: 22.7604 seconds
+[variation] swm/TwoRoom-v1 agent.color: 32.0% (63s)
+===== tworoom  variation=target.color =====
+[2026-11-12 05:34:21,898][datasets][INFO] - JAX version 0.10.2 available.
+05:34:24 | INFO  | atomic_chec~| [atomic_save] installed crash-safe checkpoint plugin (write to sibling .tmp + fsync + atomic rename)
+[2026-11-12 05:34:25,077][root][INFO] - Cached 'action' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/tworoom.h5'
+[2026-11-12 05:34:25,084][root][INFO] - Cached 'proprio' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/tworoom.h5'
+[2026-11-12 05:34:25,420][stable_worldmodel.wm.utils][INFO] - Loading checkpoint from folder /sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/checkpoints/lewm-tworooms...
+05:34:25 | INFO  | utils.py    | Created ViT-tiny from scratch with config: {'hidden_size': 192, 'num_hidden_layers': 12, 'num_attention_heads': 3, 'intermediate_size': 768, 'image_size': 224, 'patch_size': 14}
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/utils/passive_env_checker.py:146: UserWarning: [33mWARN: The obs returned by the `reset()` method was expecting a numpy array, actual type: <class 'torch.Tensor'>[0m
+  logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:486: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+  gym.logger.warn("Casting input x to numpy array.")
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/utils/passive_env_checker.py:146: UserWarning: [33mWARN: The obs returned by the `step()` method was expecting a numpy array, actual type: <class 'torch.Tensor'>[0m
+  logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:486: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+  gym.logger.warn("Casting input x to numpy array.")
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/utils/passive_env_checker.py:243: UserWarning: [33mWARN: The infos returned by `step` and the following `step` share an object, therefore, modifying one will modify the other. Environments should return new info data on every call as users commonly keep the data returned to them.[0m
+  logger.warn(
+CEM solve time: 32.6190 seconds
+CEM solve time: 5.8515 seconds
+[variation] swm/TwoRoom-v1 target.color: 86.0% (44s)
+===== tworoom  variation=wall.color =====
+[2026-11-12 05:35:18,399][datasets][INFO] - JAX version 0.10.2 available.
+05:35:20 | INFO  | atomic_chec~| [atomic_save] installed crash-safe checkpoint plugin (write to sibling .tmp + fsync + atomic rename)
+[2026-11-12 05:35:21,515][root][INFO] - Cached 'action' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/tworoom.h5'
+[2026-11-12 05:35:21,522][root][INFO] - Cached 'proprio' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/tworoom.h5'
+[2026-11-12 05:35:21,864][stable_worldmodel.wm.utils][INFO] - Loading checkpoint from folder /sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/checkpoints/lewm-tworooms...
+05:35:22 | INFO  | utils.py    | Created ViT-tiny from scratch with config: {'hidden_size': 192, 'num_hidden_layers': 12, 'num_attention_heads': 3, 'intermediate_size': 768, 'image_size': 224, 'patch_size': 14}
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/utils/passive_env_checker.py:146: UserWarning: [33mWARN: The obs returned by the `reset()` method was expecting a numpy array, actual type: <class 'torch.Tensor'>[0m
+  logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:486: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+  gym.logger.warn("Casting input x to numpy array.")
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/utils/passive_env_checker.py:146: UserWarning: [33mWARN: The obs returned by the `step()` method was expecting a numpy array, actual type: <class 'torch.Tensor'>[0m
+  logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:486: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+  gym.logger.warn("Casting input x to numpy array.")
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/utils/passive_env_checker.py:243: UserWarning: [33mWARN: The infos returned by `step` and the following `step` share an object, therefore, modifying one will modify the other. Environments should return new info data on every call as users commonly keep the data returned to them.[0m
+  logger.warn(
+CEM solve time: 32.6190 seconds
+CEM solve time: 16.9102 seconds
+[variation] swm/TwoRoom-v1 wall.color: 54.0% (56s)
+===== tworoom  variation=door.color =====
+[2026-11-12 05:36:27,678][datasets][INFO] - JAX version 0.10.2 available.
+05:36:29 | INFO  | atomic_chec~| [atomic_save] installed crash-safe checkpoint plugin (write to sibling .tmp + fsync + atomic rename)
+[2026-11-12 05:36:30,901][root][INFO] - Cached 'action' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/tworoom.h5'
+[2026-11-12 05:36:30,909][root][INFO] - Cached 'proprio' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/tworoom.h5'
+[2026-11-12 05:36:31,238][stable_worldmodel.wm.utils][INFO] - Loading checkpoint from folder /sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/checkpoints/lewm-tworooms...
+05:36:31 | INFO  | utils.py    | Created ViT-tiny from scratch with config: {'hidden_size': 192, 'num_hidden_layers': 12, 'num_attention_heads': 3, 'intermediate_size': 768, 'image_size': 224, 'patch_size': 14}
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/utils/passive_env_checker.py:146: UserWarning: [33mWARN: The obs returned by the `reset()` method was expecting a numpy array, actual type: <class 'torch.Tensor'>[0m
+  logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:486: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+  gym.logger.warn("Casting input x to numpy array.")
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/utils/passive_env_checker.py:146: UserWarning: [33mWARN: The obs returned by the `step()` method was expecting a numpy array, actual type: <class 'torch.Tensor'>[0m
+  logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:486: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+  gym.logger.warn("Casting input x to numpy array.")
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/utils/passive_env_checker.py:243: UserWarning: [33mWARN: The infos returned by `step` and the following `step` share an object, therefore, modifying one will modify the other. Environments should return new info data on every call as users commonly keep the data returned to them.[0m
+  logger.warn(
+CEM solve time: 32.6303 seconds
+CEM solve time: 8.4551 seconds
+[variation] swm/TwoRoom-v1 door.color: 82.0% (46s)
+===== tworoom  variation=agent.radius =====
+[2026-11-12 05:37:27,192][datasets][INFO] - JAX version 0.10.2 available.
+05:37:29 | INFO  | atomic_chec~| [atomic_save] installed crash-safe checkpoint plugin (write to sibling .tmp + fsync + atomic rename)
+[2026-11-12 05:37:30,493][root][INFO] - Cached 'action' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/tworoom.h5'
+[2026-11-12 05:37:30,501][root][INFO] - Cached 'proprio' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/tworoom.h5'
+[2026-11-12 05:37:30,843][stable_worldmodel.wm.utils][INFO] - Loading checkpoint from folder /sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/checkpoints/lewm-tworooms...
+05:37:30 | INFO  | utils.py    | Created ViT-tiny from scratch with config: {'hidden_size': 192, 'num_hidden_layers': 12, 'num_attention_heads': 3, 'intermediate_size': 768, 'image_size': 224, 'patch_size': 14}
+[2026-11-12 05:37:31,921][stable_worldmodel.spaces][WARNING] - MultiDiscrete: value [14, 14, 14] does not satisfy constrain_fn
+[2026-11-12 05:37:31,921][stable_worldmodel.spaces][WARNING] - Dict: space door failed check()
+Error executing job with overrides: ['policy=lewm-tworooms', 'eval.goal_offset_steps=25', 'eval.eval_budget=50', '+variation=agent.radius', '+out_dir=/sfs/weka/scratch/qxe3fj/JEPA/results/lewm_variation/tworoom']
+05:37:31 | ERROR | richuru.py  | Exception:
+Traceback (most recent call last):
+
+> File "/sfs/weka/scratch/qxe3fj/JEPA/scripts/eval_variation.py", line 234, in <module>
+    run()
+    └ <function run at 0x7f68b8104720>
+
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/main.py", line 94, in decorated_main
+    _run_hydra(
+    └ <function _run_hydra at 0x7f69e40909a0>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 394, in _run_hydra
+    _run_app(
+    └ <function _run_app at 0x7f69e4090a40>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 457, in _run_app
+    run_and_report(
+    └ <function run_and_report at 0x7f69e4090900>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 223, in run_and_report
+    raise ex
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 220, in run_and_report
+    return func()
+           └ <function _run_app.<locals>.<lambda> at 0x7f68b7696fc0>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 458, in <lambda>
+    lambda: hydra.run(
+            │     └ <function Hydra.run at 0x7f69dff4fd80>
+            └ <hydra._internal.hydra.Hydra object at 0x7f68b810f550>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/hydra.py", line 132, in run
+    _ = ret.return_value
+        │   └ <property object at 0x7f69e4834540>
+        └ JobReturn(overrides=['policy=lewm-tworooms', 'eval.goal_offset_steps=25', 'eval.eval_budget=50', '+variation=agent.radius', '...
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/core/utils.py", line 263, in return_value
+    raise self._return_value
+          │    └ AssertionError('Values must be within space!')
+          └ JobReturn(overrides=['policy=lewm-tworooms', 'eval.goal_offset_steps=25', 'eval.eval_budget=50', '+variation=agent.radius', '...
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/core/utils.py", line 189, in run_job
+    ret.return_value = task_function(task_cfg)
+    │   │              │             └ {'cache_dir': None, 'solver': {'_target_': 'stable_worldmodel.planning.solver.CEMSolver', 'cost': '???', 'batch_size': 1, 'nu...
+    │   │              └ <function run at 0x7f68b8104680>
+    │   └ <property object at 0x7f69e4834540>
+    └ JobReturn(overrides=['policy=lewm-tworooms', 'eval.goal_offset_steps=25', 'eval.eval_budget=50', '+variation=agent.radius', '...
+
+  File "/sfs/weka/scratch/qxe3fj/JEPA/scripts/eval_variation.py", line 207, in run
+    res = evaluate_varied(world, dataset, episodes_idx, start_steps, cfg, variation)
+          │               │      │        │             │            │    └ 'agent.radius'
+          │               │      │        │             │            └ {'cache_dir': None, 'solver': {'_target_': 'stable_worldmodel.planning.solver.CEMSolver', 'cost': '???', 'batch_size': 1, 'nu...
+          │               │      │        │             └ [42, 69, 25, 16, 21, 17, 72, 21, 11, 36, 50, 13, 58, 40, 0, 8, 53, 7, 38, 22, 0, 73, 8, 34, 56, 36, 28, 27, 41, 38, 60, 45, 1...
+          │               │      │        └ [644, 687, 872, 905, 933, 953, 1287, 1661, 1832, 2019, 2280, 2773, 3558, 3719, 4032, 4339, 4398, 4445, 4467, 4515, 4516, 5014...
+          │               │      └ <stable_worldmodel.data.formats.hdf5.HDF5Dataset object at 0x7f68385b44d0>
+          │               └ <stable_worldmodel.world.world.World object at 0x7f68b771d510>
+          └ <function evaluate_varied at 0x7f68b82094e0>
+
+  File "/sfs/weka/scratch/qxe3fj/JEPA/scripts/eval_variation.py", line 83, in evaluate_varied
+    world.reset(seed=seeds, options=opts)
+    │     │          │              └ {'variation': ['agent.radius']}
+    │     │          └ [42000, 42001, 42002, 42003, 42004, 42005, 42006, 42007, 42008, 42009, 42010, 42011, 42012, 42013, 42014, 42015, 42016, 42017...
+    │     └ <function World.reset at 0x7f68b8104040>
+    └ <stable_worldmodel.world.world.World object at 0x7f68b771d510>
+
+  File "/sfs/weka/scratch/qxe3fj/JEPA/src/stable-worldmodel/stable_worldmodel/world/world.py", line 184, in reset
+    _, self.infos = self.envs.reset(seed=seed, options=options)
+       │    │       │    │    │          │             └ {'variation': ['agent.radius']}
+       │    │       │    │    │          └ [42000, 42001, 42002, 42003, 42004, 42005, 42006, 42007, 42008, 42009, 42010, 42011, 42012, 42013, 42014, 42015, 42016, 42017...
+       │    │       │    │    └ <function EnvPool.reset at 0x7f68b8060ae0>
+       │    │       │    └ <stable_worldmodel.world.env_pool.EnvPool object at 0x7f68b75edd50>
+       │    │       └ <stable_worldmodel.world.world.World object at 0x7f68b771d510>
+       │    └ {}
+       └ <stable_worldmodel.world.world.World object at 0x7f68b771d510>
+
+  File "/sfs/weka/scratch/qxe3fj/JEPA/src/stable-worldmodel/stable_worldmodel/world/env_pool.py", line 105, in reset
+    _, per_env_infos[i] = env.reset(seed=seeds[i], options=opts[i])
+       │             │    │   │          │     │           │    └ 0
+       │             │    │   │          │     │           └ [{'variation': ['agent.radius']}, {'variation': ['agent.radius']}, {'variation': ['agent.radius']}, {'variation': ['agent.rad...
+       │             │    │   │          │     └ 0
+       │             │    │   │          └ [42000, 42001, 42002, 42003, 42004, 42005, 42006, 42007, 42008, 42009, 42010, 42011, 42012, 42013, 42014, 42015, 42016, 42017...
+       │             │    │   └ <function Wrapper.reset at 0x7f68b832bec0>
+       │             │    └ <MegaWrapper<ResizeGoalWrapper<EnsureInfoKeysWrapper<EverythingToInfoWrapper<AddPixelsWrapper<TimeLimit<OrderEnforcing<Passiv...
+       │             └ 0
+       └ [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None...
+
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/core.py", line 348, in reset
+    return self.env.reset(seed=seed, options=options)
+           │    │   │          │             └ {'variation': ['agent.radius']}
+           │    │   │          └ 42000
+           │    │   └ <function ResizeGoalWrapper.reset at 0x7f68b80ebba0>
+           │    └ <ResizeGoalWrapper<EnsureInfoKeysWrapper<EverythingToInfoWrapper<AddPixelsWrapper<TimeLimit<OrderEnforcing<PassiveEnvChecker<...
+           └ <MegaWrapper<ResizeGoalWrapper<EnsureInfoKeysWrapper<EverythingToInfoWrapper<AddPixelsWrapper<TimeLimit<OrderEnforcing<Passiv...
+
+  File "/sfs/weka/scratch/qxe3fj/JEPA/src/stable-worldmodel/stable_worldmodel/wrapper/default.py", line 548, in reset
+    obs, info = self.env.reset(*args, **kwargs)
+                │    │   │      │       └ {'seed': 42000, 'options': {'variation': ['agent.radius']}}
+                │    │   │      └ ()
+                │    │   └ <function EnsureInfoKeysWrapper.reset at 0x7f68b80eae80>
+                │    └ <EnsureInfoKeysWrapper<EverythingToInfoWrapper<AddPixelsWrapper<TimeLimit<OrderEnforcing<PassiveEnvChecker<TwoRoomEnv<swm/Two...
+                └ <ResizeGoalWrapper<EnsureInfoKeysWrapper<EverythingToInfoWrapper<AddPixelsWrapper<TimeLimit<OrderEnforcing<PassiveEnvChecker<...
+
+  File "/sfs/weka/scratch/qxe3fj/JEPA/src/stable-worldmodel/stable_worldmodel/wrapper/default.py", line 72, in reset
+    obs, info = self.env.reset(*args, **kwargs)
+                │    │   │      │       └ {'seed': 42000, 'options': {'variation': ['agent.radius']}}
+                │    │   │      └ ()
+                │    │   └ <function EverythingToInfoWrapper.reset at 0x7f68b80eb420>
+                │    └ <EverythingToInfoWrapper<AddPixelsWrapper<TimeLimit<OrderEnforcing<PassiveEnvChecker<TwoRoomEnv<swm/TwoRoom-v1>>>>>>>
+                └ <EnsureInfoKeysWrapper<EverythingToInfoWrapper<AddPixelsWrapper<TimeLimit<OrderEnforcing<PassiveEnvChecker<TwoRoomEnv<swm/Two...
+
+  File "/sfs/weka/scratch/qxe3fj/JEPA/src/stable-worldmodel/stable_worldmodel/wrapper/default.py", line 230, in reset
+    obs, info = self.env.reset(*args, **kwargs)
+                │    │   │      │       └ {'seed': 42000, 'options': {'variation': ['agent.radius']}}
+                │    │   │      └ ()
+                │    │   └ <function AddPixelsWrapper.reset at 0x7f68b80eb920>
+                │    └ <AddPixelsWrapper<TimeLimit<OrderEnforcing<PassiveEnvChecker<TwoRoomEnv<swm/TwoRoom-v1>>>>>>
+                └ <EverythingToInfoWrapper<AddPixelsWrapper<TimeLimit<OrderEnforcing<PassiveEnvChecker<TwoRoomEnv<swm/TwoRoom-v1>>>>>>>
+
+  File "/sfs/weka/scratch/qxe3fj/JEPA/src/stable-worldmodel/stable_worldmodel/wrapper/default.py", line 470, in reset
+    obs, info = self.env.reset(*args, **kwargs)
+                │    │   │      │       └ {'seed': 42000, 'options': {'variation': ['agent.radius']}}
+                │    │   │      └ ()
+                │    │   └ <function TimeLimit.reset at 0x7f68b81e9da0>
+                │    └ <TimeLimit<OrderEnforcing<PassiveEnvChecker<TwoRoomEnv<swm/TwoRoom-v1>>>>>
+                └ <AddPixelsWrapper<TimeLimit<OrderEnforcing<PassiveEnvChecker<TwoRoomEnv<swm/TwoRoom-v1>>>>>>
+
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/wrappers/common.py", line 151, in reset
+    return super().reset(seed=seed, options=options)
+                              │             └ {'variation': ['agent.radius']}
+                              └ 42000
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/core.py", line 348, in reset
+    return self.env.reset(seed=seed, options=options)
+           │    │   │          │             └ {'variation': ['agent.radius']}
+           │    │   │          └ 42000
+           │    │   └ <function OrderEnforcing.reset at 0x7f68b81ea520>
+           │    └ <OrderEnforcing<PassiveEnvChecker<TwoRoomEnv<swm/TwoRoom-v1>>>>
+           └ <TimeLimit<OrderEnforcing<PassiveEnvChecker<TwoRoomEnv<swm/TwoRoom-v1>>>>>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/wrappers/common.py", line 431, in reset
+    return super().reset(seed=seed, options=options)
+                              │             └ {'variation': ['agent.radius']}
+                              └ 42000
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/core.py", line 348, in reset
+    return self.env.reset(seed=seed, options=options)
+           │    │   │          │             └ {'variation': ['agent.radius']}
+           │    │   │          └ 42000
+           │    │   └ <function PassiveEnvChecker.reset at 0x7f68b81ea160>
+           │    └ <PassiveEnvChecker<TwoRoomEnv<swm/TwoRoom-v1>>>
+           └ <OrderEnforcing<PassiveEnvChecker<TwoRoomEnv<swm/TwoRoom-v1>>>>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/wrappers/common.py", line 321, in reset
+    self._previous_data = env_reset_passive_checker(
+    │    │                └ <function env_reset_passive_checker at 0x7f68b81e9a80>
+    │    └ None
+    └ <PassiveEnvChecker<TwoRoomEnv<swm/TwoRoom-v1>>>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/utils/passive_env_checker.py", line 274, in env_reset_passive_checker
+    result = env.reset(**kwargs)
+             │   │       └ {'seed': 42000, 'options': {'variation': ['agent.radius']}}
+             │   └ <function TwoRoomEnv.reset at 0x7f68b759c900>
+             └ <stable_worldmodel.envs.two_room.env.TwoRoomEnv object at 0x7f68b76a73d0>
+
+  File "/sfs/weka/scratch/qxe3fj/JEPA/src/stable-worldmodel/stable_worldmodel/envs/two_room/env.py", line 236, in reset
+    swm_spaces.reset_variation_space(
+    │          └ <function reset_variation_space at 0x7f68b759c860>
+    └ <module 'stable_worldmodel.spaces' from '/sfs/weka/scratch/qxe3fj/JEPA/src/stable-worldmodel/stable_worldmodel/spaces.py'>
+
+  File "/sfs/weka/scratch/qxe3fj/JEPA/src/stable-worldmodel/stable_worldmodel/spaces.py", line 51, in reset_variation_space
+    variation_space.update(var_keys)
+    │               │      └ ['agent.radius']
+    │               └ <function Dict.update at 0x7f68b759e840>
+    └ Dict('agent': Dict('color': Box(0, 255, (3,), uint8), 'position': Box(14.0, 209.0, (2,), float32), 'radius': Box(7.0, 14.0, (...
+
+  File "/sfs/weka/scratch/qxe3fj/JEPA/src/stable-worldmodel/stable_worldmodel/spaces.py", line 759, in update
+    assert self.check(debug=True), 'Values must be within space!'
+           │    └ <function Dict.check at 0x7f68b759e660>
+           └ Dict('agent': Dict('color': Box(0, 255, (3,), uint8), 'position': Box(14.0, 209.0, (2,), float32), 'radius': Box(7.0, 14.0, (...
+
+AssertionError: Values must be within space!
+===== tworoom  variation=target.radius =====
+[2026-11-12 05:37:40,702][datasets][INFO] - JAX version 0.10.2 available.
+05:37:42 | INFO  | atomic_chec~| [atomic_save] installed crash-safe checkpoint plugin (write to sibling .tmp + fsync + atomic rename)
+[2026-11-12 05:37:43,862][root][INFO] - Cached 'action' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/tworoom.h5'
+[2026-11-12 05:37:43,870][root][INFO] - Cached 'proprio' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/tworoom.h5'
+[2026-11-12 05:37:44,201][stable_worldmodel.wm.utils][INFO] - Loading checkpoint from folder /sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/checkpoints/lewm-tworooms...
+05:37:44 | INFO  | utils.py    | Created ViT-tiny from scratch with config: {'hidden_size': 192, 'num_hidden_layers': 12, 'num_attention_heads': 3, 'intermediate_size': 768, 'image_size': 224, 'patch_size': 14}
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/utils/passive_env_checker.py:146: UserWarning: [33mWARN: The obs returned by the `reset()` method was expecting a numpy array, actual type: <class 'torch.Tensor'>[0m
+  logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:486: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+  gym.logger.warn("Casting input x to numpy array.")
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/utils/passive_env_checker.py:146: UserWarning: [33mWARN: The obs returned by the `step()` method was expecting a numpy array, actual type: <class 'torch.Tensor'>[0m
+  logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:486: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+  gym.logger.warn("Casting input x to numpy array.")
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/utils/passive_env_checker.py:243: UserWarning: [33mWARN: The infos returned by `step` and the following `step` share an object, therefore, modifying one will modify the other. Environments should return new info data on every call as users commonly keep the data returned to them.[0m
+  logger.warn(
+CEM solve time: 32.5404 seconds
+CEM solve time: 5.8437 seconds
+[variation] swm/TwoRoom-v1 target.radius: 86.0% (44s)
+===== tworoom  variation=agent.speed =====
+[2026-11-12 05:38:37,674][datasets][INFO] - JAX version 0.10.2 available.
+05:38:39 | INFO  | atomic_chec~| [atomic_save] installed crash-safe checkpoint plugin (write to sibling .tmp + fsync + atomic rename)
+[2026-11-12 05:38:40,919][root][INFO] - Cached 'action' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/tworoom.h5'
+[2026-11-12 05:38:40,928][root][INFO] - Cached 'proprio' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/tworoom.h5'
+[2026-11-12 05:38:41,268][stable_worldmodel.wm.utils][INFO] - Loading checkpoint from folder /sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/checkpoints/lewm-tworooms...
+05:38:41 | INFO  | utils.py    | Created ViT-tiny from scratch with config: {'hidden_size': 192, 'num_hidden_layers': 12, 'num_attention_heads': 3, 'intermediate_size': 768, 'image_size': 224, 'patch_size': 14}
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/utils/passive_env_checker.py:146: UserWarning: [33mWARN: The obs returned by the `reset()` method was expecting a numpy array, actual type: <class 'torch.Tensor'>[0m
+  logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:486: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+  gym.logger.warn("Casting input x to numpy array.")
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/utils/passive_env_checker.py:146: UserWarning: [33mWARN: The obs returned by the `step()` method was expecting a numpy array, actual type: <class 'torch.Tensor'>[0m
+  logger.warn(
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:486: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+  gym.logger.warn("Casting input x to numpy array.")
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/utils/passive_env_checker.py:243: UserWarning: [33mWARN: The infos returned by `step` and the following `step` share an object, therefore, modifying one will modify the other. Environments should return new info data on every call as users commonly keep the data returned to them.[0m
+  logger.warn(
+CEM solve time: 32.5387 seconds
+CEM solve time: 11.6802 seconds
+[variation] swm/TwoRoom-v1 agent.speed: 76.0% (50s)
+== summary ==
+  "variation": "agent.color",	  "success_rate": 32.0,
+  "variation": "agent.speed",	  "success_rate": 76.0,
+  "variation": "background.color",	  "success_rate": 22.0,
+  "variation": "door.color",	  "success_rate": 82.0,
+  "variation": "none",	  "success_rate": 86.0,
+  "variation": "target.color",	  "success_rate": 86.0,
+  "variation": "target.radius",	  "success_rate": 86.0,
+  "variation": "wall.color",	  "success_rate": 54.0,

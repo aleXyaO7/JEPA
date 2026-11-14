@@ -1,0 +1,4 @@
+- policy=lewm-tworooms
+- eval.goal_offset_steps=25
+- eval.eval_budget=50
+- output.filename=trace_tworoom_offset25_results.txt

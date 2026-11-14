@@ -1,0 +1,688 @@
+name, memory.total [MiB]
+NVIDIA RTX A6000, 49140 MiB
+===== pusht  variation=none =====
+[2026-11-12 05:27:59,228][datasets][INFO] - JAX version 0.10.2 available.
+05:28:03 | INFO  | atomic_chec~| [atomic_save] installed crash-safe checkpoint plugin (write to sibling .tmp + fsync + atomic rename)
+[2026-11-12 05:28:05,881][root][INFO] - Cached 'action' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-12 05:28:06,704][root][INFO] - Cached 'proprio' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-12 05:28:07,443][root][INFO] - Cached 'state' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-12 05:28:08,712][stable_worldmodel.wm.utils][INFO] - Loading checkpoint from folder /sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/checkpoints/lewm-pusht...
+05:28:08 | INFO  | utils.py    | Created ViT-tiny from scratch with config: {'hidden_size': 192, 'num_hidden_layers': 12, 'num_attention_heads': 3, 'intermediate_size': 768, 'image_size': 224, 'patch_size': 14}
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:486: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+  gym.logger.warn("Casting input x to numpy array.")
+Error executing job with overrides: ['policy=lewm-pusht', 'eval.goal_offset_steps=25', 'eval.eval_budget=50', '+variation=none', '+out_dir=/sfs/weka/scratch/qxe3fj/JEPA/results/lewm_variation/pusht']
+05:28:10 | ERROR | richuru.py  | Exception:
+Traceback (most recent call last):
+
+> File "/sfs/weka/scratch/qxe3fj/JEPA/scripts/eval_variation.py", line 234, in <module>
+    run()
+    └ <function run at 0x7fa930058720>
+
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/main.py", line 94, in decorated_main
+    _run_hydra(
+    └ <function _run_hydra at 0x7faa57f309a0>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 394, in _run_hydra
+    _run_app(
+    └ <function _run_app at 0x7faa57f30a40>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 457, in _run_app
+    run_and_report(
+    └ <function run_and_report at 0x7faa57f30900>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 223, in run_and_report
+    raise ex
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 220, in run_and_report
+    return func()
+           └ <function _run_app.<locals>.<lambda> at 0x7fa92f5eb060>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 458, in <lambda>
+    lambda: hydra.run(
+            │     └ <function Hydra.run at 0x7faa57e4bd80>
+            └ <hydra._internal.hydra.Hydra object at 0x7fa92ff852d0>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/hydra.py", line 132, in run
+    _ = ret.return_value
+        │   └ <property object at 0x7faa5c774810>
+        └ JobReturn(overrides=['policy=lewm-pusht', 'eval.goal_offset_steps=25', 'eval.eval_budget=50', '+variation=none', '+out_dir=/s...
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/core/utils.py", line 263, in return_value
+    raise self._return_value
+          │    └ AssertionError('state restore failed')
+          └ JobReturn(overrides=['policy=lewm-pusht', 'eval.goal_offset_steps=25', 'eval.eval_budget=50', '+variation=none', '+out_dir=/s...
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/core/utils.py", line 189, in run_job
+    ret.return_value = task_function(task_cfg)
+    │   │              │             └ {'cache_dir': None, 'solver': {'_target_': 'stable_worldmodel.planning.solver.CEMSolver', 'cost': '???', 'batch_size': 1, 'nu...
+    │   │              └ <function run at 0x7fa930058680>
+    │   └ <property object at 0x7faa5c774810>
+    └ JobReturn(overrides=['policy=lewm-pusht', 'eval.goal_offset_steps=25', 'eval.eval_budget=50', '+variation=none', '+out_dir=/s...
+
+  File "/sfs/weka/scratch/qxe3fj/JEPA/scripts/eval_variation.py", line 207, in run
+    res = evaluate_varied(world, dataset, episodes_idx, start_steps, cfg, variation)
+          │               │      │        │             │            │    └ 'none'
+          │               │      │        │             │            └ {'cache_dir': None, 'solver': {'_target_': 'stable_worldmodel.planning.solver.CEMSolver', 'cost': '???', 'batch_size': 1, 'nu...
+          │               │      │        │             └ [36, 129, 40, 59, 19, 13, 114, 115, 2, 133, 20, 126, 49, 65, 117, 10, 130, 102, 89, 37, 20, 26, 51, 136, 28, 33, 26, 95, 47, ...
+          │               │      │        └ [1235, 1316, 1639, 1694, 1761, 1820, 2635, 3184, 3517, 3838, 4299, 5123, 6651, 6983, 7572, 8235, 8313, 8373, 8408, 8486, 8488...
+          │               │      └ <stable_worldmodel.data.formats.hdf5.HDF5Dataset object at 0x7fa8acd5d950>
+          │               └ <stable_worldmodel.world.world.World object at 0x7fa92f53ec90>
+          └ <function evaluate_varied at 0x7fa93015d4e0>
+
+  File "/sfs/weka/scratch/qxe3fj/JEPA/scripts/eval_variation.py", line 102, in evaluate_varied
+    assert np.array_equal(render_resized(env, hw), cur), 'state restore failed'
+           │  │           │              │    │    └ array([[[255, 255, 255],
+           │  │           │              │    │              [255, 255, 255],
+           │  │           │              │    │              [255, 255, 255],
+           │  │           │              │    │              ...,
+           │  │           │              │    │              [255, 255, 255],
+           │  │           │              │    │              [255...
+           │  │           │              │    └ (224, 224)
+           │  │           │              └ <stable_worldmodel.envs.pusht.env.PushT object at 0x7fa8e0b95790>
+           │  │           └ <function render_resized at 0x7fa9301f37e0>
+           │  └ <function array_equal at 0x7faa41a6b4f0>
+           └ <module 'numpy' from '/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/numpy/__init__.py'>
+
+AssertionError: state restore failed
+===== pusht  variation=background.color =====
+[2026-11-12 05:28:21,154][datasets][INFO] - JAX version 0.10.2 available.
+05:28:23 | INFO  | atomic_chec~| [atomic_save] installed crash-safe checkpoint plugin (write to sibling .tmp + fsync + atomic rename)
+[2026-11-12 05:28:24,831][root][INFO] - Cached 'action' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-12 05:28:24,865][root][INFO] - Cached 'proprio' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-12 05:28:24,912][root][INFO] - Cached 'state' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-12 05:28:26,158][stable_worldmodel.wm.utils][INFO] - Loading checkpoint from folder /sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/checkpoints/lewm-pusht...
+05:28:26 | INFO  | utils.py    | Created ViT-tiny from scratch with config: {'hidden_size': 192, 'num_hidden_layers': 12, 'num_attention_heads': 3, 'intermediate_size': 768, 'image_size': 224, 'patch_size': 14}
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:486: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+  gym.logger.warn("Casting input x to numpy array.")
+Error executing job with overrides: ['policy=lewm-pusht', 'eval.goal_offset_steps=25', 'eval.eval_budget=50', '+variation=background.color', '+out_dir=/sfs/weka/scratch/qxe3fj/JEPA/results/lewm_variation/pusht']
+05:28:27 | ERROR | richuru.py  | Exception:
+Traceback (most recent call last):
+
+> File "/sfs/weka/scratch/qxe3fj/JEPA/scripts/eval_variation.py", line 234, in <module>
+    run()
+    └ <function run at 0x7fe7b102c720>
+
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/main.py", line 94, in decorated_main
+    _run_hydra(
+    └ <function _run_hydra at 0x7fe8dd0349a0>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 394, in _run_hydra
+    _run_app(
+    └ <function _run_app at 0x7fe8dd034a40>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 457, in _run_app
+    run_and_report(
+    └ <function run_and_report at 0x7fe8dd034900>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 223, in run_and_report
+    raise ex
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 220, in run_and_report
+    return func()
+           └ <function _run_app.<locals>.<lambda> at 0x7fe7b106b060>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 458, in <lambda>
+    lambda: hydra.run(
+            │     └ <function Hydra.run at 0x7fe8dcefbd80>
+            └ <hydra._internal.hydra.Hydra object at 0x7fe7b1037750>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/hydra.py", line 132, in run
+    _ = ret.return_value
+        │   └ <property object at 0x7fe8dd7dc9f0>
+        └ JobReturn(overrides=['policy=lewm-pusht', 'eval.goal_offset_steps=25', 'eval.eval_budget=50', '+variation=background.color', ...
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/core/utils.py", line 263, in return_value
+    raise self._return_value
+          │    └ AssertionError('state restore failed')
+          └ JobReturn(overrides=['policy=lewm-pusht', 'eval.goal_offset_steps=25', 'eval.eval_budget=50', '+variation=background.color', ...
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/core/utils.py", line 189, in run_job
+    ret.return_value = task_function(task_cfg)
+    │   │              │             └ {'cache_dir': None, 'solver': {'_target_': 'stable_worldmodel.planning.solver.CEMSolver', 'cost': '???', 'batch_size': 1, 'nu...
+    │   │              └ <function run at 0x7fe7b102c680>
+    │   └ <property object at 0x7fe8dd7dc9f0>
+    └ JobReturn(overrides=['policy=lewm-pusht', 'eval.goal_offset_steps=25', 'eval.eval_budget=50', '+variation=background.color', ...
+
+  File "/sfs/weka/scratch/qxe3fj/JEPA/scripts/eval_variation.py", line 207, in run
+    res = evaluate_varied(world, dataset, episodes_idx, start_steps, cfg, variation)
+          │               │      │        │             │            │    └ 'background.color'
+          │               │      │        │             │            └ {'cache_dir': None, 'solver': {'_target_': 'stable_worldmodel.planning.solver.CEMSolver', 'cost': '???', 'batch_size': 1, 'nu...
+          │               │      │        │             └ [36, 129, 40, 59, 19, 13, 114, 115, 2, 133, 20, 126, 49, 65, 117, 10, 130, 102, 89, 37, 20, 26, 51, 136, 28, 33, 26, 95, 47, ...
+          │               │      │        └ [1235, 1316, 1639, 1694, 1761, 1820, 2635, 3184, 3517, 3838, 4299, 5123, 6651, 6983, 7572, 8235, 8313, 8373, 8408, 8486, 8488...
+          │               │      └ <stable_worldmodel.data.formats.hdf5.HDF5Dataset object at 0x7fe72d954990>
+          │               └ <stable_worldmodel.world.world.World object at 0x7fe7b050f010>
+          └ <function evaluate_varied at 0x7fe7b11314e0>
+
+  File "/sfs/weka/scratch/qxe3fj/JEPA/scripts/eval_variation.py", line 102, in evaluate_varied
+    assert np.array_equal(render_resized(env, hw), cur), 'state restore failed'
+           │  │           │              │    │    └ array([[[  4,  25, 248],
+           │  │           │              │    │              [  4,  25, 248],
+           │  │           │              │    │              [  4,  25, 248],
+           │  │           │              │    │              ...,
+           │  │           │              │    │              [  4,  25, 248],
+           │  │           │              │    │              [  4...
+           │  │           │              │    └ (224, 224)
+           │  │           │              └ <stable_worldmodel.envs.pusht.env.PushT object at 0x7fe761be1250>
+           │  │           └ <function render_resized at 0x7fe7b11c77e0>
+           │  └ <function array_equal at 0x7fe8dc12b770>
+           └ <module 'numpy' from '/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/numpy/__init__.py'>
+
+AssertionError: state restore failed
+===== pusht  variation=agent.color =====
+[2026-11-12 05:28:37,224][datasets][INFO] - JAX version 0.10.2 available.
+05:28:39 | INFO  | atomic_chec~| [atomic_save] installed crash-safe checkpoint plugin (write to sibling .tmp + fsync + atomic rename)
+[2026-11-12 05:28:40,352][root][INFO] - Cached 'action' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-12 05:28:40,385][root][INFO] - Cached 'proprio' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-12 05:28:40,430][root][INFO] - Cached 'state' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-12 05:28:41,635][stable_worldmodel.wm.utils][INFO] - Loading checkpoint from folder /sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/checkpoints/lewm-pusht...
+05:28:41 | INFO  | utils.py    | Created ViT-tiny from scratch with config: {'hidden_size': 192, 'num_hidden_layers': 12, 'num_attention_heads': 3, 'intermediate_size': 768, 'image_size': 224, 'patch_size': 14}
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:486: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+  gym.logger.warn("Casting input x to numpy array.")
+Error executing job with overrides: ['policy=lewm-pusht', 'eval.goal_offset_steps=25', 'eval.eval_budget=50', '+variation=agent.color', '+out_dir=/sfs/weka/scratch/qxe3fj/JEPA/results/lewm_variation/pusht']
+05:28:43 | ERROR | richuru.py  | Exception:
+Traceback (most recent call last):
+
+> File "/sfs/weka/scratch/qxe3fj/JEPA/scripts/eval_variation.py", line 234, in <module>
+    run()
+    └ <function run at 0x7ff2e9428720>
+
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/main.py", line 94, in decorated_main
+    _run_hydra(
+    └ <function _run_hydra at 0x7ff415cf89a0>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 394, in _run_hydra
+    _run_app(
+    └ <function _run_app at 0x7ff415cf8a40>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 457, in _run_app
+    run_and_report(
+    └ <function run_and_report at 0x7ff415cf8900>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 223, in run_and_report
+    raise ex
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 220, in run_and_report
+    return func()
+           └ <function _run_app.<locals>.<lambda> at 0x7ff2e9467060>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 458, in <lambda>
+    lambda: hydra.run(
+            │     └ <function Hydra.run at 0x7ff415bbfd80>
+            └ <hydra._internal.hydra.Hydra object at 0x7ff2e9e18810>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/hydra.py", line 132, in run
+    _ = ret.return_value
+        │   └ <property object at 0x7ff4164a0950>
+        └ JobReturn(overrides=['policy=lewm-pusht', 'eval.goal_offset_steps=25', 'eval.eval_budget=50', '+variation=agent.color', '+out...
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/core/utils.py", line 263, in return_value
+    raise self._return_value
+          │    └ AssertionError('state restore failed')
+          └ JobReturn(overrides=['policy=lewm-pusht', 'eval.goal_offset_steps=25', 'eval.eval_budget=50', '+variation=agent.color', '+out...
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/core/utils.py", line 189, in run_job
+    ret.return_value = task_function(task_cfg)
+    │   │              │             └ {'cache_dir': None, 'solver': {'_target_': 'stable_worldmodel.planning.solver.CEMSolver', 'cost': '???', 'batch_size': 1, 'nu...
+    │   │              └ <function run at 0x7ff2e9428680>
+    │   └ <property object at 0x7ff4164a0950>
+    └ JobReturn(overrides=['policy=lewm-pusht', 'eval.goal_offset_steps=25', 'eval.eval_budget=50', '+variation=agent.color', '+out...
+
+  File "/sfs/weka/scratch/qxe3fj/JEPA/scripts/eval_variation.py", line 207, in run
+    res = evaluate_varied(world, dataset, episodes_idx, start_steps, cfg, variation)
+          │               │      │        │             │            │    └ 'agent.color'
+          │               │      │        │             │            └ {'cache_dir': None, 'solver': {'_target_': 'stable_worldmodel.planning.solver.CEMSolver', 'cost': '???', 'batch_size': 1, 'nu...
+          │               │      │        │             └ [36, 129, 40, 59, 19, 13, 114, 115, 2, 133, 20, 126, 49, 65, 117, 10, 130, 102, 89, 37, 20, 26, 51, 136, 28, 33, 26, 95, 47, ...
+          │               │      │        └ [1235, 1316, 1639, 1694, 1761, 1820, 2635, 3184, 3517, 3838, 4299, 5123, 6651, 6983, 7572, 8235, 8313, 8373, 8408, 8486, 8488...
+          │               │      └ <stable_worldmodel.data.formats.hdf5.HDF5Dataset object at 0x7ff26336e690>
+          │               └ <stable_worldmodel.world.world.World object at 0x7ff2e93aab10>
+          └ <function evaluate_varied at 0x7ff2e9ddd4e0>
+
+  File "/sfs/weka/scratch/qxe3fj/JEPA/scripts/eval_variation.py", line 102, in evaluate_varied
+    assert np.array_equal(render_resized(env, hw), cur), 'state restore failed'
+           │  │           │              │    │    └ array([[[255, 255, 255],
+           │  │           │              │    │              [255, 255, 255],
+           │  │           │              │    │              [255, 255, 255],
+           │  │           │              │    │              ...,
+           │  │           │              │    │              [255, 255, 255],
+           │  │           │              │    │              [255...
+           │  │           │              │    └ (224, 224)
+           │  │           │              └ <stable_worldmodel.envs.pusht.env.PushT object at 0x7ff29a2c8c10>
+           │  │           └ <function render_resized at 0x7ff2ea0737e0>
+           │  └ <function array_equal at 0x7ff414702ff0>
+           └ <module 'numpy' from '/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/numpy/__init__.py'>
+
+AssertionError: state restore failed
+===== pusht  variation=block.color =====
+[2026-11-12 05:28:52,069][datasets][INFO] - JAX version 0.10.2 available.
+05:28:54 | INFO  | atomic_chec~| [atomic_save] installed crash-safe checkpoint plugin (write to sibling .tmp + fsync + atomic rename)
+[2026-11-12 05:28:55,206][root][INFO] - Cached 'action' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-12 05:28:55,238][root][INFO] - Cached 'proprio' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-12 05:28:55,283][root][INFO] - Cached 'state' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-12 05:28:56,497][stable_worldmodel.wm.utils][INFO] - Loading checkpoint from folder /sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/checkpoints/lewm-pusht...
+05:28:56 | INFO  | utils.py    | Created ViT-tiny from scratch with config: {'hidden_size': 192, 'num_hidden_layers': 12, 'num_attention_heads': 3, 'intermediate_size': 768, 'image_size': 224, 'patch_size': 14}
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:486: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+  gym.logger.warn("Casting input x to numpy array.")
+Error executing job with overrides: ['policy=lewm-pusht', 'eval.goal_offset_steps=25', 'eval.eval_budget=50', '+variation=block.color', '+out_dir=/sfs/weka/scratch/qxe3fj/JEPA/results/lewm_variation/pusht']
+05:28:57 | ERROR | richuru.py  | Exception:
+Traceback (most recent call last):
+
+> File "/sfs/weka/scratch/qxe3fj/JEPA/scripts/eval_variation.py", line 234, in <module>
+    run()
+    └ <function run at 0x7f5d53128720>
+
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/main.py", line 94, in decorated_main
+    _run_hydra(
+    └ <function _run_hydra at 0x7f5e7b9089a0>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 394, in _run_hydra
+    _run_app(
+    └ <function _run_app at 0x7f5e7b908a40>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 457, in _run_app
+    run_and_report(
+    └ <function run_and_report at 0x7f5e7b908900>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 223, in run_and_report
+    raise ex
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 220, in run_and_report
+    return func()
+           └ <function _run_app.<locals>.<lambda> at 0x7f5d53167060>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 458, in <lambda>
+    lambda: hydra.run(
+            │     └ <function Hydra.run at 0x7f5e7b827d80>
+            └ <hydra._internal.hydra.Hydra object at 0x7f5d531455d0>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/hydra.py", line 132, in run
+    _ = ret.return_value
+        │   └ <property object at 0x7f5e80140860>
+        └ JobReturn(overrides=['policy=lewm-pusht', 'eval.goal_offset_steps=25', 'eval.eval_budget=50', '+variation=block.color', '+out...
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/core/utils.py", line 263, in return_value
+    raise self._return_value
+          │    └ AssertionError('state restore failed')
+          └ JobReturn(overrides=['policy=lewm-pusht', 'eval.goal_offset_steps=25', 'eval.eval_budget=50', '+variation=block.color', '+out...
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/core/utils.py", line 189, in run_job
+    ret.return_value = task_function(task_cfg)
+    │   │              │             └ {'cache_dir': None, 'solver': {'_target_': 'stable_worldmodel.planning.solver.CEMSolver', 'cost': '???', 'batch_size': 1, 'nu...
+    │   │              └ <function run at 0x7f5d53128680>
+    │   └ <property object at 0x7f5e80140860>
+    └ JobReturn(overrides=['policy=lewm-pusht', 'eval.goal_offset_steps=25', 'eval.eval_budget=50', '+variation=block.color', '+out...
+
+  File "/sfs/weka/scratch/qxe3fj/JEPA/scripts/eval_variation.py", line 207, in run
+    res = evaluate_varied(world, dataset, episodes_idx, start_steps, cfg, variation)
+          │               │      │        │             │            │    └ 'block.color'
+          │               │      │        │             │            └ {'cache_dir': None, 'solver': {'_target_': 'stable_worldmodel.planning.solver.CEMSolver', 'cost': '???', 'batch_size': 1, 'nu...
+          │               │      │        │             └ [36, 129, 40, 59, 19, 13, 114, 115, 2, 133, 20, 126, 49, 65, 117, 10, 130, 102, 89, 37, 20, 26, 51, 136, 28, 33, 26, 95, 47, ...
+          │               │      │        └ [1235, 1316, 1639, 1694, 1761, 1820, 2635, 3184, 3517, 3838, 4299, 5123, 6651, 6983, 7572, 8235, 8313, 8373, 8408, 8486, 8488...
+          │               │      └ <stable_worldmodel.data.formats.hdf5.HDF5Dataset object at 0x7f5cd1017250>
+          │               └ <stable_worldmodel.world.world.World object at 0x7f5d52eba250>
+          └ <function evaluate_varied at 0x7f5d53ad94e0>
+
+  File "/sfs/weka/scratch/qxe3fj/JEPA/scripts/eval_variation.py", line 102, in evaluate_varied
+    assert np.array_equal(render_resized(env, hw), cur), 'state restore failed'
+           │  │           │              │    │    └ array([[[255, 255, 255],
+           │  │           │              │    │              [255, 255, 255],
+           │  │           │              │    │              [255, 255, 255],
+           │  │           │              │    │              ...,
+           │  │           │              │    │              [255, 255, 255],
+           │  │           │              │    │              [255...
+           │  │           │              │    └ (224, 224)
+           │  │           │              └ <stable_worldmodel.envs.pusht.env.PushT object at 0x7f5d03fd1c90>
+           │  │           └ <function render_resized at 0x7f5d53b777e0>
+           │  └ <function array_equal at 0x7f5e653c8a30>
+           └ <module 'numpy' from '/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/numpy/__init__.py'>
+
+AssertionError: state restore failed
+===== pusht  variation=goal.color =====
+[2026-11-12 05:29:06,781][datasets][INFO] - JAX version 0.10.2 available.
+05:29:08 | INFO  | atomic_chec~| [atomic_save] installed crash-safe checkpoint plugin (write to sibling .tmp + fsync + atomic rename)
+[2026-11-12 05:29:09,969][root][INFO] - Cached 'action' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-12 05:29:10,001][root][INFO] - Cached 'proprio' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-12 05:29:10,046][root][INFO] - Cached 'state' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-12 05:29:11,246][stable_worldmodel.wm.utils][INFO] - Loading checkpoint from folder /sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/checkpoints/lewm-pusht...
+05:29:11 | INFO  | utils.py    | Created ViT-tiny from scratch with config: {'hidden_size': 192, 'num_hidden_layers': 12, 'num_attention_heads': 3, 'intermediate_size': 768, 'image_size': 224, 'patch_size': 14}
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:486: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+  gym.logger.warn("Casting input x to numpy array.")
+Error executing job with overrides: ['policy=lewm-pusht', 'eval.goal_offset_steps=25', 'eval.eval_budget=50', '+variation=goal.color', '+out_dir=/sfs/weka/scratch/qxe3fj/JEPA/results/lewm_variation/pusht']
+05:29:12 | ERROR | richuru.py  | Exception:
+Traceback (most recent call last):
+
+> File "/sfs/weka/scratch/qxe3fj/JEPA/scripts/eval_variation.py", line 234, in <module>
+    run()
+    └ <function run at 0x7fc17bbcc720>
+
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/main.py", line 94, in decorated_main
+    _run_hydra(
+    └ <function _run_hydra at 0x7fc2a84849a0>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 394, in _run_hydra
+    _run_app(
+    └ <function _run_app at 0x7fc2a8484a40>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 457, in _run_app
+    run_and_report(
+    └ <function run_and_report at 0x7fc2a8484900>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 223, in run_and_report
+    raise ex
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 220, in run_and_report
+    return func()
+           └ <function _run_app.<locals>.<lambda> at 0x7fc17bc0b060>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 458, in <lambda>
+    lambda: hydra.run(
+            │     └ <function Hydra.run at 0x7fc2a834bd80>
+            └ <hydra._internal.hydra.Hydra object at 0x7fc17d562bd0>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/hydra.py", line 132, in run
+    _ = ret.return_value
+        │   └ <property object at 0x7fc2a8c2ccc0>
+        └ JobReturn(overrides=['policy=lewm-pusht', 'eval.goal_offset_steps=25', 'eval.eval_budget=50', '+variation=goal.color', '+out_...
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/core/utils.py", line 263, in return_value
+    raise self._return_value
+          │    └ AssertionError('state restore failed')
+          └ JobReturn(overrides=['policy=lewm-pusht', 'eval.goal_offset_steps=25', 'eval.eval_budget=50', '+variation=goal.color', '+out_...
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/core/utils.py", line 189, in run_job
+    ret.return_value = task_function(task_cfg)
+    │   │              │             └ {'cache_dir': None, 'solver': {'_target_': 'stable_worldmodel.planning.solver.CEMSolver', 'cost': '???', 'batch_size': 1, 'nu...
+    │   │              └ <function run at 0x7fc17bbcc680>
+    │   └ <property object at 0x7fc2a8c2ccc0>
+    └ JobReturn(overrides=['policy=lewm-pusht', 'eval.goal_offset_steps=25', 'eval.eval_budget=50', '+variation=goal.color', '+out_...
+
+  File "/sfs/weka/scratch/qxe3fj/JEPA/scripts/eval_variation.py", line 207, in run
+    res = evaluate_varied(world, dataset, episodes_idx, start_steps, cfg, variation)
+          │               │      │        │             │            │    └ 'goal.color'
+          │               │      │        │             │            └ {'cache_dir': None, 'solver': {'_target_': 'stable_worldmodel.planning.solver.CEMSolver', 'cost': '???', 'batch_size': 1, 'nu...
+          │               │      │        │             └ [36, 129, 40, 59, 19, 13, 114, 115, 2, 133, 20, 126, 49, 65, 117, 10, 130, 102, 89, 37, 20, 26, 51, 136, 28, 33, 26, 95, 47, ...
+          │               │      │        └ [1235, 1316, 1639, 1694, 1761, 1820, 2635, 3184, 3517, 3838, 4299, 5123, 6651, 6983, 7572, 8235, 8313, 8373, 8408, 8486, 8488...
+          │               │      └ <stable_worldmodel.data.formats.hdf5.HDF5Dataset object at 0x7fc1067f4850>
+          │               └ <stable_worldmodel.world.world.World object at 0x7fc17bb5b210>
+          └ <function evaluate_varied at 0x7fc17c5814e0>
+
+  File "/sfs/weka/scratch/qxe3fj/JEPA/scripts/eval_variation.py", line 102, in evaluate_varied
+    assert np.array_equal(render_resized(env, hw), cur), 'state restore failed'
+           │  │           │              │    │    └ array([[[255, 255, 255],
+           │  │           │              │    │              [255, 255, 255],
+           │  │           │              │    │              [255, 255, 255],
+           │  │           │              │    │              ...,
+           │  │           │              │    │              [255, 255, 255],
+           │  │           │              │    │              [255...
+           │  │           │              │    └ (224, 224)
+           │  │           │              └ <stable_worldmodel.envs.pusht.env.PushT object at 0x7fc1300d94d0>
+           │  │           └ <function render_resized at 0x7fc17c8137e0>
+           │  └ <function array_equal at 0x7fc28dea73b0>
+           └ <module 'numpy' from '/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/numpy/__init__.py'>
+
+AssertionError: state restore failed
+===== pusht  variation=agent.scale =====
+[2026-11-12 05:29:21,473][datasets][INFO] - JAX version 0.10.2 available.
+05:29:23 | INFO  | atomic_chec~| [atomic_save] installed crash-safe checkpoint plugin (write to sibling .tmp + fsync + atomic rename)
+[2026-11-12 05:29:24,562][root][INFO] - Cached 'action' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-12 05:29:24,594][root][INFO] - Cached 'proprio' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-12 05:29:24,639][root][INFO] - Cached 'state' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-12 05:29:25,853][stable_worldmodel.wm.utils][INFO] - Loading checkpoint from folder /sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/checkpoints/lewm-pusht...
+05:29:25 | INFO  | utils.py    | Created ViT-tiny from scratch with config: {'hidden_size': 192, 'num_hidden_layers': 12, 'num_attention_heads': 3, 'intermediate_size': 768, 'image_size': 224, 'patch_size': 14}
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:486: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+  gym.logger.warn("Casting input x to numpy array.")
+Error executing job with overrides: ['policy=lewm-pusht', 'eval.goal_offset_steps=25', 'eval.eval_budget=50', '+variation=agent.scale', '+out_dir=/sfs/weka/scratch/qxe3fj/JEPA/results/lewm_variation/pusht']
+05:29:27 | ERROR | richuru.py  | Exception:
+Traceback (most recent call last):
+
+> File "/sfs/weka/scratch/qxe3fj/JEPA/scripts/eval_variation.py", line 234, in <module>
+    run()
+    └ <function run at 0x7f402a2cc720>
+
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/main.py", line 94, in decorated_main
+    _run_hydra(
+    └ <function _run_hydra at 0x7f4156b0c9a0>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 394, in _run_hydra
+    _run_app(
+    └ <function _run_app at 0x7f4156b0ca40>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 457, in _run_app
+    run_and_report(
+    └ <function run_and_report at 0x7f4156b0c900>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 223, in run_and_report
+    raise ex
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 220, in run_and_report
+    return func()
+           └ <function _run_app.<locals>.<lambda> at 0x7f402a30b060>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 458, in <lambda>
+    lambda: hydra.run(
+            │     └ <function Hydra.run at 0x7f41569d3d80>
+            └ <hydra._internal.hydra.Hydra object at 0x7f402a314b10>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/hydra.py", line 132, in run
+    _ = ret.return_value
+        │   └ <property object at 0x7f41572b4770>
+        └ JobReturn(overrides=['policy=lewm-pusht', 'eval.goal_offset_steps=25', 'eval.eval_budget=50', '+variation=agent.scale', '+out...
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/core/utils.py", line 263, in return_value
+    raise self._return_value
+          │    └ AssertionError('state restore failed')
+          └ JobReturn(overrides=['policy=lewm-pusht', 'eval.goal_offset_steps=25', 'eval.eval_budget=50', '+variation=agent.scale', '+out...
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/core/utils.py", line 189, in run_job
+    ret.return_value = task_function(task_cfg)
+    │   │              │             └ {'cache_dir': None, 'solver': {'_target_': 'stable_worldmodel.planning.solver.CEMSolver', 'cost': '???', 'batch_size': 1, 'nu...
+    │   │              └ <function run at 0x7f402a2cc680>
+    │   └ <property object at 0x7f41572b4770>
+    └ JobReturn(overrides=['policy=lewm-pusht', 'eval.goal_offset_steps=25', 'eval.eval_budget=50', '+variation=agent.scale', '+out...
+
+  File "/sfs/weka/scratch/qxe3fj/JEPA/scripts/eval_variation.py", line 207, in run
+    res = evaluate_varied(world, dataset, episodes_idx, start_steps, cfg, variation)
+          │               │      │        │             │            │    └ 'agent.scale'
+          │               │      │        │             │            └ {'cache_dir': None, 'solver': {'_target_': 'stable_worldmodel.planning.solver.CEMSolver', 'cost': '???', 'batch_size': 1, 'nu...
+          │               │      │        │             └ [36, 129, 40, 59, 19, 13, 114, 115, 2, 133, 20, 126, 49, 65, 117, 10, 130, 102, 89, 37, 20, 26, 51, 136, 28, 33, 26, 95, 47, ...
+          │               │      │        └ [1235, 1316, 1639, 1694, 1761, 1820, 2635, 3184, 3517, 3838, 4299, 5123, 6651, 6983, 7572, 8235, 8313, 8373, 8408, 8486, 8488...
+          │               │      └ <stable_worldmodel.data.formats.hdf5.HDF5Dataset object at 0x7f3fa39efb10>
+          │               └ <stable_worldmodel.world.world.World object at 0x7f402a056e90>
+          └ <function evaluate_varied at 0x7f402ac814e0>
+
+  File "/sfs/weka/scratch/qxe3fj/JEPA/scripts/eval_variation.py", line 102, in evaluate_varied
+    assert np.array_equal(render_resized(env, hw), cur), 'state restore failed'
+           │  │           │              │    │    └ array([[[255, 255, 255],
+           │  │           │              │    │              [255, 255, 255],
+           │  │           │              │    │              [255, 255, 255],
+           │  │           │              │    │              ...,
+           │  │           │              │    │              [255, 255, 255],
+           │  │           │              │    │              [255...
+           │  │           │              │    └ (224, 224)
+           │  │           │              └ <stable_worldmodel.envs.pusht.env.PushT object at 0x7f3fdb1affd0>
+           │  │           └ <function render_resized at 0x7f402ad177e0>
+           │  └ <function array_equal at 0x7f413c52c9b0>
+           └ <module 'numpy' from '/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/numpy/__init__.py'>
+
+AssertionError: state restore failed
+===== pusht  variation=block.scale =====
+[2026-11-12 05:29:36,062][datasets][INFO] - JAX version 0.10.2 available.
+05:29:38 | INFO  | atomic_chec~| [atomic_save] installed crash-safe checkpoint plugin (write to sibling .tmp + fsync + atomic rename)
+[2026-11-12 05:29:39,149][root][INFO] - Cached 'action' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-12 05:29:39,181][root][INFO] - Cached 'proprio' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-12 05:29:39,226][root][INFO] - Cached 'state' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-12 05:29:40,422][stable_worldmodel.wm.utils][INFO] - Loading checkpoint from folder /sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/checkpoints/lewm-pusht...
+05:29:40 | INFO  | utils.py    | Created ViT-tiny from scratch with config: {'hidden_size': 192, 'num_hidden_layers': 12, 'num_attention_heads': 3, 'intermediate_size': 768, 'image_size': 224, 'patch_size': 14}
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:486: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+  gym.logger.warn("Casting input x to numpy array.")
+Error executing job with overrides: ['policy=lewm-pusht', 'eval.goal_offset_steps=25', 'eval.eval_budget=50', '+variation=block.scale', '+out_dir=/sfs/weka/scratch/qxe3fj/JEPA/results/lewm_variation/pusht']
+05:29:41 | ERROR | richuru.py  | Exception:
+Traceback (most recent call last):
+
+> File "/sfs/weka/scratch/qxe3fj/JEPA/scripts/eval_variation.py", line 234, in <module>
+    run()
+    └ <function run at 0x7f589522c720>
+
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/main.py", line 94, in decorated_main
+    _run_hydra(
+    └ <function _run_hydra at 0x7f59c1a9c9a0>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 394, in _run_hydra
+    _run_app(
+    └ <function _run_app at 0x7f59c1a9ca40>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 457, in _run_app
+    run_and_report(
+    └ <function run_and_report at 0x7f59c1a9c900>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 223, in run_and_report
+    raise ex
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 220, in run_and_report
+    return func()
+           └ <function _run_app.<locals>.<lambda> at 0x7f589526b060>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 458, in <lambda>
+    lambda: hydra.run(
+            │     └ <function Hydra.run at 0x7f59c1963d80>
+            └ <hydra._internal.hydra.Hydra object at 0x7f58952372d0>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/hydra.py", line 132, in run
+    _ = ret.return_value
+        │   └ <property object at 0x7f59c22489f0>
+        └ JobReturn(overrides=['policy=lewm-pusht', 'eval.goal_offset_steps=25', 'eval.eval_budget=50', '+variation=block.scale', '+out...
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/core/utils.py", line 263, in return_value
+    raise self._return_value
+          │    └ AssertionError('state restore failed')
+          └ JobReturn(overrides=['policy=lewm-pusht', 'eval.goal_offset_steps=25', 'eval.eval_budget=50', '+variation=block.scale', '+out...
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/core/utils.py", line 189, in run_job
+    ret.return_value = task_function(task_cfg)
+    │   │              │             └ {'cache_dir': None, 'solver': {'_target_': 'stable_worldmodel.planning.solver.CEMSolver', 'cost': '???', 'batch_size': 1, 'nu...
+    │   │              └ <function run at 0x7f589522c680>
+    │   └ <property object at 0x7f59c22489f0>
+    └ JobReturn(overrides=['policy=lewm-pusht', 'eval.goal_offset_steps=25', 'eval.eval_budget=50', '+variation=block.scale', '+out...
+
+  File "/sfs/weka/scratch/qxe3fj/JEPA/scripts/eval_variation.py", line 207, in run
+    res = evaluate_varied(world, dataset, episodes_idx, start_steps, cfg, variation)
+          │               │      │        │             │            │    └ 'block.scale'
+          │               │      │        │             │            └ {'cache_dir': None, 'solver': {'_target_': 'stable_worldmodel.planning.solver.CEMSolver', 'cost': '???', 'batch_size': 1, 'nu...
+          │               │      │        │             └ [36, 129, 40, 59, 19, 13, 114, 115, 2, 133, 20, 126, 49, 65, 117, 10, 130, 102, 89, 37, 20, 26, 51, 136, 28, 33, 26, 95, 47, ...
+          │               │      │        └ [1235, 1316, 1639, 1694, 1761, 1820, 2635, 3184, 3517, 3838, 4299, 5123, 6651, 6983, 7572, 8235, 8313, 8373, 8408, 8486, 8488...
+          │               │      └ <stable_worldmodel.data.formats.hdf5.HDF5Dataset object at 0x7f580f0b8c10>
+          │               └ <stable_worldmodel.world.world.World object at 0x7f5894fbd190>
+          └ <function evaluate_varied at 0x7f5895be14e0>
+
+  File "/sfs/weka/scratch/qxe3fj/JEPA/scripts/eval_variation.py", line 102, in evaluate_varied
+    assert np.array_equal(render_resized(env, hw), cur), 'state restore failed'
+           │  │           │              │    │    └ array([[[255, 255, 255],
+           │  │           │              │    │              [255, 255, 255],
+           │  │           │              │    │              [255, 255, 255],
+           │  │           │              │    │              ...,
+           │  │           │              │    │              [255, 255, 255],
+           │  │           │              │    │              [255...
+           │  │           │              │    └ (224, 224)
+           │  │           │              └ <stable_worldmodel.envs.pusht.env.PushT object at 0x7f5894fbc850>
+           │  │           └ <function render_resized at 0x7f5895c737e0>
+           │  └ <function array_equal at 0x7f59c049f0b0>
+           └ <module 'numpy' from '/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/numpy/__init__.py'>
+
+AssertionError: state restore failed
+===== pusht  variation=agent.shape =====
+[2026-11-12 05:29:50,335][datasets][INFO] - JAX version 0.10.2 available.
+05:29:52 | INFO  | atomic_chec~| [atomic_save] installed crash-safe checkpoint plugin (write to sibling .tmp + fsync + atomic rename)
+[2026-11-12 05:29:53,478][root][INFO] - Cached 'action' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-12 05:29:53,510][root][INFO] - Cached 'proprio' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-12 05:29:53,555][root][INFO] - Cached 'state' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-12 05:29:54,759][stable_worldmodel.wm.utils][INFO] - Loading checkpoint from folder /sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/checkpoints/lewm-pusht...
+05:29:54 | INFO  | utils.py    | Created ViT-tiny from scratch with config: {'hidden_size': 192, 'num_hidden_layers': 12, 'num_attention_heads': 3, 'intermediate_size': 768, 'image_size': 224, 'patch_size': 14}
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:486: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+  gym.logger.warn("Casting input x to numpy array.")
+Error executing job with overrides: ['policy=lewm-pusht', 'eval.goal_offset_steps=25', 'eval.eval_budget=50', '+variation=agent.shape', '+out_dir=/sfs/weka/scratch/qxe3fj/JEPA/results/lewm_variation/pusht']
+05:29:56 | ERROR | richuru.py  | Exception:
+Traceback (most recent call last):
+
+> File "/sfs/weka/scratch/qxe3fj/JEPA/scripts/eval_variation.py", line 234, in <module>
+    run()
+    └ <function run at 0x7fcd19ffc720>
+
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/main.py", line 94, in decorated_main
+    _run_hydra(
+    └ <function _run_hydra at 0x7fce4689c9a0>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 394, in _run_hydra
+    _run_app(
+    └ <function _run_app at 0x7fce4689ca40>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 457, in _run_app
+    run_and_report(
+    └ <function run_and_report at 0x7fce4689c900>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 223, in run_and_report
+    raise ex
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 220, in run_and_report
+    return func()
+           └ <function _run_app.<locals>.<lambda> at 0x7fcd1a03b060>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 458, in <lambda>
+    lambda: hydra.run(
+            │     └ <function Hydra.run at 0x7fce46763d80>
+            └ <hydra._internal.hydra.Hydra object at 0x7fcd1a04bf50>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/hydra.py", line 132, in run
+    _ = ret.return_value
+        │   └ <property object at 0x7fce47044b80>
+        └ JobReturn(overrides=['policy=lewm-pusht', 'eval.goal_offset_steps=25', 'eval.eval_budget=50', '+variation=agent.shape', '+out...
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/core/utils.py", line 263, in return_value
+    raise self._return_value
+          │    └ AssertionError('state restore failed')
+          └ JobReturn(overrides=['policy=lewm-pusht', 'eval.goal_offset_steps=25', 'eval.eval_budget=50', '+variation=agent.shape', '+out...
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/core/utils.py", line 189, in run_job
+    ret.return_value = task_function(task_cfg)
+    │   │              │             └ {'cache_dir': None, 'solver': {'_target_': 'stable_worldmodel.planning.solver.CEMSolver', 'cost': '???', 'batch_size': 1, 'nu...
+    │   │              └ <function run at 0x7fcd19ffc680>
+    │   └ <property object at 0x7fce47044b80>
+    └ JobReturn(overrides=['policy=lewm-pusht', 'eval.goal_offset_steps=25', 'eval.eval_budget=50', '+variation=agent.shape', '+out...
+
+  File "/sfs/weka/scratch/qxe3fj/JEPA/scripts/eval_variation.py", line 207, in run
+    res = evaluate_varied(world, dataset, episodes_idx, start_steps, cfg, variation)
+          │               │      │        │             │            │    └ 'agent.shape'
+          │               │      │        │             │            └ {'cache_dir': None, 'solver': {'_target_': 'stable_worldmodel.planning.solver.CEMSolver', 'cost': '???', 'batch_size': 1, 'nu...
+          │               │      │        │             └ [36, 129, 40, 59, 19, 13, 114, 115, 2, 133, 20, 126, 49, 65, 117, 10, 130, 102, 89, 37, 20, 26, 51, 136, 28, 33, 26, 95, 47, ...
+          │               │      │        └ [1235, 1316, 1639, 1694, 1761, 1820, 2635, 3184, 3517, 3838, 4299, 5123, 6651, 6983, 7572, 8235, 8313, 8373, 8408, 8486, 8488...
+          │               │      └ <stable_worldmodel.data.formats.hdf5.HDF5Dataset object at 0x7fcc93ef0310>
+          │               └ <stable_worldmodel.world.world.World object at 0x7fcd19f8b9d0>
+          └ <function evaluate_varied at 0x7fcd1a9ad4e0>
+
+  File "/sfs/weka/scratch/qxe3fj/JEPA/scripts/eval_variation.py", line 102, in evaluate_varied
+    assert np.array_equal(render_resized(env, hw), cur), 'state restore failed'
+           │  │           │              │    │    └ array([[[255, 255, 255],
+           │  │           │              │    │              [255, 255, 255],
+           │  │           │              │    │              [255, 255, 255],
+           │  │           │              │    │              ...,
+           │  │           │              │    │              [255, 255, 255],
+           │  │           │              │    │              [255...
+           │  │           │              │    └ (224, 224)
+           │  │           │              └ <stable_worldmodel.envs.pusht.env.PushT object at 0x7fcd19e51ed0>
+           │  │           └ <function render_resized at 0x7fcd1ac4b7e0>
+           │  └ <function array_equal at 0x7fce4693d4f0>
+           └ <module 'numpy' from '/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/numpy/__init__.py'>
+
+AssertionError: state restore failed
+===== pusht  variation=block.shape =====
+[2026-11-12 05:30:04,985][datasets][INFO] - JAX version 0.10.2 available.
+05:30:06 | INFO  | atomic_chec~| [atomic_save] installed crash-safe checkpoint plugin (write to sibling .tmp + fsync + atomic rename)
+[2026-11-12 05:30:08,063][root][INFO] - Cached 'action' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-12 05:30:08,094][root][INFO] - Cached 'proprio' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-12 05:30:08,137][root][INFO] - Cached 'state' from '/sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/datasets/pusht_expert_train.h5'
+[2026-11-12 05:30:09,265][stable_worldmodel.wm.utils][INFO] - Loading checkpoint from folder /sfs/weka/scratch/qxe3fj/JEPA/stablewm_home/checkpoints/lewm-pusht...
+05:30:09 | INFO  | utils.py    | Created ViT-tiny from scratch with config: {'hidden_size': 192, 'num_hidden_layers': 12, 'num_attention_heads': 3, 'intermediate_size': 768, 'image_size': 224, 'patch_size': 14}
+/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/gymnasium/spaces/box.py:486: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+  gym.logger.warn("Casting input x to numpy array.")
+Error executing job with overrides: ['policy=lewm-pusht', 'eval.goal_offset_steps=25', 'eval.eval_budget=50', '+variation=block.shape', '+out_dir=/sfs/weka/scratch/qxe3fj/JEPA/results/lewm_variation/pusht']
+05:30:10 | ERROR | richuru.py  | Exception:
+Traceback (most recent call last):
+
+> File "/sfs/weka/scratch/qxe3fj/JEPA/scripts/eval_variation.py", line 234, in <module>
+    run()
+    └ <function run at 0x7fc64064c720>
+
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/main.py", line 94, in decorated_main
+    _run_hydra(
+    └ <function _run_hydra at 0x7fc76cee49a0>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 394, in _run_hydra
+    _run_app(
+    └ <function _run_app at 0x7fc76cee4a40>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 457, in _run_app
+    run_and_report(
+    └ <function run_and_report at 0x7fc76cee4900>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 223, in run_and_report
+    raise ex
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 220, in run_and_report
+    return func()
+           └ <function _run_app.<locals>.<lambda> at 0x7fc64068b060>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 458, in <lambda>
+    lambda: hydra.run(
+            │     └ <function Hydra.run at 0x7fc76cdabd80>
+            └ <hydra._internal.hydra.Hydra object at 0x7fc6406551d0>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/hydra.py", line 132, in run
+    _ = ret.return_value
+        │   └ <property object at 0x7fc76d68cb80>
+        └ JobReturn(overrides=['policy=lewm-pusht', 'eval.goal_offset_steps=25', 'eval.eval_budget=50', '+variation=block.shape', '+out...
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/core/utils.py", line 263, in return_value
+    raise self._return_value
+          │    └ AssertionError('state restore failed')
+          └ JobReturn(overrides=['policy=lewm-pusht', 'eval.goal_offset_steps=25', 'eval.eval_budget=50', '+variation=block.shape', '+out...
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/core/utils.py", line 189, in run_job
+    ret.return_value = task_function(task_cfg)
+    │   │              │             └ {'cache_dir': None, 'solver': {'_target_': 'stable_worldmodel.planning.solver.CEMSolver', 'cost': '???', 'batch_size': 1, 'nu...
+    │   │              └ <function run at 0x7fc64064c680>
+    │   └ <property object at 0x7fc76d68cb80>
+    └ JobReturn(overrides=['policy=lewm-pusht', 'eval.goal_offset_steps=25', 'eval.eval_budget=50', '+variation=block.shape', '+out...
+
+  File "/sfs/weka/scratch/qxe3fj/JEPA/scripts/eval_variation.py", line 207, in run
+    res = evaluate_varied(world, dataset, episodes_idx, start_steps, cfg, variation)
+          │               │      │        │             │            │    └ 'block.shape'
+          │               │      │        │             │            └ {'cache_dir': None, 'solver': {'_target_': 'stable_worldmodel.planning.solver.CEMSolver', 'cost': '???', 'batch_size': 1, 'nu...
+          │               │      │        │             └ [36, 129, 40, 59, 19, 13, 114, 115, 2, 133, 20, 126, 49, 65, 117, 10, 130, 102, 89, 37, 20, 26, 51, 136, 28, 33, 26, 95, 47, ...
+          │               │      │        └ [1235, 1316, 1639, 1694, 1761, 1820, 2635, 3184, 3517, 3838, 4299, 5123, 6651, 6983, 7572, 8235, 8313, 8373, 8408, 8486, 8488...
+          │               │      └ <stable_worldmodel.data.formats.hdf5.HDF5Dataset object at 0x7fc5bdbb5690>
+          │               └ <stable_worldmodel.world.world.World object at 0x7fc6403dc510>
+          └ <function evaluate_varied at 0x7fc640ffd4e0>
+
+  File "/sfs/weka/scratch/qxe3fj/JEPA/scripts/eval_variation.py", line 102, in evaluate_varied
+    assert np.array_equal(render_resized(env, hw), cur), 'state restore failed'
+           │  │           │              │    │    └ array([[[255, 255, 255],
+           │  │           │              │    │              [255, 255, 255],
+           │  │           │              │    │              [255, 255, 255],
+           │  │           │              │    │              ...,
+           │  │           │              │    │              [255, 255, 255],
+           │  │           │              │    │              [255...
+           │  │           │              │    └ (224, 224)
+           │  │           │              └ <stable_worldmodel.envs.pusht.env.PushT object at 0x7fc5f1529bd0>
+           │  │           └ <function render_resized at 0x7fc6410977e0>
+           │  └ <function array_equal at 0x7fc75298aeb0>
+           └ <module 'numpy' from '/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/numpy/__init__.py'>
+
+AssertionError: state restore failed
+== summary ==
+grep: /sfs/weka/scratch/qxe3fj/JEPA/results/lewm_variation/pusht/*/result.json: No such file or directory

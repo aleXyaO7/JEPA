@@ -26,3 +26,7 @@ src/
 __pycache__/
 *.pyc
 .DS_Store
+
+# third-party datasets (OGBench, IntPhys 2): re-download, see README
+raw_downloads/
+bench_tmp/

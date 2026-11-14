@@ -1,0 +1,40 @@
+{
+  "n_episodes": 50,
+  "success_rate": 86.0,
+  "trivial_successes_lt5": 7,
+  "picked": {
+    "success": 0,
+    "failure": 1
+  },
+  "steps_recorded": 51,
+  "lowdim_keys": [
+    "action",
+    "distance_to_target",
+    "goal_action",
+    "goal_observation",
+    "goal_pos_agent",
+    "goal_pos_target",
+    "goal_proprio",
+    "goal_state",
+    "id",
+    "observation",
+    "proprio",
+    "render_time",
+    "reward",
+    "state",
+    "step_idx",
+    "terminated",
+    "truncated"
+  ],
+  "argv": [
+    "--config-path",
+    "/sfs/weka/scratch/qxe3fj/JEPA/src/stable-worldmodel/scripts/plan/config",
+    "--config-name",
+    "tworoom",
+    "policy=lewm-tworooms",
+    "eval.goal_offset_steps=25",
+    "eval.eval_budget=50",
+    "output.filename=trace_tworoom_offset25_results.txt",
+    "hydra.run.dir=/sfs/weka/scratch/qxe3fj/JEPA/results/trajectories/lewm_tworoom/hydra"
+  ]
+}

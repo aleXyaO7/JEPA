@@ -1,0 +1,319 @@
+name, memory.total [MiB]
+NVIDIA A40, 46068 MiB
+===== trace DINO-WM pusht (goal_H 25, 50 evals, seed 100) =====
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/wandb/util.py:118: SentryHubDeprecationWarning: `sentry_sdk.Hub` is deprecated and will be removed in a future major release. Please consult our 1.x to 2.x migration guide for details on how to migrate `Hub` usage to the new API: https://docs.sentry.io/platforms/python/migration/1.x-to-2.x
+  sentry_hub = sentry_sdk.Hub(sentry_client)
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py:30: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/pkg_resources/__init__.py:3148: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('mpl_toolkits')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/pkg_resources/__init__.py:3148: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/Cython/Distutils/old_build_ext.py:15: DeprecationWarning: dep_util is Deprecated. Use functions from setuptools instead.
+  from distutils.dep_util import newer, newer_group
+<frozen importlib._bootstrap>:283: DeprecationWarning: the load_module() method is deprecated and slated for removal in Python 3.12; use exec_module() instead
+Warning: Mujoco-based envs failed to import. Set the environment variable D4RL_SUPPRESS_IMPORT_ERROR=1 to suppress this message.
+No module named 'mjrl'
+Warning: Flow failed to import. Set the environment variable D4RL_SUPPRESS_IMPORT_ERROR=1 to suppress this message.
+No module named 'flow'
+Warning: CARLA failed to import. Set the environment variable D4RL_SUPPRESS_IMPORT_ERROR=1 to suppress this message.
+No module named 'carla'
+pybullet build time: Jan 29 2025 23:16:28
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-open-v0[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-umaze-v0[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-medium-v0[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-large-v0[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-umaze-v1[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-medium-v1[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-large-v1[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-eval-umaze-v1[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-eval-medium-v1[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-eval-large-v1[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-open-dense-v0[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-umaze-dense-v0[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-medium-dense-v0[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-large-dense-v0[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-umaze-dense-v1[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-medium-dense-v1[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-large-dense-v1[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-eval-umaze-dense-v1[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-eval-medium-dense-v1[0m
+  logger.warn(f"Overriding environment {id}")
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/gym/envs/registration.py:595: UserWarning: [33mWARN: Overriding environment maze2d-eval-large-dense-v1[0m
+  logger.warn(f"Overriding environment {id}")
+/sfs/weka/scratch/qxe3fj/temporal-straightening/custom_resolvers.py:4: UserWarning: 
+The version_base parameter is not specified.
+Please specify a compatability version level, or None.
+Will assume defaults for version 1.1
+  @hydra.main(config_path=None)
+[2026-11-13 20:31:29,311][__main__][INFO] - Planning result saved dir: /sfs/weka/scratch/qxe3fj/JEPA/results/trajectories/dinowm_pusht/hydra
+/scratch/qxe3fj/.conda/envs/ts310/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py:30: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+Using cache found in /home/qxe3fj/.cache/torch/hub/facebookresearch_dinov2_81b2b6419385
+Loaded 18685 rollouts
+Loaded 21 rollouts
+[2026-11-13 20:31:31,518][dinov2][INFO] - using MLP layer as FFN
+[2026-11-13 20:31:32,799][models.dino][WARNING] - Unknown projector 'none' for patch tokens; proceeding without projector.
+Using cache found in /home/qxe3fj/.cache/torch/hub/facebookresearch_dinov2_81b2b6419385
+Resuming from epoch 2: /sfs/weka/scratch/qxe3fj/JEPA/checkpoints/dino_wm/outputs/pusht/checkpoints/model_latest.pth
+[2026-11-13 20:31:33,376][dinov2][INFO] - using MLP layer as FFN
+[2026-11-13 20:31:36,127][models.dino][WARNING] - Unknown projector 'none' for patch tokens; proceeding without projector.
+[2026-11-13 20:31:36,134][models.visual_world_model][INFO] - num_action_repeat: 1
+[2026-11-13 20:31:36,135][models.visual_world_model][INFO] - num_proprio_repeat: 1
+[2026-11-13 20:31:36,135][models.visual_world_model][INFO] - proprio encoder: ProprioceptiveEmbedding(
+  (patch_embed): Conv1d(4, 10, kernel_size=(1,), stride=(1,))
+)
+[2026-11-13 20:31:36,135][models.visual_world_model][INFO] - action encoder: ProprioceptiveEmbedding(
+  (patch_embed): Conv1d(10, 10, kernel_size=(1,), stride=(1,))
+)
+[2026-11-13 20:31:36,135][models.visual_world_model][INFO] - proprio_dim: 10, after repeat: 10
+[2026-11-13 20:31:36,135][models.visual_world_model][INFO] - action_dim: 10, after repeat: 10
+[2026-11-13 20:31:36,135][models.visual_world_model][INFO] - emb_dim: 404
+[2026-11-13 20:31:36,135][models.visual_world_model][INFO] - Straightening disabled
+[2026-11-13 20:31:36,135][models.visual_world_model][INFO] - Speed constancy disabled
+[2026-11-13 20:31:36,135][models.visual_world_model][INFO] - Trajectory penalty disabled
+[2026-11-13 20:31:36,135][models.visual_world_model][INFO] - Stop-grad enabled: True
+[2026-11-13 20:31:36,135][models.visual_world_model][INFO] - VCReg enabled: False, apply_to=enc, std_coeff=0.0, cov_coeff=0.0
+[2026-11-13 20:31:36,135][models.visual_world_model][INFO] - Motion regularizer: mode=none direction_scale=0.1 speed_scale=0.1 predictor_layer=None
+[2026-11-13 20:31:36,135][models.visual_world_model][INFO] - Model emb_dim: 404
+[timing] setup_model_s=6.836
+eval_seed:  [1, 101, 201, 301, 401, 501, 601, 701, 801, 901, 1001, 1101, 1201, 1301, 1401, 1501, 1601, 1701, 1801, 1901, 2001, 2101, 2201, 2301, 2401, 2501, 2601, 2701, 2801, 2901, 3001, 3101, 3201, 3301, 3401, 3501, 3601, 3701, 3801, 3901, 4001, 4101, 4201, 4301, 4401, 4501, 4601, 4701, 4801, 4901]
+Dumped plan targets to /sfs/weka/scratch/qxe3fj/JEPA/results/trajectories/dinowm_pusht/hydra/plan_targets.pkl
+[timing] setup_workspace_s=15.722
+  0%|          | 0/10 [00:00<?, ?it/s] 10%|█         | 1/10 [02:56<26:30, 176.70s/it] 20%|██        | 2/10 [05:53<23:35, 176.96s/it] 30%|███       | 3/10 [08:51<20:39, 177.11s/it] 40%|████      | 4/10 [11:48<17:42, 177.17s/it] 50%|█████     | 5/10 [14:45<14:46, 177.23s/it] 60%|██████    | 6/10 [17:43<11:49, 177.30s/it] 70%|███████   | 7/10 [20:40<08:51, 177.31s/it]Success rate:  0.04
+{'success': array([False, False, False, False, False, False, False, False, False,
+       False, False, False, False, False, False, False, False, False,
+       False, False, False, False, False, False, False, False, False,
+        True, False, False, False, False, False, False,  True, False,
+       False, False, False, False, False, False, False, False, False,
+       False, False, False, False, False]), 'state_dist': array([ 82.49089 , 128.90773 , 106.98654 , 132.26418 ,  71.407555,
+        80.229904, 145.57991 ,  60.92613 ,  51.7209  ,  66.760315,
+        63.700657,  82.20252 , 160.61247 , 100.68125 , 113.6147  ,
+        89.15469 , 132.4624  , 108.3869  , 185.41138 , 208.07712 ,
+       134.88898 ,  58.25008 , 162.42807 ,  94.57501 ,  90.98912 ,
+       174.86826 ,  46.51785 ,  33.74212 ,  69.14271 ,  82.56103 ,
+       167.03938 ,  79.43912 ,  77.41295 , 177.28638 ,  32.466755,
+        36.90351 , 178.22267 , 150.88387 ,  77.42476 , 117.791336,
+       148.54233 , 108.28773 , 134.4341  ,  57.91556 ,  82.24085 ,
+       183.3205  , 136.61644 , 126.85151 , 141.49509 , 117.50359 ],
+      dtype=float32)}
+Success rate:  0.04
+{'success': array([False, False, False, False, False, False, False, False, False,
+       False, False, False, False, False, False, False, False, False,
+       False, False, False, False, False, False, False, False, False,
+        True, False, False, False, False, False, False,  True, False,
+       False, False, False, False, False, False, False, False, False,
+       False, False, False, False, False]), 'state_dist': array([ 76.62335 , 102.63588 ,  82.011406,  66.21904 ,  41.887238,
+        76.88879 ,  93.3485  ,  68.278114,  40.97596 ,  34.39035 ,
+        32.261444,  55.170918, 140.30347 ,  65.11019 , 105.280685,
+        53.552315,  83.0143  , 102.43073 , 141.4898  , 167.55174 ,
+        65.45039 ,  43.21167 , 130.94579 ,  71.4113  ,  49.87479 ,
+       151.14052 ,  30.675861,  29.43214 ,  49.8393  ,  53.621475,
+       124.03398 ,  54.801277,  41.12572 , 114.0739  ,  23.645103,
+        27.295534, 143.10245 , 116.14654 ,  61.67923 ,  53.04398 ,
+        71.309265,  76.3911  , 113.93749 ,  34.953392,  52.935974,
+       144.11449 , 109.60485 ,  59.83892 , 121.92386 ,  46.157307],
+      dtype=float32)}
+Success rate:  0.26
+{'success': array([False, False, False, False,  True, False, False, False, False,
+        True,  True, False, False, False, False, False, False, False,
+       False, False, False, False, False, False, False, False, False,
+        True, False,  True, False,  True,  True, False,  True,  True,
+       False, False, False, False, False, False, False,  True,  True,
+       False, False,  True, False,  True]), 'state_dist': array([ 75.27591 ,  88.36834 ,  82.52418 ,  44.735027,  33.449116,
+        70.80645 ,  46.308743,  58.215866,  46.01037 ,  32.809734,
+        27.649464,  45.649647, 139.54651 ,  35.40595 ,  96.00575 ,
+        37.351215,  74.65134 , 107.78114 , 108.885315, 120.37173 ,
+        40.421803,  30.889297, 127.89441 ,  51.82143 ,  27.974258,
+       140.20102 ,  42.31554 ,  26.840979,  44.49013 ,  27.701763,
+        87.77817 ,  38.170208,  29.68123 ,  88.62974 ,  29.540762,
+        20.462412, 145.9962  , 103.04004 ,  59.049313,  33.861626,
+        50.256493,  52.87263 , 109.676544,  24.254934,  29.56835 ,
+       117.268524,  85.647026,  36.150295,  96.37519 ,  34.959988],
+      dtype=float32)}
+Success rate:  0.4
+{'success': array([False, False, False,  True,  True, False,  True, False,  True,
+        True,  True, False, False, False, False, False,  True, False,
+       False, False, False,  True, False, False,  True, False, False,
+        True, False,  True, False,  True,  True, False,  True,  True,
+       False, False, False,  True, False,  True, False, False,  True,
+       False, False,  True, False,  True]), 'state_dist': array([ 70.45024 ,  80.45697 ,  88.69386 ,  25.76963 ,  31.696636,
+        70.39922 ,  25.675114,  51.49523 ,  30.203203,  22.007048,
+        15.919751,  48.894695, 125.695206,  27.023766,  70.787224,
+        38.642525,  78.96857 ,  73.46766 ,  84.95307 , 101.6043  ,
+        31.959988,  31.52624 , 123.62223 ,  44.716255,  27.358528,
+       136.8838  ,  45.065063,  35.126163,  36.584908,  32.517544,
+        62.955585,  24.837   ,  25.51378 ,  62.34185 ,  34.014137,
+        15.920676, 154.75539 ,  88.496605,  52.09995 ,  31.73413 ,
+        46.828438,  33.09574 , 114.98138 ,  21.722631,  23.68344 ,
+       106.663925,  82.79349 ,  10.578662,  80.69171 ,  11.335669],
+      dtype=float32)}
+Success rate:  0.46
+{'success': array([False, False, False,  True,  True, False,  True, False,  True,
+        True,  True, False, False, False, False,  True, False, False,
+        True, False, False,  True, False, False, False, False,  True,
+        True, False,  True, False,  True,  True,  True,  True,  True,
+       False, False, False,  True,  True,  True, False, False,  True,
+       False, False,  True, False,  True]), 'state_dist': array([ 68.81828 ,  74.366905,  91.59012 ,  20.375538,  25.860565,
+        69.345375,  17.566944,  48.58196 ,  25.688337,  21.19904 ,
+        26.373241,  43.02638 ,  70.664986,  24.698013,  67.60736 ,
+        27.757668,  82.772026,  36.132065,  56.611694,  76.78308 ,
+        27.713041,  34.290466, 102.2564  ,  46.046272,  28.840212,
+       132.76617 ,  39.816296,  40.334225,  36.82085 ,  30.416199,
+        43.747646,  32.181553,  24.843863,  50.176746,  38.371513,
+        26.001421, 121.62124 ,  72.83712 ,  52.350273,  20.896185,
+        35.51882 ,  26.115442, 128.2258  ,  22.688196,  19.190556,
+        94.65946 ,  77.51299 ,  12.557683,  76.74251 ,  17.267805],
+      dtype=float32)}
+Success rate:  0.52
+{'success': array([False, False, False,  True,  True, False,  True, False,  True,
+        True,  True, False, False, False, False,  True,  True, False,
+        True,  True, False,  True, False, False, False, False,  True,
+        True, False,  True,  True,  True,  True,  True,  True,  True,
+       False, False, False,  True,  True,  True, False, False,  True,
+       False, False,  True, False,  True]), 'state_dist': array([ 67.147285,  69.64612 ,  80.212814,  16.613474,   9.386718,
+        68.24356 ,  23.203878,  42.615383,  24.205463,  34.630154,
+        14.829908,  42.4824  ,  64.716225,  36.473106,  65.0743  ,
+        18.883234,  68.54863 ,  34.233654,  46.396393,  57.107254,
+        24.180677,  25.982262,  79.556854,  44.450226,  23.700718,
+       131.43436 ,  36.290176,  41.437466,  25.48034 ,  32.186386,
+        41.337627,  26.3654  ,  33.4974  ,  40.26364 ,  37.03043 ,
+        21.620306,  57.066242,  71.90791 ,  54.91871 ,  17.046715,
+        26.53567 ,  25.247728,  59.520706,  21.091595,  20.992428,
+        89.14548 ,  73.64477 ,  22.731897,  66.58957 ,  12.363564],
+      dtype=float32)}
+Success rate:  0.58
+{'success': array([False, False, False,  True,  True, False,  True, False,  True,
+        True,  True, False, False, False, False,  True,  True, False,
+        True,  True, False,  True, False, False,  True, False,  True,
+        True, False,  True,  True,  True,  True,  True,  True,  True,
+       False, False, False,  True,  True,  True, False,  True,  True,
+       False, False,  True,  True,  True]), 'state_dist': array([ 76.89421  ,  67.194084 ,  76.12872  ,  15.712632 ,   6.1712747,
+        68.53408  ,  18.764915 ,  38.03471  ,  21.520592 ,  29.524456 ,
+        16.925385 ,  42.66763  ,  62.091526 ,  24.598354 ,  66.41927  ,
+        19.098698 ,  59.862198 ,  37.884365 ,  43.8266   ,  51.438843 ,
+        42.52633  ,  16.195572 ,  45.021675 ,  45.86681  ,  21.485245 ,
+       128.95335  ,  28.460247 ,  50.958885 ,  23.52797  ,  21.195547 ,
+        37.036457 ,  31.13527  ,  30.849594 ,  35.759613 ,  45.16391  ,
+        19.71283  ,  47.415398 ,  66.29775  ,  53.643387 ,  14.5209   ,
+        28.41626  ,  20.036081 ,  58.838707 ,  22.136665 ,  16.81994  ,
+        88.78921  ,  70.65617  ,  16.857126 ,  63.820107 ,  14.5157385],
+      dtype=float32)}
+Success rate:  0.62
+ 80%|████████  | 8/10 [23:37<05:54, 177.26s/it] 90%|█████████ | 9/10 [26:34<02:57, 177.25s/it]100%|██████████| 10/10 [29:32<00:00, 177.24s/it]100%|██████████| 10/10 [29:32<00:00, 177.21s/it]
+{'success': array([False, False, False,  True,  True, False,  True,  True,  True,
+        True,  True, False, False,  True, False,  True,  True, False,
+        True,  True,  True,  True, False, False,  True, False,  True,
+        True, False,  True, False,  True,  True,  True,  True,  True,
+       False, False, False,  True,  True,  True, False,  True,  True,
+       False, False,  True,  True,  True]), 'state_dist': array([ 72.050125 ,  66.81926  ,  72.79165  ,  20.21915  ,   6.7702017,
+        68.23363  ,  19.072622 ,  39.150154 ,  14.7427635,  23.618921 ,
+        18.030527 ,  42.64284  ,  53.127575 ,  23.880938 ,  60.38578  ,
+        19.823132 ,  50.942585 ,  44.991188 ,  46.631565 ,  28.034513 ,
+        30.104319 ,  14.244541 ,  35.401997 ,  41.472572 ,  18.017872 ,
+       127.413216 ,  24.75247  ,  45.441597 ,  24.47803  ,  15.918998 ,
+        23.437706 ,  37.742188 ,  39.321552 ,  30.590906 ,  40.299282 ,
+        25.511887 ,  44.79562  ,  56.80599  ,  53.179634 ,  13.316872 ,
+        21.380169 ,  20.989595 ,  60.3031   ,  25.461632 ,  12.218653 ,
+        88.34     ,  71.05071  ,  19.48868  ,  65.973366 ,  13.818911 ],
+      dtype=float32)}
+Success rate:  0.64
+{'success': array([False, False, False,  True,  True, False,  True,  True,  True,
+        True,  True, False, False, False, False,  True,  True, False,
+        True,  True, False,  True, False, False,  True, False,  True,
+        True, False,  True,  True,  True,  True,  True,  True,  True,
+        True,  True, False,  True,  True,  True, False,  True,  True,
+       False, False,  True,  True,  True]), 'state_dist': array([ 72.34834 ,  64.99142 ,  72.90721 ,  32.963024,  12.448065,
+        71.59013 ,  23.549427,  41.931576,  17.94102 ,  20.361553,
+        22.52277 ,  43.74636 ,  51.600742,  25.25847 ,  60.052162,
+        20.518394,  56.56817 ,  39.607506,  35.216   ,  19.52919 ,
+        32.805103,  12.497682,  31.587353,  39.038723,  20.22846 ,
+       124.44816 ,  29.034124,  37.864933,  28.686731,  12.207831,
+        23.439676,  47.427387,  39.29087 ,  24.289627,  37.208595,
+        26.313221,  44.78147 ,  54.853256,  36.480907,  19.985123,
+        18.866161,  24.539854,  53.59129 ,  32.01077 ,  13.442281,
+        84.254486,  69.23861 ,  14.952225,  60.87705 ,  16.887432],
+      dtype=float32)}
+Success rate:  0.64
+{'success': array([False, False, False,  True,  True, False,  True,  True,  True,
+        True,  True, False, False, False, False,  True,  True, False,
+        True,  True,  True,  True, False, False,  True, False,  True,
+        True, False,  True,  True,  True,  True,  True,  True,  True,
+       False,  True, False,  True,  True,  True, False,  True,  True,
+       False, False,  True,  True,  True]), 'state_dist': array([ 74.09053 ,  56.502106,  71.10208 ,  48.79043 ,  16.65373 ,
+        72.29182 ,  20.475714,  42.22077 ,  14.979205,  19.02981 ,
+        16.878769,  47.879753,  49.393272,  23.03773 ,  58.206013,
+        19.263464,  47.776543,  41.335884,  26.062878,  13.151547,
+        29.797285,  13.729144,  27.21592 ,  41.185062,  17.982676,
+       123.343155,  23.258585,  44.726982,  27.375237,  11.346507,
+        23.73943 ,  42.254745,  41.340847,  25.343382,  36.688316,
+        21.258112,  39.655735,  48.227917,  33.021774,  14.388052,
+        18.878399,  24.22568 ,  49.751057,  32.1939  ,  13.058948,
+        58.358364,  69.056305,  14.137887,  58.759434,  18.549269],
+      dtype=float32)}
+MPC iter 0 Eval ------- 
+Success rate:  0.64
+{'success': array([False, False, False,  True,  True, False,  True,  True,  True,
+        True,  True, False, False, False, False,  True,  True, False,
+        True,  True,  True,  True, False, False,  True, False,  True,
+        True, False,  True,  True,  True,  True,  True,  True,  True,
+       False,  True, False,  True,  True,  True, False,  True,  True,
+       False, False,  True,  True,  True]), 'state_dist': array([ 74.09053 ,  56.502106,  71.10208 ,  48.79043 ,  16.65373 ,
+        72.29182 ,  20.475714,  42.22077 ,  14.979205,  19.02981 ,
+        16.878769,  47.879753,  49.393272,  23.03773 ,  58.206013,
+        19.263464,  47.776543,  41.335884,  26.062878,  13.151547,
+        29.797285,  13.729144,  27.21592 ,  41.185062,  17.982676,
+       123.343155,  23.258585,  44.726982,  27.375237,  11.346507,
+        23.73943 ,  42.254745,  41.340847,  25.343382,  36.688316,
+        21.258112,  39.655735,  48.227917,  33.021774,  14.388052,
+        18.878399,  24.22568 ,  49.751057,  32.1939  ,  13.058948,
+        58.358364,  69.056305,  14.137887,  58.759434,  18.549269],
+      dtype=float32)}
+self.is_success:  [False False False  True  True False  True  True  True  True  True False
+ False False False  True  True False  True  True  True  True False False
+  True False  True  True False  True  True  True  True  True  True  True
+ False  True False  True  True  True False  True  True False False  True
+  True  True]
+Success rate:  0.64
+{'success': array([False, False, False,  True,  True, False,  True,  True,  True,
+        True,  True, False, False, False, False,  True,  True, False,
+        True,  True,  True,  True, False, False,  True, False,  True,
+        True, False,  True,  True,  True,  True,  True,  True,  True,
+       False,  True, False,  True,  True,  True, False,  True,  True,
+       False, False,  True,  True,  True]), 'state_dist': array([ 74.09053 ,  56.502106,  71.10208 ,  48.79043 ,  16.65373 ,
+        72.29182 ,  20.475714,  42.22077 ,  14.979205,  19.02981 ,
+        16.878769,  47.879753,  49.393272,  23.03773 ,  58.206013,
+        19.263464,  47.776543,  41.335884,  26.062878,  13.151547,
+        29.797285,  13.729144,  27.21592 ,  41.185062,  17.982676,
+       123.343155,  23.258585,  44.726982,  27.375237,  11.346507,
+        23.73943 ,  42.254745,  41.340847,  25.343382,  36.688316,
+        21.258112,  39.655735,  48.227917,  33.021774,  14.388052,
+        18.878399,  24.22568 ,  49.751057,  32.1939  ,  13.058948,
+        58.358364,  69.056305,  14.137887,  58.759434,  18.549269],
+      dtype=float32)}
+[trace] {"n_episodes": 50, "success_rate": 64.0, "picked": {"success": 3, "failure": 0}, "real_steps": 26, "imagined_steps": {"3": 6, "0": 6}, "frameskip": 5, "argv": ["--config-dir", "/sfs/weka/scratch/qxe3fj/JEPA/conf_overrides", "--config-name", "plan_cem_fixed.yaml", "ckpt_base_path=/sfs/weka/scratch/qxe3fj/JEPA/checkpoints/dino_wm/outputs/pusht", "model_epoch=latest", "goal_H=25", "planner.sub_planner.horizon=25", "planner.n_taken_actions=25", "n_evals=50", "seed=100", "decode_for_viz=false", "hydra.run.dir=/sfs/weka/scratch/qxe3fj/JEPA/results/trajectories/dinowm_pusht/hydra", "objective.alpha=1"]}
+[timing] perform_planning_s=1776.911
+[timing] total_planning_main_s=1799.468

@@ -1,0 +1,65 @@
+name, memory.total [MiB]
+NVIDIA A40, 46068 MiB
+===== tworoom  variation=agent.radius=12 =====
+20:30:01 | ERROR | richuru.py  | Exception:
+Traceback (most recent call last):
+
+> File "/sfs/weka/scratch/qxe3fj/JEPA/scripts/eval_variation.py", line 283, in <module>
+    run()
+    └ <function run at 0x7f84e5a749a0>
+
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/main.py", line 94, in decorated_main
+    _run_hydra(
+    └ <function _run_hydra at 0x7f86122d8b80>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 394, in _run_hydra
+    _run_app(
+    └ <function _run_app at 0x7f86122d8c20>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 457, in _run_app
+    run_and_report(
+    └ <function run_and_report at 0x7f86122d8ae0>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 223, in run_and_report
+    raise ex
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 220, in run_and_report
+    return func()
+           └ <function _run_app.<locals>.<lambda> at 0x7f84e5ab5440>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/utils.py", line 458, in <lambda>
+    lambda: hydra.run(
+            │     └ <function Hydra.run at 0x7f86121a3f60>
+            └ <hydra._internal.hydra.Hydra object at 0x7f84ef264850>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/hydra.py", line 105, in run
+    cfg = self.compose_config(
+          │    └ <function Hydra.compose_config at 0x7f86121ac9a0>
+          └ <hydra._internal.hydra.Hydra object at 0x7f84ef264850>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/hydra.py", line 594, in compose_config
+    cfg = self.config_loader.load_configuration(
+          │    │             └ <function ConfigLoaderImpl.load_configuration at 0x7f86121a3420>
+          │    └ <hydra._internal.config_loader_impl.ConfigLoaderImpl object at 0x7f84e5a79390>
+          └ <hydra._internal.hydra.Hydra object at 0x7f84ef264850>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/config_loader_impl.py", line 142, in load_configuration
+    return self._load_configuration_impl(
+           │    └ <function ConfigLoaderImpl._load_configuration_impl at 0x7f86121a3600>
+           └ <hydra._internal.config_loader_impl.ConfigLoaderImpl object at 0x7f84e5a79390>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/config_loader_impl.py", line 244, in _load_configuration_impl
+    parsed_overrides, caching_repo = self._parse_overrides_and_create_caching_repo(
+                                     │    └ <function ConfigLoaderImpl._parse_overrides_and_create_caching_repo at 0x7f86121a3560>
+                                     └ <hydra._internal.config_loader_impl.ConfigLoaderImpl object at 0x7f84e5a79390>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/_internal/config_loader_impl.py", line 228, in _parse_overrides_and_create_caching_repo
+    parsed_overrides = parser.parse_overrides(overrides=overrides)
+                       │      │                         └ ['policy=lewm-tworooms', 'eval.goal_offset_steps=25', 'eval.eval_budget=50', '+variation=agent.radius=12', '+out_dir=/sfs/wek...
+                       │      └ <function OverridesParser.parse_overrides at 0x7f86121a31a0>
+                       └ <hydra.core.override_parser.overrides_parser.OverridesParser object at 0x7f84e5a8b390>
+  File "/scratch/qxe3fj/.conda/envs/swm/lib/python3.11/site-packages/hydra/core/override_parser/overrides_parser.py", line 96, in parse_overrides
+    raise OverrideParseException(
+          └ <class 'hydra.errors.OverrideParseException'>
+
+hydra.errors.OverrideParseException: mismatched input '=' expecting <EOF>
+See https://hydra.cc/docs/1.2/advanced/override_grammar/basic for details
+== summary ==
+  "variation": "agent.color",	  "success_rate": 32.0,
+  "variation": "agent.speed",	  "success_rate": 76.0,
+  "variation": "background.color",	  "success_rate": 22.0,
+  "variation": "door.color",	  "success_rate": 82.0,
+  "variation": "none",	  "success_rate": 86.0,
+  "variation": "target.color",	  "success_rate": 86.0,
+  "variation": "target.radius",	  "success_rate": 86.0,
+  "variation": "wall.color",	  "success_rate": 54.0,
